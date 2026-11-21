@@ -1,0 +1,29 @@
+{
+  "backend_options": {
+    "chop_threshold": 0.0,
+    "mps_lapack": false,
+    "mps_log_data": true,
+    "precision": "double",
+    "zero_threshold": 0.0
+  },
+  "bond_dimensions": [
+    256
+  ],
+  "cases": [
+    {
+      "config": "compact_n8_w0002_tau23",
+      "id": "n8_w0002_tau23_T15",
+      "profile": "baseline",
+      "steps": 15
+    }
+  ],
+  "counts_check": false,
+  "purpose": "User-started baseline tau23/T15/bond256 completion; fixed discrete transport model",
+  "schema_version": 1,
+  "seed": 20261030,
+  "shots": 1,
+  "sparse_crosscheck": false,
+  "truncation_thresholds": [
+    1e-16
+  ]
+}

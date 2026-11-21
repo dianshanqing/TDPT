@@ -1,0 +1,561 @@
+{
+  "absolute_tolerance": 2e-11,
+  "cpu": {
+    "requested_total_budget": 4,
+    "threads_per_worker": 1,
+    "workers": 1
+  },
+  "deadline": null,
+  "elapsed_seconds": 193.3414494000026,
+  "inverse_and_reflection": [
+    {
+      "all_registers_reflected": true,
+      "inverse_amplitude_error": 0.0,
+      "inverse_tail_probability": 1.512192883792289e-31,
+      "passed": true,
+      "profile": "baseline",
+      "reflection_qubits": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "runtime": {
+        "checkpoints": [],
+        "effective_deadline_monotonic": null,
+        "final_basis": 21,
+        "max_states": 60000,
+        "parent_deadline_monotonic": null,
+        "peak_basis": 21,
+        "primitive_gates": 577,
+        "seconds": 0.02066529999137856,
+        "timeout_seconds": null
+      }
+    },
+    {
+      "all_registers_reflected": true,
+      "inverse_amplitude_error": 0.0,
+      "inverse_tail_probability": 1.512192883792289e-31,
+      "passed": true,
+      "profile": "compressed",
+      "reflection_qubits": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ],
+      "runtime": {
+        "checkpoints": [],
+        "effective_deadline_monotonic": null,
+        "final_basis": 21,
+        "max_states": 60000,
+        "parent_deadline_monotonic": null,
+        "peak_basis": 21,
+        "primitive_gates": 610,
+        "seconds": 0.022235500015085563,
+        "timeout_seconds": null
+      }
+    },
+    {
+      "all_registers_reflected": true,
+      "inverse_amplitude_error": 0.0,
+      "inverse_tail_probability": 1.512192883792289e-31,
+      "passed": true,
+      "profile": "full_history",
+      "reflection_qubits": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "runtime": {
+        "checkpoints": [],
+        "effective_deadline_monotonic": null,
+        "final_basis": 21,
+        "max_states": 60000,
+        "parent_deadline_monotonic": null,
+        "peak_basis": 21,
+        "primitive_gates": 463,
+        "seconds": 0.016422599990619346,
+        "timeout_seconds": null
+      }
+    }
+  ],
+  "mc": [
+    {
+      "case": "q_legacy_small",
+      "counts": {
+        "absorb": 2024,
+        "boundary": 840,
+        "detect": 1135,
+        "survive": 1
+      },
+      "diagnostic_limits": [
+        0.0025392331856205945,
+        0.04401608955260582,
+        0.04892505326136319,
+        0.040260746190259405
+      ],
+      "diagnostic_pass": true,
+      "histories": 4000,
+      "probabilities": [
+        0.00025,
+        0.28375,
+        0.506,
+        0.21
+      ],
+      "reference": [
+        0.0001200150273951483,
+        0.2782939560903015,
+        0.5097997911364659,
+        0.21178623774583738
+      ],
+      "seconds": 0.011204199981875718,
+      "seed": 20261030
+    },
+    {
+      "case": "q_uniform_small",
+      "counts": {
+        "absorb": 647,
+        "boundary": 1305,
+        "detect": 2048,
+        "survive": 0
+      },
+      "diagnostic_limits": [
+        0.0020718925640704636,
+        0.04893324369990901,
+        0.03728572894125089,
+        0.0459352910955004
+      ],
+      "diagnostic_pass": true,
+      "histories": 4000,
+      "probabilities": [
+        0.0,
+        0.512,
+        0.16175,
+        0.32625
+      ],
+      "reference": [
+        3.634144346041158e-05,
+        0.5031161248199568,
+        0.1718094042678318,
+        0.32503812946875094
+      ],
+      "seconds": 0.02018369999132119,
+      "seed": 20261030
+    },
+    {
+      "case": "q_layered_small",
+      "counts": {
+        "absorb": 1285,
+        "boundary": 1206,
+        "detect": 1508,
+        "survive": 1
+      },
+      "diagnostic_limits": [
+        0.0019366375630599595,
+        0.04738365573861535,
+        0.04621535499206785,
+        0.044704851168561
+      ],
+      "diagnostic_pass": true,
+      "histories": 4000,
+      "probabilities": [
+        0.00025,
+        0.377,
+        0.32125,
+        0.3015
+      ],
+      "reference": [
+        2.1184044483178452e-05,
+        0.37320614453188156,
+        0.3331544200521022,
+        0.2936182513715331
+      ],
+      "seconds": 0.01249300001654774,
+      "seed": 20261030
+    },
+    {
+      "case": "q_vacuum",
+      "counts": {
+        "absorb": 0,
+        "boundary": 0,
+        "detect": 4000,
+        "survive": 0
+      },
+      "diagnostic_limits": [
+        0.0015,
+        0.0015,
+        0.0015,
+        0.0015
+      ],
+      "diagnostic_pass": true,
+      "histories": 4000,
+      "probabilities": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "reference": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "seconds": 0.01187799999024719,
+      "seed": 20261030
+    },
+    {
+      "case": "q_pure_absorb",
+      "counts": {
+        "absorb": 2177,
+        "boundary": 0,
+        "detect": 1823,
+        "survive": 0
+      },
+      "diagnostic_limits": [
+        0.0015,
+        0.048689956718597396,
+        0.048689956718597396,
+        0.0015
+      ],
+      "diagnostic_pass": true,
+      "histories": 4000,
+      "probabilities": [
+        0.0,
+        0.45575,
+        0.54425,
+        0.0
+      ],
+      "reference": [
+        0.0,
+        0.4493289641172216,
+        0.5506710358827784,
+        0.0
+      ],
+      "seconds": 0.010219399991910905,
+      "seed": 20261030
+    },
+    {
+      "case": "q_pure_scatter",
+      "counts": {
+        "absorb": 0,
+        "boundary": 3873,
+        "detect": 108,
+        "survive": 19
+      },
+      "diagnostic_limits": [
+        0.007940012844094239,
+        0.01709023911155809,
+        0.0015,
+        0.018299241238009526
+      ],
+      "diagnostic_pass": true,
+      "histories": 4000,
+      "probabilities": [
+        0.00475,
+        0.027,
+        0.0,
+        0.96825
+      ],
+      "reference": [
+        0.004629629629629629,
+        0.027777777777777776,
+        0.0,
+        0.9675925925925926
+      ],
+      "seconds": 0.01633149999543093,
+      "seed": 20261030
+    },
+    {
+      "case": "q_boundary_overlap",
+      "counts": {
+        "absorb": 0,
+        "boundary": 4000,
+        "detect": 0,
+        "survive": 0
+      },
+      "diagnostic_limits": [
+        0.0015,
+        0.0015,
+        0.0015,
+        0.0015
+      ],
+      "diagnostic_pass": true,
+      "histories": 4000,
+      "probabilities": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "reference": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "seconds": 0.0010950999858323485,
+      "seed": 20261030
+    }
+  ],
+  "passed": true,
+  "peak_process_memory_mb": 151.05078125,
+  "rows": [
+    {
+      "case": "q_legacy_small_baseline",
+      "max_joint_error": 1.1102230246251565e-16,
+      "passed": true,
+      "seconds": 0.3489259000052698,
+      "status": "complete"
+    },
+    {
+      "case": "q_legacy_small_compressed",
+      "max_joint_error": 1.1102230246251565e-16,
+      "passed": true,
+      "seconds": 0.3784511999983806,
+      "status": "complete"
+    },
+    {
+      "case": "q_legacy_small_full_history",
+      "max_joint_error": 1.1102230246251565e-16,
+      "passed": true,
+      "seconds": 0.3111102000111714,
+      "status": "complete"
+    },
+    {
+      "case": "q_uniform_small_baseline",
+      "max_joint_error": 1.1102230246251565e-16,
+      "passed": true,
+      "seconds": 0.3114949000009801,
+      "status": "complete"
+    },
+    {
+      "case": "q_uniform_small_compressed",
+      "max_joint_error": 1.1102230246251565e-16,
+      "passed": true,
+      "seconds": 0.3159459999878891,
+      "status": "complete"
+    },
+    {
+      "case": "q_uniform_small_full_history",
+      "max_joint_error": 1.1102230246251565e-16,
+      "passed": true,
+      "seconds": 0.2787069999903906,
+      "status": "complete"
+    },
+    {
+      "case": "q_layered_small_baseline",
+      "max_joint_error": 8.326672684688674e-17,
+      "passed": true,
+      "seconds": 0.3436058000079356,
+      "status": "complete"
+    },
+    {
+      "case": "q_layered_small_compressed",
+      "max_joint_error": 8.326672684688674e-17,
+      "passed": true,
+      "seconds": 0.31789440001011826,
+      "status": "complete"
+    },
+    {
+      "case": "q_layered_small_full_history",
+      "max_joint_error": 8.326672684688674e-17,
+      "passed": true,
+      "seconds": 0.28221940001822077,
+      "status": "complete"
+    },
+    {
+      "case": "q_vacuum_baseline",
+      "max_joint_error": 0.0,
+      "passed": true,
+      "seconds": 0.1907022999948822,
+      "status": "complete"
+    },
+    {
+      "case": "q_vacuum_compressed",
+      "max_joint_error": 0.0,
+      "passed": true,
+      "seconds": 0.2502823999966495,
+      "status": "complete"
+    },
+    {
+      "case": "q_vacuum_full_history",
+      "max_joint_error": 0.0,
+      "passed": true,
+      "seconds": 0.21529110000119545,
+      "status": "complete"
+    },
+    {
+      "case": "q_pure_absorb_baseline",
+      "max_joint_error": 1.6653345369377348e-16,
+      "passed": true,
+      "seconds": 0.24754360000952147,
+      "status": "complete"
+    },
+    {
+      "case": "q_pure_absorb_compressed",
+      "max_joint_error": 1.6653345369377348e-16,
+      "passed": true,
+      "seconds": 0.20384510001167655,
+      "status": "complete"
+    },
+    {
+      "case": "q_pure_absorb_full_history",
+      "max_joint_error": 1.6653345369377348e-16,
+      "passed": true,
+      "seconds": 0.18177750002359971,
+      "status": "complete"
+    },
+    {
+      "case": "q_pure_scatter_baseline",
+      "max_joint_error": 5.551115123125783e-17,
+      "passed": true,
+      "seconds": 0.2542591000092216,
+      "status": "complete"
+    },
+    {
+      "case": "q_pure_scatter_compressed",
+      "max_joint_error": 5.551115123125783e-17,
+      "passed": true,
+      "seconds": 0.23865819998900406,
+      "status": "complete"
+    },
+    {
+      "case": "q_pure_scatter_full_history",
+      "max_joint_error": 5.551115123125783e-17,
+      "passed": true,
+      "seconds": 0.22438649999094196,
+      "status": "complete"
+    },
+    {
+      "case": "q_boundary_overlap_baseline",
+      "max_joint_error": 0.0,
+      "passed": true,
+      "seconds": 0.14572269999189302,
+      "status": "complete"
+    },
+    {
+      "case": "q_boundary_overlap_compressed",
+      "max_joint_error": 0.0,
+      "passed": true,
+      "seconds": 0.14846019999822602,
+      "status": "complete"
+    },
+    {
+      "case": "q_boundary_overlap_full_history",
+      "max_joint_error": 0.0,
+      "passed": true,
+      "seconds": 0.19535470000118949,
+      "status": "complete"
+    }
+  ],
+  "status": "complete"
+}

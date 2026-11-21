@@ -1,0 +1,241 @@
+{
+  "phase": "exact_reference",
+  "steps": 12,
+  "seed_ignored": 1234,
+  "unitary_matched_energy": false,
+  "status_codes": {
+    "alive": "00",
+    "detect": "01",
+    "absorb": "10",
+    "boundary": "11"
+  },
+  "step_summaries": [
+    {
+      "step": 1,
+      "p_detect_reach": 0.0,
+      "p_absorb": 0.010000000000000002,
+      "p_boundary": 0.0,
+      "p_survive": 0.99,
+      "sum_prob": 1.0,
+      "active_states": 6,
+      "terminal_this_step": {
+        "detect": 0.0,
+        "absorb": 0.010000000000000002,
+        "boundary": 0.0
+      }
+    },
+    {
+      "step": 2,
+      "p_detect_reach": 0.0,
+      "p_absorb": 0.019750000000000007,
+      "p_boundary": 0.015000000000000001,
+      "p_survive": 0.96525,
+      "sum_prob": 1.0,
+      "active_states": 30,
+      "terminal_this_step": {
+        "detect": 0.0,
+        "absorb": 0.009750000000000005,
+        "boundary": 0.015000000000000001
+      }
+    },
+    {
+      "step": 3,
+      "p_detect_reach": 0.0,
+      "p_absorb": 0.029393499999999975,
+      "p_boundary": 0.0159,
+      "p_survive": 0.9547065,
+      "sum_prob": 1.0,
+      "active_states": 84,
+      "terminal_this_step": {
+        "detect": 0.0,
+        "absorb": 0.009643500000000011,
+        "boundary": 0.0009000000000000002
+      }
+    },
+    {
+      "step": 4,
+      "p_detect_reach": 0.0,
+      "p_absorb": 0.03855517374999997,
+      "p_boundary": 0.054439125,
+      "p_survive": 0.90700570125,
+      "sum_prob": 1.0,
+      "active_states": 168,
+      "terminal_this_step": {
+        "detect": 0.0,
+        "absorb": 0.009161673749999998,
+        "boundary": 0.038539125
+      }
+    },
+    {
+      "step": 5,
+      "p_detect_reach": 0.0,
+      "p_absorb": 0.047145379674999835,
+      "p_boundary": 0.10242423375000002,
+      "p_survive": 0.850430386575,
+      "sum_prob": 0.9999999999999999,
+      "active_states": 270,
+      "terminal_this_step": {
+        "detect": 0.0,
+        "absorb": 0.008590205924999986,
+        "boundary": 0.047985108750000005
+      }
+    },
+    {
+      "step": 6,
+      "p_detect_reach": 0.0,
+      "p_absorb": 0.05508643716681245,
+      "p_boundary": 0.15874887114375022,
+      "p_survive": 0.7861646916894376,
+      "sum_prob": 1.0000000000000002,
+      "active_states": 378,
+      "terminal_this_step": {
+        "detect": 0.0,
+        "absorb": 0.007941057491812517,
+        "boundary": 0.05632463739375003
+      }
+    },
+    {
+      "step": 7,
+      "p_detect_reach": 0.0,
+      "p_absorb": 0.06250735001769805,
+      "p_boundary": 0.20282227774462533,
+      "p_survive": 0.734670372237677,
+      "sum_prob": 1.0000000000000004,
+      "active_states": 486,
+      "terminal_this_step": {
+        "detect": 0.0,
+        "absorb": 0.007420912850885613,
+        "boundary": 0.044073406600875005
+      }
+    },
+    {
+      "step": 8,
+      "p_detect_reach": 0.0,
+      "p_absorb": 0.06419918527837784,
+      "p_boundary": 0.2528207302359537,
+      "p_survive": 0.6829800844856687,
+      "sum_prob": 1.0000000000000002,
+      "active_states": 594,
+      "terminal_this_step": {
+        "detect": 0.0,
+        "absorb": 0.0016918352606800483,
+        "boundary": 0.049998452491328234
+      }
+    },
+    {
+      "step": 9,
+      "p_detect_reach": 0.0,
+      "p_absorb": 0.06614228071675395,
+      "p_boundary": 0.2916246436168209,
+      "p_survive": 0.6422330756664254,
+      "sum_prob": 1.0000000000000002,
+      "active_states": 702,
+      "terminal_this_step": {
+        "detect": 0.0,
+        "absorb": 0.0019430954383759223,
+        "boundary": 0.03880391338086733
+      }
+    },
+    {
+      "step": 10,
+      "p_detect_reach": 0.0,
+      "p_absorb": 0.07377070627478242,
+      "p_boundary": 0.33502723885034347,
+      "p_survive": 0.5912020548748742,
+      "sum_prob": 1.0,
+      "active_states": 810,
+      "terminal_this_step": {
+        "detect": 0.0,
+        "absorb": 0.00762842555802858,
+        "boundary": 0.04340259523352261
+      }
+    },
+    {
+      "step": 11,
+      "p_detect_reach": 0.0,
+      "p_absorb": 0.0810596742383027,
+      "p_boundary": 0.35722368223518197,
+      "p_survive": 0.5617166435265151,
+      "sum_prob": 0.9999999999999998,
+      "active_states": 918,
+      "terminal_this_step": {
+        "detect": 0.0,
+        "absorb": 0.007288967963520573,
+        "boundary": 0.022196443384838525
+      }
+    },
+    {
+      "step": 12,
+      "p_detect_reach": 0.43464278993253214,
+      "p_absorb": 0.08287687006630269,
+      "p_boundary": 0.3731211287970037,
+      "p_survive": 0.10935921120416062,
+      "sum_prob": 0.9999999999999991,
+      "active_states": 1020,
+      "terminal_this_step": {
+        "detect": 0.43464278993253214,
+        "absorb": 0.0018171958280000752,
+        "boundary": 0.015897446561822202
+      }
+    }
+  ],
+  "final": {
+    "step": 12,
+    "p_detect_reach": 0.43464278993253214,
+    "p_absorb": 0.08287687006630269,
+    "p_boundary": 0.3731211287970037,
+    "p_survive": 0.10935921120416062,
+    "sum_prob": 0.9999999999999991,
+    "active_states": 1020,
+    "terminal_this_step": {
+      "detect": 0.43464278993253214,
+      "absorb": 0.0018171958280000752,
+      "boundary": 0.015897446561822202
+    }
+  },
+  "mc_reference": {
+    "path": "outputs\\MC\\mc_s12_h4e6_seed1234\\results.json",
+    "comparison": [
+      {
+        "state": "detect",
+        "exact_p": 0.43464278993253214,
+        "mc_p": 0.43473575,
+        "mc_se": 0.000247861139386521,
+        "diff": -9.296006746783991e-05,
+        "z_vs_mc": -0.3750489798357443,
+        "within_3sigma": true
+      },
+      {
+        "state": "absorb",
+        "exact_p": 0.08287687006630269,
+        "mc_p": 0.08287175,
+        "mc_se": 0.0001378441357584151,
+        "diff": 5.120066302696791e-06,
+        "z_vs_mc": 0.03714388192523614,
+        "within_3sigma": true
+      },
+      {
+        "state": "boundary",
+        "exact_p": 0.3731211287970037,
+        "mc_p": 0.37287125,
+        "mc_se": 0.00024178413974216626,
+        "diff": 0.00024987879700372195,
+        "z_vs_mc": 1.0334788595736166,
+        "within_3sigma": true
+      },
+      {
+        "state": "survive",
+        "exact_p": 0.10935921120416062,
+        "mc_p": 0.10952125,
+        "mc_se": 0.0001561460420555365,
+        "diff": -0.00016203879583938374,
+        "z_vs_mc": -1.0377387329596952,
+        "within_3sigma": true
+      }
+    ]
+  },
+  "notes": [
+    "The exact solver is deterministic; --seed is accepted only for output metadata.",
+    "p_survive is the active alive mass after the requested number of steps."
+  ]
+}

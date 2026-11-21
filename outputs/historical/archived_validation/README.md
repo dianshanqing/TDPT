@@ -1,0 +1,3 @@
+# Weighted postprocessing of MPS detector counts
+
+This archived table evaluates 11 T12/T15 finite-MPS settings against five synthetic response targets per setting. Each of the 55 response estimates equals its original sampled detector fraction times the specified detector efficiency. All rows were checked against the original merged counts, indexed by HIST-TEST-046, HIST-TEST-047, HIST-TEST-048, HIST-TEST-049, HIST-TEST-050, HIST-TEST-051, HIST-TEST-052, HIST-TEST-053, HIST-TEST-054, HIST-TEST-055, HIST-TEST-056. The `methods.csv` table in `../duct_mps` identifies the actual v1 profiles and maps the legacy path names to their stored results. Counts are reused across efficiencies. The table supports recalculation of weighted response estimates at fixed settings.

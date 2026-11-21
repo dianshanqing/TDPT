@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Please cite Three-Dimensional Particle Transport when using TDPT."
+title: "Three-Dimensional Particle Transport (TDPT)"
+type: software
+version: "2.0.0"
+license: MIT
+author:
+  - family-names: Wang
+    given-names: Yu

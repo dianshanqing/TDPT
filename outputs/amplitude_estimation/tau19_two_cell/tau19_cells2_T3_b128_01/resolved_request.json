@@ -1,0 +1,187 @@
+{
+  "arguments": {
+    "aer_threads": 1,
+    "blas_threads": 1,
+    "bond": 128,
+    "case_id": null,
+    "confidence": 0.95,
+    "config": "q_tau19_two_cell",
+    "counts_check": true,
+    "cpu_budget": 1,
+    "dry_run": false,
+    "iqae_max_grover_power": 2048,
+    "iqae_max_queries": 10000000,
+    "iqae_max_shots": 20000,
+    "memory_mib": 8192,
+    "mps_lapack": null,
+    "mps_threads": 1,
+    "mps_trunc": 1e-16,
+    "outdir": "outputs/amplitude_estimation/tau19_two_cell/tau19_cells2_T3_b128_01",
+    "perf_prefix_gates": null,
+    "perf_reference": null,
+    "profile": "baseline",
+    "relative_error": 0.01,
+    "seed": 2026110804,
+    "shots": 512,
+    "steps": 3,
+    "suite": null,
+    "task": "iqae"
+  },
+  "backend": {},
+  "backend_options": {},
+  "cases": [
+    {
+      "config": "q_tau19_two_cell",
+      "config_sha256": "c6fc04a05c93ce3811e19dbe67e00e08df3973abdabb50ef9d3ed44304d392a0",
+      "id": "model",
+      "model_document": {
+        "geom": {
+          "detector_x": 3,
+          "duct_y0": 1,
+          "duct_y1": 1,
+          "duct_z0": 1,
+          "duct_z1": 1,
+          "nx": 5,
+          "ny": 3,
+          "nz": 3,
+          "roi_y0": 1,
+          "roi_y1": 1,
+          "roi_z0": 1,
+          "roi_z1": 1,
+          "slab_x0": 1,
+          "slab_x1": 2
+        },
+        "groups": {
+          "boundaries": [
+            1.0,
+            0.0
+          ],
+          "n_groups": 1
+        },
+        "h": 0.5,
+        "layers": [
+          {
+            "material": "tungsten",
+            "x0": 1,
+            "x1": 2
+          }
+        ],
+        "mats": {
+          "air": {
+            "p_abs": [
+              0.09999999999999998
+            ],
+            "p_int": [
+              0.39346934028736663
+            ],
+            "q_down": [
+              0
+            ]
+          },
+          "concrete": {
+            "p_abs": [
+              0
+            ],
+            "p_int": [
+              -0.0
+            ],
+            "q_down": [
+              0
+            ]
+          },
+          "tungsten": {
+            "p_abs": [
+              0.998
+            ],
+            "p_int": [
+              0.9069855107893365
+            ],
+            "q_down": [
+              0
+            ]
+          }
+        },
+        "metadata": {
+          "interaction_source": "compact_n8_w0002_tau19 material probabilities at h=0.5",
+          "main_candidate": false,
+          "material_cells": 2,
+          "physical_material_calibration": false,
+          "purpose": "Natural two-cell transport IQAE validation; no free conditional rarity factor",
+          "recommended_steps": 3,
+          "total_optical_thickness": 4.75
+        },
+        "model": "uniform_slab",
+        "source": {
+          "dir0": 0,
+          "g0": 0,
+          "x0": 1,
+          "y0": 1,
+          "z0": 1
+        }
+      },
+      "profile": "baseline",
+      "steps": 3
+    }
+  ],
+  "counts_check": true,
+  "dry_run": false,
+  "effective_suite": null,
+  "outdir": "outputs/amplitude_estimation/tau19_two_cell/tau19_cells2_T3_b128_01",
+  "overrides": [
+    {
+      "field": "outdir",
+      "previous": "outputs\\iqae_transport\\tau19_cells2_T3_b128_01",
+      "source": "cli",
+      "value": "outputs/amplitude_estimation/tau19_two_cell/tau19_cells2_T3_b128_01"
+    }
+  ],
+  "precedence": "explicit CLI > explicit CMD > selected suite/model > default",
+  "precision_contract": {
+    "budget_exhaustion": "budget_within_target_not_achieved",
+    "confidence": 0.95,
+    "failure_probability": 0.050000000000000044,
+    "numerical_parameters": "bond and mps_trunc control simulator error separately; statistical precision does not certify total error",
+    "reference_used_for_stopping": false,
+    "relative_error": 0.01,
+    "scope": "single_case_complete_estimation",
+    "stop_rule": "valid confidence interval [L,U], L>0 and (U-L)/(2*L)<=relative_error; estimate=(L+U)/2"
+  },
+  "provenance": {
+    "aer_threads": "cmd",
+    "blas_threads": "default",
+    "bond": "cmd",
+    "case_id": "default",
+    "confidence": "cmd",
+    "config": "cmd",
+    "counts_check": "default",
+    "cpu_budget": "cmd",
+    "dry_run": "cmd",
+    "iqae_max_grover_power": "cmd",
+    "iqae_max_queries": "cmd",
+    "iqae_max_shots": "cmd",
+    "memory_mib": "cmd",
+    "mps_lapack": "default",
+    "mps_threads": "cmd",
+    "mps_trunc": "cmd",
+    "outdir": "cli",
+    "perf_prefix_gates": "default",
+    "perf_reference": "default",
+    "profile": "cmd",
+    "relative_error": "cmd",
+    "seed": "cmd",
+    "shots": "cmd",
+    "steps": "cmd",
+    "suite": "default",
+    "task": "cli"
+  },
+  "resources": {
+    "aer_threads": 1,
+    "blas_threads": 1,
+    "cpu_budget": 1,
+    "memory_mib": 8192,
+    "mps_threads": 1
+  },
+  "schema_version": 1,
+  "simulation_executed": false,
+  "task": "iqae"
+}

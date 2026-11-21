@@ -1,0 +1,6 @@
+sampler_type,backend_method,m,oracle_calls,shots,success_count,failure_count,success_probability,expected_success_probability,success_se,circuit_depth,gate_count,qubit_count,elapsed_time_sec,build_time_sec
+quantum_circuit,statevector,0,1,2000,0,2000,0.0,1e-06,0.0,98,"{""cx"": 20, ""measure"": 1, ""rz"": 72, ""sx"": 34}",4,0.11338186264038086,0.04964494705200195
+quantum_circuit,statevector,100,201,2000,84,1916,0.042,0.03985985524914727,0.004485309353879618,21798,"{""cx"": 5420, ""measure"": 1, ""rz"": 16872, ""sx"": 7234, ""x"": 800}",4,1.322237491607666,0.5615575313568115
+quantum_circuit,statevector,250,501,2000,475,1525,0.2375,0.23069092814483577,0.009515612171584127,54348,"{""cx"": 13520, ""measure"": 1, ""rz"": 42072, ""sx"": 18034, ""x"": 2000}",4,3.115339756011963,1.4674148559570312
+quantum_circuit,statevector,500,1001,2000,1407,593,0.7035,0.7089824505095205,0.010212437270309179,108598,"{""cx"": 27020, ""measure"": 1, ""rz"": 84072, ""sx"": 36034, ""x"": 4000}",4,6.072452545166016,3.097429037094116
+quantum_circuit,statevector,750,1501,2000,1987,13,0.9935,0.9951364130301151,0.0017969070649312877,162848,"{""cx"": 40520, ""measure"": 1, ""rz"": 126072, ""sx"": 54034, ""x"": 6000}",4,9.015010833740234,4.6466779708862305

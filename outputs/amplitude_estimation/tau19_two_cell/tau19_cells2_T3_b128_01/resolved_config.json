@@ -1,0 +1,593 @@
+{
+  "actual_cases": [
+    {
+      "config": "q_tau19_two_cell",
+      "config_sha256": "c6fc04a05c93ce3811e19dbe67e00e08df3973abdabb50ef9d3ed44304d392a0",
+      "id": "model",
+      "model_document": {
+        "geom": {
+          "detector_x": 3,
+          "duct_y0": 1,
+          "duct_y1": 1,
+          "duct_z0": 1,
+          "duct_z1": 1,
+          "nx": 5,
+          "ny": 3,
+          "nz": 3,
+          "roi_y0": 1,
+          "roi_y1": 1,
+          "roi_z0": 1,
+          "roi_z1": 1,
+          "slab_x0": 1,
+          "slab_x1": 2
+        },
+        "groups": {
+          "boundaries": [
+            1.0,
+            0.0
+          ],
+          "n_groups": 1
+        },
+        "h": 0.5,
+        "layers": [
+          {
+            "material": "tungsten",
+            "x0": 1,
+            "x1": 2
+          }
+        ],
+        "mats": {
+          "air": {
+            "p_abs": [
+              0.09999999999999998
+            ],
+            "p_int": [
+              0.39346934028736663
+            ],
+            "q_down": [
+              0
+            ]
+          },
+          "concrete": {
+            "p_abs": [
+              0
+            ],
+            "p_int": [
+              -0.0
+            ],
+            "q_down": [
+              0
+            ]
+          },
+          "tungsten": {
+            "p_abs": [
+              0.998
+            ],
+            "p_int": [
+              0.9069855107893365
+            ],
+            "q_down": [
+              0
+            ]
+          }
+        },
+        "metadata": {
+          "interaction_source": "compact_n8_w0002_tau19 material probabilities at h=0.5",
+          "main_candidate": false,
+          "material_cells": 2,
+          "physical_material_calibration": false,
+          "purpose": "Natural two-cell transport IQAE validation; no free conditional rarity factor",
+          "recommended_steps": 3,
+          "total_optical_thickness": 4.75
+        },
+        "model": "uniform_slab",
+        "source": {
+          "dir0": 0,
+          "g0": 0,
+          "x0": 1,
+          "y0": 1,
+          "z0": 1
+        }
+      },
+      "profile": "baseline",
+      "steps": 3
+    }
+  ],
+  "arguments": {
+    "absorb_tape": false,
+    "aer_heartbeat_sec": 30.0,
+    "aer_max_mem_mb": 0,
+    "aer_safe_basis": false,
+    "aer_shot_chunk": 100,
+    "aer_threads": 1,
+    "blas_threads": 1,
+    "case_id": null,
+    "compile_only": false,
+    "compiled_qpy": "",
+    "confidence": 0.95,
+    "config": "q_tau19_two_cell",
+    "counts_check": true,
+    "cpu_budget": 1,
+    "debug_measure_work": false,
+    "dir_tape": false,
+    "dry_run": false,
+    "full_history_mode": false,
+    "global_shot_offset": 0,
+    "histories": 200000,
+    "internal_worker": "75acc0c2b88e4a5a96076aaa13701ef2",
+    "iqae_alpha": 0.05,
+    "iqae_debug": false,
+    "iqae_debug_print_ops": false,
+    "iqae_eps": 0.05,
+    "iqae_good": "detect",
+    "iqae_heartbeat_sec": 30.0,
+    "iqae_max_call_sec": null,
+    "iqae_max_grover_power": 2048,
+    "iqae_max_queries": 10000000,
+    "iqae_max_shots": 20000,
+    "iqae_mode": "relative",
+    "iqae_shot_chunk": 512,
+    "iqae_target_g": -1,
+    "iqae_use_aer": true,
+    "kernel_profile": "baseline",
+    "mlae_powers": "0,1",
+    "mps_lapack": null,
+    "mps_max_bond": 128,
+    "mps_threads": 1,
+    "mps_trunc": 1e-16,
+    "num_shards": 1,
+    "outdir": "outputs/amplitude_estimation/tau19_two_cell/tau19_cells2_T3_b128_01",
+    "perf_prefix_gates": null,
+    "perf_reference": null,
+    "phase": "iqae",
+    "plot": false,
+    "probe_compile": false,
+    "rare_eta": -1.0,
+    "rare_p_target": 0.0,
+    "relative_error": 0.01,
+    "request_hash": "",
+    "resolved_request": {
+      "arguments": {
+        "aer_threads": 1,
+        "blas_threads": 1,
+        "bond": 128,
+        "case_id": null,
+        "confidence": 0.95,
+        "config": "q_tau19_two_cell",
+        "counts_check": true,
+        "cpu_budget": 1,
+        "dry_run": false,
+        "iqae_max_grover_power": 2048,
+        "iqae_max_queries": 10000000,
+        "iqae_max_shots": 20000,
+        "memory_mib": 8192,
+        "mps_lapack": null,
+        "mps_threads": 1,
+        "mps_trunc": 1e-16,
+        "outdir": "outputs/amplitude_estimation/tau19_two_cell/tau19_cells2_T3_b128_01",
+        "perf_prefix_gates": null,
+        "perf_reference": null,
+        "profile": "baseline",
+        "relative_error": 0.01,
+        "seed": 2026110804,
+        "shots": 512,
+        "steps": 3,
+        "suite": null,
+        "task": "iqae"
+      },
+      "backend": {},
+      "backend_options": {},
+      "cases": [
+        {
+          "config": "q_tau19_two_cell",
+          "config_sha256": "c6fc04a05c93ce3811e19dbe67e00e08df3973abdabb50ef9d3ed44304d392a0",
+          "id": "model",
+          "model_document": {
+            "geom": {
+              "detector_x": 3,
+              "duct_y0": 1,
+              "duct_y1": 1,
+              "duct_z0": 1,
+              "duct_z1": 1,
+              "nx": 5,
+              "ny": 3,
+              "nz": 3,
+              "roi_y0": 1,
+              "roi_y1": 1,
+              "roi_z0": 1,
+              "roi_z1": 1,
+              "slab_x0": 1,
+              "slab_x1": 2
+            },
+            "groups": {
+              "boundaries": [
+                1.0,
+                0.0
+              ],
+              "n_groups": 1
+            },
+            "h": 0.5,
+            "layers": [
+              {
+                "material": "tungsten",
+                "x0": 1,
+                "x1": 2
+              }
+            ],
+            "mats": {
+              "air": {
+                "p_abs": [
+                  0.09999999999999998
+                ],
+                "p_int": [
+                  0.39346934028736663
+                ],
+                "q_down": [
+                  0
+                ]
+              },
+              "concrete": {
+                "p_abs": [
+                  0
+                ],
+                "p_int": [
+                  -0.0
+                ],
+                "q_down": [
+                  0
+                ]
+              },
+              "tungsten": {
+                "p_abs": [
+                  0.998
+                ],
+                "p_int": [
+                  0.9069855107893365
+                ],
+                "q_down": [
+                  0
+                ]
+              }
+            },
+            "metadata": {
+              "interaction_source": "compact_n8_w0002_tau19 material probabilities at h=0.5",
+              "main_candidate": false,
+              "material_cells": 2,
+              "physical_material_calibration": false,
+              "purpose": "Natural two-cell transport IQAE validation; no free conditional rarity factor",
+              "recommended_steps": 3,
+              "total_optical_thickness": 4.75
+            },
+            "model": "uniform_slab",
+            "source": {
+              "dir0": 0,
+              "g0": 0,
+              "x0": 1,
+              "y0": 1,
+              "z0": 1
+            }
+          },
+          "profile": "baseline",
+          "steps": 3
+        }
+      ],
+      "counts_check": true,
+      "dry_run": false,
+      "effective_suite": null,
+      "outdir": "outputs/amplitude_estimation/tau19_two_cell/tau19_cells2_T3_b128_01",
+      "overrides": [
+        {
+          "field": "outdir",
+          "previous": "outputs\\iqae_transport\\tau19_cells2_T3_b128_01",
+          "source": "cli",
+          "value": "outputs/amplitude_estimation/tau19_two_cell/tau19_cells2_T3_b128_01"
+        }
+      ],
+      "precedence": "explicit CLI > explicit CMD > selected suite/model > default",
+      "precision_contract": {
+        "budget_exhaustion": "budget_within_target_not_achieved",
+        "confidence": 0.95,
+        "failure_probability": 0.050000000000000044,
+        "numerical_parameters": "bond and mps_trunc control simulator error separately; statistical precision does not certify total error",
+        "reference_used_for_stopping": false,
+        "relative_error": 0.01,
+        "scope": "single_case_complete_estimation",
+        "stop_rule": "valid confidence interval [L,U], L>0 and (U-L)/(2*L)<=relative_error; estimate=(L+U)/2"
+      },
+      "provenance": {
+        "aer_threads": "cmd",
+        "blas_threads": "default",
+        "bond": "cmd",
+        "case_id": "default",
+        "confidence": "cmd",
+        "config": "cmd",
+        "counts_check": "default",
+        "cpu_budget": "cmd",
+        "dry_run": "cmd",
+        "iqae_max_grover_power": "cmd",
+        "iqae_max_queries": "cmd",
+        "iqae_max_shots": "cmd",
+        "memory_mib": "cmd",
+        "mps_lapack": "default",
+        "mps_threads": "cmd",
+        "mps_trunc": "cmd",
+        "outdir": "cli",
+        "perf_prefix_gates": "default",
+        "perf_reference": "default",
+        "profile": "cmd",
+        "relative_error": "cmd",
+        "seed": "cmd",
+        "shots": "cmd",
+        "steps": "cmd",
+        "suite": "default",
+        "task": "cli"
+      },
+      "resources": {
+        "aer_threads": 1,
+        "blas_threads": 1,
+        "cpu_budget": 1,
+        "memory_mib": 8192,
+        "mps_threads": 1
+      },
+      "schema_version": 1,
+      "simulation_executed": false,
+      "task": "iqae"
+    },
+    "resource_settings": {
+      "aer_threads": 1,
+      "allocation_performed": true,
+      "available_logical_cpus": 64,
+      "blas_application": [
+        {
+          "applied": true,
+          "config": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY SkylakeX MAX_THREADS=24",
+          "errors": [],
+          "get_num_threads_supported": true,
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "num_threads_after": 1,
+          "num_threads_before": 1,
+          "owner": "numpy",
+          "parallel": 1,
+          "path": "C:\\ProgramData\\anaconda3\\envs\\'QC'\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+          "requested_threads": 1,
+          "restored_after_failure": null,
+          "set_num_threads_supported": true,
+          "symbol_prefix": "scipy_openblas_",
+          "symbol_suffix": "64_",
+          "threading_layer": "native_threads",
+          "version": "0.3.31.188.0"
+        }
+      ],
+      "blas_threads": 1,
+      "deadline_environment": null,
+      "effective_cpu_budget": 1,
+      "host_fits_request": true,
+      "loaded_libraries_after": [
+        {
+          "config": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY SkylakeX MAX_THREADS=24",
+          "errors": [],
+          "get_num_threads_supported": true,
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "owner": "numpy",
+          "parallel": 1,
+          "path": "C:\\ProgramData\\anaconda3\\envs\\'QC'\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+          "set_num_threads_supported": true,
+          "symbol_prefix": "scipy_openblas_",
+          "symbol_suffix": "64_",
+          "threading_layer": "native_threads",
+          "version": "0.3.31.188.0"
+        }
+      ],
+      "loaded_libraries_before": [
+        {
+          "config": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY SkylakeX MAX_THREADS=24",
+          "errors": [],
+          "get_num_threads_supported": true,
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "owner": "numpy",
+          "parallel": 1,
+          "path": "C:\\ProgramData\\anaconda3\\envs\\'QC'\\Lib\\site-packages\\numpy.libs\\libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+          "set_num_threads_supported": true,
+          "symbol_prefix": "scipy_openblas_",
+          "symbol_suffix": "64_",
+          "threading_layer": "native_threads",
+          "version": "0.3.31.188.0"
+        }
+      ],
+      "mps_threads": 1,
+      "nested_thread_upper_bound": 1,
+      "requested_cpu_budget": 1,
+      "workers": 1
+    },
+    "root_seed": null,
+    "run_id": "5f034df6f4264aa284c23119d5e7be1c",
+    "run_memory_mib": 8192,
+    "run_timeout_sec": null,
+    "save_compiled_qpy": "",
+    "scatter_tape": false,
+    "seed": 2026110804,
+    "shard_id": -1,
+    "shard_seed_offset": 0,
+    "shots": 512,
+    "skip_transpile": false,
+    "steps": 3,
+    "suite": null,
+    "term_tape": false,
+    "test_measure_coins": false,
+    "test_measure_dir": false,
+    "test_measure_x": false,
+    "total_samples": null,
+    "transpiler_seed": 1234,
+    "unitary_matched_energy": false,
+    "xt_disable_boundary": false,
+    "xt_disable_detector": false,
+    "xt_no_interaction": false
+  },
+  "config": {
+    "geom": {
+      "detector_x": 3,
+      "duct_y0": 1,
+      "duct_y1": 1,
+      "duct_z0": 1,
+      "duct_z1": 1,
+      "nx": 5,
+      "ny": 3,
+      "nz": 3,
+      "roi_y0": 1,
+      "roi_y1": 1,
+      "roi_z0": 1,
+      "roi_z1": 1,
+      "slab_x0": 1,
+      "slab_x1": 2
+    },
+    "groups": {
+      "boundaries": [
+        1.0,
+        0.0
+      ],
+      "n_groups": 1
+    },
+    "h": 0.5,
+    "layers": [
+      {
+        "material": "tungsten",
+        "x0": 1,
+        "x1": 2
+      }
+    ],
+    "mats": {
+      "air": {
+        "p_abs": [
+          0.09999999999999998
+        ],
+        "p_int": [
+          0.39346934028736663
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "concrete": {
+        "p_abs": [
+          0
+        ],
+        "p_int": [
+          -0.0
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "tungsten": {
+        "p_abs": [
+          0.998
+        ],
+        "p_int": [
+          0.9069855107893365
+        ],
+        "q_down": [
+          0
+        ]
+      }
+    },
+    "model": "uniform_slab",
+    "source": {
+      "dir0": 0,
+      "g0": 0,
+      "x0": 1,
+      "y0": 1,
+      "z0": 1
+    }
+  },
+  "model_document": {
+    "geom": {
+      "detector_x": 3,
+      "duct_y0": 1,
+      "duct_y1": 1,
+      "duct_z0": 1,
+      "duct_z1": 1,
+      "nx": 5,
+      "ny": 3,
+      "nz": 3,
+      "roi_y0": 1,
+      "roi_y1": 1,
+      "roi_z0": 1,
+      "roi_z1": 1,
+      "slab_x0": 1,
+      "slab_x1": 2
+    },
+    "groups": {
+      "boundaries": [
+        1.0,
+        0.0
+      ],
+      "n_groups": 1
+    },
+    "h": 0.5,
+    "layers": [
+      {
+        "material": "tungsten",
+        "x0": 1,
+        "x1": 2
+      }
+    ],
+    "mats": {
+      "air": {
+        "p_abs": [
+          0.09999999999999998
+        ],
+        "p_int": [
+          0.39346934028736663
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "concrete": {
+        "p_abs": [
+          0
+        ],
+        "p_int": [
+          -0.0
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "tungsten": {
+        "p_abs": [
+          0.998
+        ],
+        "p_int": [
+          0.9069855107893365
+        ],
+        "q_down": [
+          0
+        ]
+      }
+    },
+    "metadata": {
+      "interaction_source": "compact_n8_w0002_tau19 material probabilities at h=0.5",
+      "main_candidate": false,
+      "material_cells": 2,
+      "physical_material_calibration": false,
+      "purpose": "Natural two-cell transport IQAE validation; no free conditional rarity factor",
+      "recommended_steps": 3,
+      "total_optical_thickness": 4.75
+    },
+    "model": "uniform_slab",
+    "source": {
+      "dir0": 0,
+      "g0": 0,
+      "x0": 1,
+      "y0": 1,
+      "z0": 1
+    }
+  },
+  "precedence": "explicit CLI > explicit CMD > selected suite/model > default",
+  "steps": 3,
+  "suite_controls_cases": false
+}

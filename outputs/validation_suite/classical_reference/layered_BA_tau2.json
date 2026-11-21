@@ -1,0 +1,883 @@
+{
+  "order": [
+    "survive",
+    "detect",
+    "absorb",
+    "boundary"
+  ],
+  "config": {
+    "geom": {
+      "nx": 13,
+      "ny": 9,
+      "nz": 9,
+      "slab_x0": 4,
+      "slab_x1": 7,
+      "duct_y0": 4,
+      "duct_y1": 4,
+      "duct_z0": 4,
+      "duct_z1": 4,
+      "detector_x": 10,
+      "roi_y0": 3,
+      "roi_y1": 5,
+      "roi_z0": 3,
+      "roi_z1": 5
+    },
+    "groups": {
+      "n_groups": 1,
+      "boundaries": [
+        1,
+        0
+      ]
+    },
+    "mats": {
+      "concrete": {
+        "p_int": [
+          -0.0
+        ],
+        "p_abs": [
+          0
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "tungsten": {
+        "p_int": [
+          0.39346934028736663
+        ],
+        "p_abs": [
+          0.5
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "air": {
+        "p_int": [
+          0.39346934028736663
+        ],
+        "p_abs": [
+          0.09999999999999998
+        ],
+        "q_down": [
+          0
+        ]
+      }
+    },
+    "source": {
+      "x0": 2,
+      "y0": 4,
+      "z0": 4,
+      "g0": 0,
+      "dir0": 0
+    },
+    "model": "layered_slab",
+    "layers": [
+      {
+        "x0": 4,
+        "x1": 5,
+        "material": "air"
+      },
+      {
+        "x0": 6,
+        "x1": 7,
+        "material": "tungsten"
+      }
+    ],
+    "h": 0.5
+  },
+  "rows": [
+    {
+      "steps": 1,
+      "probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p_S": 1.0,
+      "p_D": 0.0,
+      "p_A": 0.0,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 1.0,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 1
+    },
+    {
+      "steps": 2,
+      "probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p_S": 1.0,
+      "p_D": 0.0,
+      "p_A": 0.0,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 1.0,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 1
+    },
+    {
+      "steps": 3,
+      "probabilities": [
+        0.9606530659712634,
+        0.0,
+        0.03934693402873665,
+        0.0
+      ],
+      "p_S": 0.9606530659712634,
+      "p_D": 0.0,
+      "p_A": 0.03934693402873665,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.03934693402873665,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 0.9606530659712634,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 6
+    },
+    {
+      "steps": 4,
+      "probabilities": [
+        0.9251765849861812,
+        0.0,
+        0.07482341501381892,
+        0.0
+      ],
+      "p_S": 0.9251765849861812,
+      "p_D": 0.0,
+      "p_A": 0.07482341501381892,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.035476480985082263,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 0.9251765849861812,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 31
+    },
+    {
+      "steps": 5,
+      "probabilities": [
+        0.8219280498466043,
+        0.0,
+        0.17807195015339577,
+        0.0
+      ],
+      "p_S": 0.8219280498466043,
+      "p_D": 0.0,
+      "p_A": 0.17807195015339577,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.10324853513957684,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 0.8219280498466043,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 89
+    },
+    {
+      "steps": 6,
+      "probabilities": [
+        0.7373150957848842,
+        0.0,
+        0.26268490421511603,
+        0.0
+      ],
+      "p_S": 0.7373150957848842,
+      "p_D": 0.0,
+      "p_A": 0.26268490421511603,
+      "p_B": 0.0,
+      "probability_sum": 1.0000000000000002,
+      "norm_error": 2.220446049250313e-16,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.08461295406172024,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 0.7373150957848842,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 194
+    },
+    {
+      "steps": 7,
+      "probabilities": [
+        0.5751134010514278,
+        0.0,
+        0.296266671027459,
+        0.1286199279211134
+      ],
+      "p_S": 0.5751134010514278,
+      "p_D": 0.0,
+      "p_A": 0.296266671027459,
+      "p_B": 0.1286199279211134,
+      "probability_sum": 1.0000000000000002,
+      "norm_error": 2.220446049250313e-16,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.03358176681234296,
+        0.1286199279211134
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 0.5751134010514278,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 330
+    },
+    {
+      "steps": 8,
+      "probabilities": [
+        0.47881166355589366,
+        0.0,
+        0.3208186807565056,
+        0.20036965568760096
+      ],
+      "p_S": 0.47881166355589366,
+      "p_D": 0.0,
+      "p_A": 0.3208186807565056,
+      "p_B": 0.20036965568760096,
+      "probability_sum": 1.0000000000000002,
+      "norm_error": 2.220446049250313e-16,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.024552009729046604,
+        0.07174972776648755
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 0.47881166355589366,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 471
+    },
+    {
+      "steps": 9,
+      "probabilities": [
+        0.20618042297584632,
+        0.18105020916863723,
+        0.3359270263703722,
+        0.27684234148514436
+      ],
+      "p_S": 0.20618042297584632,
+      "p_D": 0.18105020916863723,
+      "p_A": 0.3359270263703722,
+      "p_B": 0.27684234148514436,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.18105020916863723,
+        0.015108345613866616,
+        0.0764726857975434
+      ],
+      "p_D_uncollided": 0.1353352832366127,
+      "p_D_scattered": 0.04571492593202453,
+      "tail_bound_absolute": 0.20618042297584632,
+      "tail_bound_relative_to_current_D": 1.1388024566367765,
+      "live_states": 590
+    },
+    {
+      "steps": 10,
+      "probabilities": [
+        0.14045503658044858,
+        0.19106669108352456,
+        0.3444291745501799,
+        0.32404909778584706
+      ],
+      "p_S": 0.14045503658044858,
+      "p_D": 0.19106669108352456,
+      "p_A": 0.3444291745501799,
+      "p_B": 0.32404909778584706,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.010016481914887333,
+        0.008502148179807698,
+        0.04720675630070271
+      ],
+      "p_D_uncollided": 0.1353352832366127,
+      "p_D_scattered": 0.05573140784691186,
+      "tail_bound_absolute": 0.14045503658044858,
+      "tail_bound_relative_to_current_D": 0.7351100067936428,
+      "live_states": 659
+    },
+    {
+      "steps": 11,
+      "probabilities": [
+        0.0998299980862146,
+        0.19396638964316334,
+        0.3499960771762098,
+        0.3562075350944124
+      ],
+      "p_S": 0.0998299980862146,
+      "p_D": 0.19396638964316334,
+      "p_A": 0.3499960771762098,
+      "p_B": 0.3562075350944124,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0028996985596387854,
+        0.005566902626029903,
+        0.032158437308565296
+      ],
+      "p_D_uncollided": 0.1353352832366127,
+      "p_D_scattered": 0.05863110640655064,
+      "tail_bound_absolute": 0.0998299980862146,
+      "tail_bound_relative_to_current_D": 0.5146767863745371,
+      "live_states": 702
+    },
+    {
+      "steps": 12,
+      "probabilities": [
+        0.07498431721328126,
+        0.19551142624704454,
+        0.3536237590444865,
+        0.3758804974951878
+      ],
+      "p_S": 0.07498431721328126,
+      "p_D": 0.19551142624704454,
+      "p_A": 0.3536237590444865,
+      "p_B": 0.3758804974951878,
+      "probability_sum": 1.0000000000000002,
+      "norm_error": 2.220446049250313e-16,
+      "first_termination": [
+        0.0,
+        0.0015450366038812062,
+        0.0036276818682767177,
+        0.019672962400775408
+      ],
+      "p_D_uncollided": 0.1353352832366127,
+      "p_D_scattered": 0.06017614301043184,
+      "tail_bound_absolute": 0.07498431721328126,
+      "tail_bound_relative_to_current_D": 0.38352907885052456,
+      "live_states": 723
+    },
+    {
+      "steps": 13,
+      "probabilities": [
+        0.0498130950468021,
+        0.19654744583199574,
+        0.3560104684821726,
+        0.3976289906390297
+      ],
+      "p_S": 0.0498130950468021,
+      "p_D": 0.19654744583199574,
+      "p_A": 0.3560104684821726,
+      "p_B": 0.3976289906390297,
+      "probability_sum": 1.0000000000000002,
+      "norm_error": 2.220446049250313e-16,
+      "first_termination": [
+        0.0,
+        0.0010360195849511854,
+        0.0023867094376861034,
+        0.02174849314384188
+      ],
+      "p_D_uncollided": 0.1353352832366127,
+      "p_D_scattered": 0.061212162595383035,
+      "tail_bound_absolute": 0.0498130950468021,
+      "tail_bound_relative_to_current_D": 0.25344056156995903,
+      "live_states": 738
+    },
+    {
+      "steps": 14,
+      "probabilities": [
+        0.032145855591698295,
+        0.19731544937532736,
+        0.35761846497486044,
+        0.412920230058114
+      ],
+      "p_S": 0.032145855591698295,
+      "p_D": 0.19731544937532736,
+      "p_A": 0.35761846497486044,
+      "p_B": 0.412920230058114,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0007680035433316172,
+        0.001607996492687838,
+        0.015291239419084356
+      ],
+      "p_D_uncollided": 0.1353352832366127,
+      "p_D_scattered": 0.061980166138714654,
+      "tail_bound_absolute": 0.032145855591698295,
+      "tail_bound_relative_to_current_D": 0.16291606001186174,
+      "live_states": 747
+    },
+    {
+      "steps": 15,
+      "probabilities": [
+        0.021722250847357745,
+        0.19781876261151077,
+        0.35869889362566737,
+        0.4217600929154642
+      ],
+      "p_S": 0.021722250847357745,
+      "p_D": 0.19781876261151077,
+      "p_A": 0.35869889362566737,
+      "p_B": 0.4217600929154642,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0005033132361834091,
+        0.0010804286508069541,
+        0.008839862857350186
+      ],
+      "p_D_uncollided": 0.1353352832366127,
+      "p_D_scattered": 0.062483479374898065,
+      "tail_bound_absolute": 0.021722250847357745,
+      "tail_bound_relative_to_current_D": 0.109808850083737,
+      "live_states": 750
+    },
+    {
+      "steps": 16,
+      "probabilities": [
+        0.014472071650596424,
+        0.19814977586652285,
+        0.35941550814515905,
+        0.42796264433772174
+      ],
+      "p_S": 0.014472071650596424,
+      "p_D": 0.19814977586652285,
+      "p_A": 0.35941550814515905,
+      "p_B": 0.42796264433772174,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.00033101325501209755,
+        0.0007166145194916666,
+        0.006202551422257556
+      ],
+      "p_D_uncollided": 0.1353352832366127,
+      "p_D_scattered": 0.06281449262991015,
+      "tail_bound_absolute": 0.014472071650596424,
+      "tail_bound_relative_to_current_D": 0.07303602331776073,
+      "live_states": 751
+    },
+    {
+      "steps": 17,
+      "probabilities": [
+        0.00980728132014137,
+        0.19833413298012492,
+        0.3598965289179713,
+        0.43196205678176247
+      ],
+      "p_S": 0.00980728132014137,
+      "p_D": 0.19833413298012492,
+      "p_A": 0.3598965289179713,
+      "p_B": 0.43196205678176247,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.00018435711360207502,
+        0.0004810207728122399,
+        0.003999412444040742
+      ],
+      "p_D_uncollided": 0.1353352832366127,
+      "p_D_scattered": 0.06299884974351222,
+      "tail_bound_absolute": 0.00980728132014137,
+      "tail_bound_relative_to_current_D": 0.049448277877233354,
+      "live_states": 750
+    },
+    {
+      "steps": 18,
+      "probabilities": [
+        0.0066716481935594684,
+        0.19844805728005266,
+        0.36021867129375085,
+        0.4346616232326371
+      ],
+      "p_S": 0.0066716481935594684,
+      "p_D": 0.19844805728005266,
+      "p_A": 0.36021867129375085,
+      "p_B": 0.4346616232326371,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.00011392429992773994,
+        0.00032214237577956706,
+        0.0026995664508745938
+      ],
+      "p_D_uncollided": 0.1353352832366127,
+      "p_D_scattered": 0.06311277404343996,
+      "tail_bound_absolute": 0.0066716481935594684,
+      "tail_bound_relative_to_current_D": 0.033619115676926714,
+      "live_states": 751
+    },
+    {
+      "steps": 19,
+      "probabilities": [
+        0.004527283291472709,
+        0.1985294736745582,
+        0.3604356711684923,
+        0.43650757186547684
+      ],
+      "p_S": 0.004527283291472709,
+      "p_D": 0.1985294736745582,
+      "p_A": 0.3604356711684923,
+      "p_B": 0.43650757186547684,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        8.14163945055429e-05,
+        0.00021699987474144166,
+        0.0018459486328397745
+      ],
+      "p_D_uncollided": 0.1353352832366127,
+      "p_D_scattered": 0.0631941904379455,
+      "tail_bound_absolute": 0.004527283291472709,
+      "tail_bound_relative_to_current_D": 0.022804086505030036,
+      "live_states": 750
+    },
+    {
+      "steps": 20,
+      "probabilities": [
+        0.0030530470170138024,
+        0.19858021415977392,
+        0.3605821985289894,
+        0.4377845402942229
+      ],
+      "p_S": 0.0030530470170138024,
+      "p_D": 0.19858021415977392,
+      "p_A": 0.3605821985289894,
+      "p_B": 0.4377845402942229,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        5.074048521573206e-05,
+        0.0001465273604970661,
+        0.0012769684287461077
+      ],
+      "p_D_uncollided": 0.1353352832366127,
+      "p_D_scattered": 0.06324493092316122,
+      "tail_bound_absolute": 0.0030530470170138024,
+      "tail_bound_relative_to_current_D": 0.015374376696750755,
+      "live_states": 751
+    },
+    {
+      "steps": 21,
+      "probabilities": [
+        0.002063695119143999,
+        0.19861815515416928,
+        0.36068136678384494,
+        0.4386367829428418
+      ],
+      "p_S": 0.002063695119143999,
+      "p_D": 0.19861815515416928,
+      "p_A": 0.36068136678384494,
+      "p_B": 0.4386367829428418,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        3.79409943953583e-05,
+        9.91682548555438e-05,
+        0.0008522426486189017
+      ],
+      "p_D_uncollided": 0.1353352832366127,
+      "p_D_scattered": 0.06328287191755658,
+      "tail_bound_absolute": 0.002063695119143999,
+      "tail_bound_relative_to_current_D": 0.010390264261301487,
+      "live_states": 750
+    },
+    {
+      "steps": 22,
+      "probabilities": [
+        0.0013963115408565378,
+        0.19864025770542507,
+        0.36074826327921855,
+        0.43921516747449985
+      ],
+      "p_S": 0.0013963115408565378,
+      "p_D": 0.19864025770542507,
+      "p_A": 0.36074826327921855,
+      "p_B": 0.43921516747449985,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        2.210255125579696e-05,
+        6.689649537364037e-05,
+        0.0005783845316580239
+      ],
+      "p_D_uncollided": 0.1353352832366127,
+      "p_D_scattered": 0.06330497446881236,
+      "tail_bound_absolute": 0.0013963115408565378,
+      "tail_bound_relative_to_current_D": 0.007029348214636369,
+      "live_states": 751
+    }
+  ],
+  "identity": {
+    "actual_profile": "independent_reference",
+    "backend": {
+      "algorithm": "CSR",
+      "dtype": "float64"
+    },
+    "compile": null,
+    "config": {
+      "geom": {
+        "detector_x": 10,
+        "duct_y0": 4,
+        "duct_y1": 4,
+        "duct_z0": 4,
+        "duct_z1": 4,
+        "nx": 13,
+        "ny": 9,
+        "nz": 9,
+        "roi_y0": 3,
+        "roi_y1": 5,
+        "roi_z0": 3,
+        "roi_z1": 5,
+        "slab_x0": 4,
+        "slab_x1": 7
+      },
+      "groups": {
+        "boundaries": [
+          1,
+          0
+        ],
+        "n_groups": 1
+      },
+      "h": 0.5,
+      "layers": [
+        {
+          "material": "air",
+          "x0": 4,
+          "x1": 5
+        },
+        {
+          "material": "tungsten",
+          "x0": 6,
+          "x1": 7
+        }
+      ],
+      "mats": {
+        "air": {
+          "p_abs": [
+            0.09999999999999998
+          ],
+          "p_int": [
+            0.39346934028736663
+          ],
+          "q_down": [
+            0
+          ]
+        },
+        "concrete": {
+          "p_abs": [
+            0
+          ],
+          "p_int": [
+            -0.0
+          ],
+          "q_down": [
+            0
+          ]
+        },
+        "tungsten": {
+          "p_abs": [
+            0.5
+          ],
+          "p_int": [
+            0.39346934028736663
+          ],
+          "q_down": [
+            0
+          ]
+        }
+      },
+      "model": "layered_slab",
+      "source": {
+        "dir0": 0,
+        "g0": 0,
+        "x0": 2,
+        "y0": 4,
+        "z0": 4
+      }
+    },
+    "extra": {
+      "steps": 22
+    },
+    "measurement": "deterministic complete classical distribution",
+    "phase": "reference",
+    "schema_version": 2,
+    "sources": {
+      "__init__.py": "fccee91dfb4c53924bff125b5e21172197ef3fddb9ee6817df2bfffdf700b724",
+      "ae_execution.py": "4a58a4fc56817ed38a8611fdb38f3b79627c1017babe66bc90b86b52a2071172",
+      "ae_likelihood.py": "32d78467f1b394e59ef100d2f844832c5a610342975b29cae2dc5198a7d985da",
+      "ae_runtime.py": "b8a10d6458a52b448e49a0e59fba8fd1ae9ad845b2db953894398d9364f11196",
+      "analyze_alignment_paper1.py": "44a680489babfbc66e28f2dcb945557e889c4eaf058ef572a25587dbe8eed93f",
+      "compare_mc_test.py": "84e8e93b4dcad0a160f63e90f267669c8d2392e545a0febbbbd96bd3dccfa5bf",
+      "config.py": "a0ae6f2bd55cdf8d0840da7c07595b0155846347ba97d5d1738a563d34a1a867",
+      "diagnostic_fullstep_a1a2.py": "25f1ffbaad4387cd1e8dbcd095ef4b7275b007686d6f411221c695771a940c93",
+      "diagnostic_only.py": "1d793fc3e8eec969cb3e73b357861b4a12ef2bb2c161ddc38cbea34c72bbd452",
+      "geometry.py": "b6fd795bfe93b98861dccc5d64ed0b51fe9337cd7dedec3ae780d1f4be6036da",
+      "iqae.py": "c965b75cf05a2704b9e6cb27f8fcf965bbf445d031a4a63a76150cff7fbd4d0d",
+      "main.py": "59155a27f24d2c3f3a9ac659cd5cf923c36a0d860a981e33dafd406d369617f2",
+      "mc.py": "080e2bb3df8a931fc8fae89532b89dbfd47e77ef815369b8f74367d01b0f444d",
+      "mc_diag.py": "a3727c9b21c08fd066455f74b144882db726cf5c27349a1118c527bbc568b950",
+      "merge_shards.py": "e38c3f1a7669a454f7a899d19b23aee95686cc5197bc33d53cce9aede1be83ba",
+      "models.py": "181d0617fe73c11e5808f34b10cbdc298960633c05822e0a2a88d1b6fd7d7e06",
+      "output_guard.py": "7d32497d4cc7ec80cd3c9111ffac1378a6b385b9aa84ac0c0221d41ccb4e8e14",
+      "plotting.py": "ff93e01107c02e947d2d732e3d5bb9755ac7b3807f91aff21aa3c38f6f894ad1",
+      "postprocess_alignment.py": "dc631dbb1c57a39a1327c58ac081cbec2de2c7b30eb9d0c5f017f778c5b60671",
+      "reference_solver.py": "cd8e1c48cde93172bae72ef10277279c48df77a2bc214f11bc699ef6a6eba64b",
+      "rrk/__init__.py": "2339209d76ac9493948d8ac2ac98e6cc368a09a4dcf5bc7a1f3a0e4679b6f376",
+      "rrk/model.py": "1f9fc56c19f5bfe0f60478bfc5a0604090d5b69a1ddb566d3243b786215dddef",
+      "run.py": "ded018fcc3e1a69392b7d0c224cf44d83cdcb1ab1b83a56c0fb6af5e41d3fa62",
+      "runtime_identity.py": "d4ee7e25600fadb4b5352bbe8cf2df53c0535206f70c0432b5b90d3e336ff759",
+      "screening.py": "7c2de4d0f88149efe86b94c80a336189c4d3e934fdb93db02f452eaf2e1f94bc",
+      "shard_runner.py": "b5ca262c19e8dc622f69f82068c0ed2bc580b3ebfed552234667faa3c9fa579a",
+      "stats_utils.py": "1500000a9600b96ba533866ed74503c6ba248984da728cfcc07f34f93abf0bc8",
+      "tools/build_advantage_boundary_summary.py": "a2e0d389fe4e724155a9c2fd59ca97a8fb2819155c588fabef65bdb94b85e819",
+      "tools/build_paper_extension_tables.py": "3f90cd0d418cf44890f99d2cc9e41bf345ac2d51a486a5b4979077c57aa844f9",
+      "tools/cloud_pilot.py": "14fab803597c3219be9f53ae6471535848a07f389df16eee0ca374403eebf492",
+      "tools/collect_rrk_ae_runs.py": "93d58b3543dfdc1a935af38022594fe4d59f1e6646052eeb81daa03bce4826f5",
+      "tools/collect_weighted_rare_mc.py": "12ac1e4fb5b4b88b9b7f4797b4aadcfc52b515ff57c0c8cd71c492bd52bd6682",
+      "tools/exact_reference_solver.py": "4cfecf27afa397d873d99645d2c075c4f91ea4980f474f94ab13b8d064dfe450",
+      "tools/fit_fixed_depth_ae.py": "e009d65acf21bf05978f75245a6de84cea58e928e8a608070e96a2d761acf942",
+      "tools/make_rare_response_run_commands.py": "990c4d42cbdb12423f948431980fb697944c99be593ea00826293774a2c0cc5a",
+      "tools/plot_advantage_boundary.py": "7a0013805fe337fb42fc644ef2503d0c24c9f325022bef8d34b7a56284de91a3",
+      "tools/plot_archived_rare_response_validation.py": "76fbb020f0dcde69d89284114b69f346826c4d223968497688ca681c2adaf5b6",
+      "tools/plot_extension_main_figure.py": "694435fe5a77770edcc70a969a9016ab2a6ecb6734c1789e801c97b5928be8e8",
+      "tools/plot_fig1_geometry.py": "09b748fc4f1177ab1690df155518c829e635dd8c6b722d3cf49a7f14d3b8a74a",
+      "tools/plot_rare_response_boundary.py": "a75001e30214a7a226f7880f3aa98d83ee9992cf189abfa9239c24013c7a9bce",
+      "tools/postprocess_archived_highbond_rare_response.py": "2989f74beaa0627e0dcd15c214fe1b9c6e1adcadfdbcfa5cc476e1b3fe85f0d7",
+      "tools/postprocess_rare_response_mps.py": "a6566a6505153af657f09a4e366b64cad20c104b384e27bab997a546cacd6a06",
+      "tools/rare_response_mc.py": "a1a968d46dbf863ef5084fe6723e04da35c808a4407f384b3a8d1b181702d84a",
+      "tools/rrk_amplification_planner.py": "556a19b7270c1b5b2da98c136c0d5fbbdafa2174ad5beb683065263bd151d9f6",
+      "tools/rrk_smoke.py": "1526e37c013ff28fd02126f9219eb19142c6febb6999b5da699d208dda0c9b88",
+      "tools/run_local_validation.py": "57e7afe72f7f3c1c76b4cb6a44c36c05c4e6f19755ab75425f8be9cbf01f71da",
+      "tools/supervised.py": "d8043359f04425a8f77a0f799b342063849ba4db87412f73a19eb362e2ab2adc",
+      "unitary_circuit.py": "b2566824a91d7f2a6796c495286a5a4c1ff9d07f347a2732bb355345facc6ea7",
+      "validation.py": "89acb5a905a602c5d6f07a669017d70acc8496164c4d41d595da889b12620a5b"
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.13",
+      "qiskit": "2.5.2",
+      "qiskit-aer": "0.17.2",
+      "qiskit-algorithms": "0.4.0",
+      "scipy": "1.17.1"
+    },
+    "identity_hash": "63eb0d6587c7e26b37bf69c30ae20863e877d6dc9104da38a105523edb49d326",
+    "config_sha256": "4f6e185842fed2e01983cc67af3ec1c14ad7853690c867a1d428fe12dd1b42ea",
+    "reference_source_sha256": "cd8e1c48cde93172bae72ef10277279c48df77a2bc214f11bc699ef6a6eba64b",
+    "steps": 22,
+    "algorithm": "reachable CSR deterministic recursion",
+    "dtype": "float64"
+  },
+  "diagnostics": {
+    "earliest_detection_step": 9,
+    "first_detection_by_step": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.18105020916863723,
+      0.010016481914887333,
+      0.0028996985596387854,
+      0.0015450366038812062,
+      0.0010360195849511854,
+      0.0007680035433316172,
+      0.0005033132361834091,
+      0.00033101325501209755,
+      0.00018435711360207502,
+      0.00011392429992773994,
+      8.14163945055429e-05,
+      5.074048521573206e-05,
+      3.79409943953583e-05,
+      2.210255125579696e-05
+    ],
+    "p_D_uncollided": 0.1353352832366127,
+    "p_D_scattered": 0.06330497446881236,
+    "detected_mean_scatter_count": 0.5051017105008166,
+    "leakage": {
+      "front": 0.17750681207469224,
+      "side": 0.24073949998868385,
+      "rear": 0.020968855411123824
+    },
+    "absorption_by_material": {
+      "concrete": 0.0,
+      "tungsten": 0.22903940102863019,
+      "air": 0.13170886225058856
+    },
+    "straight_effective_optical_thickness": 2.0000000000000004,
+    "reachable_states": 1504,
+    "transition_nnz": 6129,
+    "max_live_states": 751,
+    "one_step_mass_error": 4.440892098500626e-16,
+    "build_seconds": 0.009221400017850101,
+    "total_seconds": 0.029236100002890453,
+    "process_peak_rss_bytes": 62607360,
+    "memory_scope": "process lifetime high-water RSS on Windows; current RSS fallback elsewhere",
+    "numerical_status": "float64 unsampled reference; tail inequality is analytic, evaluated without interval arithmetic",
+    "termination_argument": "bounded rectangular domain and reachable escape paths; no nonterminating closed class in screening cases",
+    "tail_method": "p_S conservative upper bound; no floating-point linear solve claimed as certification"
+  },
+  "candidate": {
+    "id": "layered_BA_tau2",
+    "config": "configs/models/layered_BA_tau2.json",
+    "role": "candidate",
+    "reason": "Equal A/B amounts L/2=1.0; swap order with total material and geometry held fixed"
+  },
+  "config_file_sha256": "0ca9f18a86abf676fcf9e314ffafd46f0fbc7efcb473432dd9ad74f569aac1ef"
+}

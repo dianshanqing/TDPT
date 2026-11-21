@@ -1,0 +1,90 @@
+{
+  "cases": [
+    [
+      "compact_n8_w0002_tau14",
+      8.421424906189056e-07
+    ],
+    [
+      "compact_n8_w0002_tau19",
+      5.75033654667226e-09
+    ],
+    [
+      "compact_n8_w0002_tau23",
+      1.0729208963459933e-10
+    ],
+    [
+      "moderate_0p2",
+      0.2
+    ],
+    [
+      "moderate_0p7",
+      0.7
+    ]
+  ],
+  "confidence": 0.95,
+  "coverage_claim": "finite repetitions diagnose; theoretical guarantee is alpha-spending CP, single process",
+  "label": "理想测量模型下的估计器统计验证",
+  "max_power": 10000000,
+  "max_queries": 100000000000,
+  "max_shots": 200000,
+  "random_stream": "SeedSequence(seed).spawn(5*repetitions), fixed before observations",
+  "reference_path": "outputs\\revision_screening\\20261030_compact_deep_01\\precision_classical.json",
+  "reference_sha256": "cacc9c6b62a9fc9364c5b0d38276024fcbb7996c8d410c67b368b89263ca1561",
+  "relative_error": 0.01,
+  "repetitions_per_case": 1000,
+  "seed": 20261106,
+  "shots": 512,
+  "sources": {
+    "__init__.py": "fccee91dfb4c53924bff125b5e21172197ef3fddb9ee6817df2bfffdf700b724",
+    "ae_execution.py": "03a00647b3a76571c994f5d74823a2d3d40c1c5caf1e548b46f1ee16debda614",
+    "ae_likelihood.py": "32d78467f1b394e59ef100d2f844832c5a610342975b29cae2dc5198a7d985da",
+    "ae_runtime.py": "4dad65ee9b5b460f6173310eafe39bfe43ccd187d7902098e556efc67b8b520b",
+    "analyze_alignment_paper1.py": "44a680489babfbc66e28f2dcb945557e889c4eaf058ef572a25587dbe8eed93f",
+    "batch_runtime.py": "58f0432876622a100d89adb000f9f80c2e3d85be730cde68d143eeed39b79a9c",
+    "cloud_pilot.py": "cd6dc63ce57e0f52a6bbb3233f590c3d670c1b4db679c60cb3f2ac0802841f66",
+    "compact_classical.py": "c71efdfb8b11f90c5ebe96075180e2a599cb87e9d98cd4622df3d1d80fd071c8",
+    "compare_mc_test.py": "2491eabbca9549bbcfe6df21f7494d9ede9fe8035b8e575aa68a4eef02abb359",
+    "config.py": "a0ae6f2bd55cdf8d0840da7c07595b0155846347ba97d5d1738a563d34a1a867",
+    "diagnostic_fullstep_a1a2.py": "25f1ffbaad4387cd1e8dbcd095ef4b7275b007686d6f411221c695771a940c93",
+    "diagnostic_only.py": "dbc6c5e19df00e9dcc5361240ff8575d89bc65dc96e9dc468b5d9ad28e9de7b7",
+    "geometry.py": "b6fd795bfe93b98861dccc5d64ed0b51fe9337cd7dedec3ae780d1f4be6036da",
+    "iqae.py": "168b622129a31a70d4bdac1fb328c83bbec64d305af00c83628994e318593265",
+    "main.py": "f4c3d9a2bbbf3aa36f56d72371851b8763d2e9835897bdf0869845fdd763bd72",
+    "mc.py": "080e2bb3df8a931fc8fae89532b89dbfd47e77ef815369b8f74367d01b0f444d",
+    "mc_diag.py": "a3727c9b21c08fd066455f74b144882db726cf5c27349a1118c527bbc568b950",
+    "merge_shards.py": "e38c3f1a7669a454f7a899d19b23aee95686cc5197bc33d53cce9aede1be83ba",
+    "models.py": "b37956eda05c1595ee72e7d3f2772eb3bb77d4dc64fef8fe28137d75dd5f3ccd",
+    "mps_numerical.py": "e53a4c95652b4dfbcd3af18adf0e6a1e762dfb7baa133e1e76fc8bbec1177113",
+    "mps_performance.py": "aec214a808893cfe5083f0c69f949c73fdd9251b4bbbc2490c6d7812151c1438",
+    "numerical_runtime.py": "e61eb0de7a5dc7d72d78637c179a2731853e794e633ed62afdde59ee0a9902cc",
+    "output_guard.py": "7d32497d4cc7ec80cd3c9111ffac1378a6b385b9aa84ac0c0221d41ccb4e8e14",
+    "plotting.py": "ff93e01107c02e947d2d732e3d5bb9755ac7b3807f91aff21aa3c38f6f894ad1",
+    "postprocess_alignment.py": "c270c13daf3a0f8e5a4d478c43da65b0f6654ac04b85527ab74d6e276a7074dd",
+    "presets.py": "ed1191e0173957c3185f2f4613809b72563c56687e2c7625dc74c2c656b75320",
+    "qc_environment.py": "9fcc8fb4308d80f9a569ca946d700ecfcfd5c3c4cccde50143ad3250b13f71a8",
+    "qc_versions.py": "81314845d36fbea223b324d95d9ada1a8e41e1dcc10b493b659a79ac15fe22ea",
+    "rare_precision.py": "c32f8cb935cd0eaa485a07e9171f7d78767633d0f59c9e927b4ecd87e727c88d",
+    "reference_engine.py": "047ca9ec83c562547da92b8a403419267b751094f7ed90a529282cf09cf21662",
+    "reference_solver.py": "cd8e1c48cde93172bae72ef10277279c48df77a2bc214f11bc699ef6a6eba64b",
+    "rrk_model.py": "1f9fc56c19f5bfe0f60478bfc5a0604090d5b69a1ddb566d3243b786215dddef",
+    "run.py": "0c24b126508baffa424f807719bd1b2ae4706bf1d6b100dd1968bf5e2049d746",
+    "run_local_validation.py": "48bb9abab05cf11749fe9d66f4d1227c032847ede73a92533c5b013be1990a33",
+    "run_request.py": "fd0faf2080d5a52f31c48533da46036733f9b03d70d8f71fa22a335901e3d2ab",
+    "runtime_identity.py": "8c06de53f9e862a9962282fe17972a29f03db37bf835c2925beb86d57fc76962",
+    "screening.py": "da10a6facb1a39594ad1674f6d4792dd17084a92f114813aa157e3d8cb216e6e",
+    "shard_runner.py": "82b6bac8a84915fdaecaffa8cb8a3f7e54608e0964a26b4420f9427c825a5e8c",
+    "stats_utils.py": "d93c440c4c1954f340eeddeb58ffc1e3fc4c6f6e51a3cf69a3bedeac5d46e023",
+    "supervised.py": "e2e494c22c0dd09356ecb9453cf14561189e55e2946e0222b89a3dc283d7b881",
+    "unitary_circuit.py": "4e049256bd532409dd88f7d6b93f7985ec865d446b4f0542259f567bde749656",
+    "validation.py": "b677f548e91029b87f88052ecf45ebee7bfb86709b4fb61a8231584798b5a197"
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.13",
+    "qiskit": "2.5.2",
+    "qiskit-aer": "0.17.2",
+    "qiskit-algorithms": "0.4.0",
+    "scipy": "1.17.1"
+  }
+}

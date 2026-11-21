@@ -1,0 +1,186 @@
+{
+  "candidates": [
+    {
+      "config": {
+        "geom": {
+          "detector_x": 3,
+          "duct_y0": 1,
+          "duct_y1": 1,
+          "duct_z0": 1,
+          "duct_z1": 1,
+          "nx": 5,
+          "ny": 3,
+          "nz": 3,
+          "roi_y0": 1,
+          "roi_y1": 1,
+          "roi_z0": 1,
+          "roi_z1": 1,
+          "slab_x0": 1,
+          "slab_x1": 2
+        },
+        "groups": {
+          "boundaries": [
+            1.0,
+            0.0
+          ],
+          "n_groups": 1
+        },
+        "h": 1.0,
+        "layers": [
+          {
+            "material": "tungsten",
+            "x0": 1,
+            "x1": 2
+          }
+        ],
+        "mats": {
+          "air": {
+            "p_abs": [
+              0.65
+            ],
+            "p_int": [
+              0.5034146962085905
+            ],
+            "q_down": [
+              0.0
+            ]
+          },
+          "concrete": {
+            "p_abs": [
+              0.0
+            ],
+            "p_int": [
+              0.0
+            ],
+            "q_down": [
+              0.0
+            ]
+          },
+          "tungsten": {
+            "p_abs": [
+              0.3
+            ],
+            "p_int": [
+              0.3296799539643607
+            ],
+            "q_down": [
+              0.0
+            ]
+          }
+        },
+        "model": "uniform_slab",
+        "source": {
+          "dir0": 0,
+          "g0": 0,
+          "x0": 1,
+          "y0": 1,
+          "z0": 1
+        }
+      },
+      "id": "uniform_two_cell",
+      "probabilities": [
+        0.024565381449947236,
+        0.5023729262121445,
+        0.17170170904093499,
+        0.30135998329697333
+      ],
+      "reason": "Natural short-step transport; no external rarity factor. One retains the tau19 material interaction probabilities.",
+      "selected": true,
+      "steps": 3
+    },
+    {
+      "config": {
+        "geom": {
+          "detector_x": 2,
+          "duct_y0": 1,
+          "duct_y1": 1,
+          "duct_z0": 1,
+          "duct_z1": 1,
+          "nx": 4,
+          "ny": 3,
+          "nz": 3,
+          "roi_y0": 1,
+          "roi_y1": 1,
+          "roi_z0": 1,
+          "roi_z1": 1,
+          "slab_x0": 1,
+          "slab_x1": 1
+        },
+        "groups": {
+          "boundaries": [
+            1.0,
+            0.0
+          ],
+          "n_groups": 1
+        },
+        "h": 0.5,
+        "layers": [
+          {
+            "material": "tungsten",
+            "x0": 1,
+            "x1": 1
+          }
+        ],
+        "mats": {
+          "air": {
+            "p_abs": [
+              0.09999999999999998
+            ],
+            "p_int": [
+              0.39346934028736663
+            ],
+            "q_down": [
+              0
+            ]
+          },
+          "concrete": {
+            "p_abs": [
+              0
+            ],
+            "p_int": [
+              -0.0
+            ],
+            "q_down": [
+              0
+            ]
+          },
+          "tungsten": {
+            "p_abs": [
+              0.998
+            ],
+            "p_int": [
+              0.9069855107893365
+            ],
+            "q_down": [
+              0
+            ]
+          }
+        },
+        "model": "uniform_slab",
+        "source": {
+          "dir0": 0,
+          "g0": 0,
+          "x0": 1,
+          "y0": 1,
+          "z0": 1
+        }
+      },
+      "id": "tau19_one_cell",
+      "probabilities": [
+        0.0,
+        0.09331681771425991,
+        0.9051715397677579,
+        0.0015116425179822288
+      ],
+      "reason": "Natural short-step transport; no external rarity factor. One retains the tau19 material interaction probabilities.",
+      "selected": true,
+      "steps": 2
+    }
+  ],
+  "fixed_seeds": [
+    2026110701,
+    2026110702
+  ],
+  "scope": "These reduced geometries are validation subcases, not replacements for the fixed main candidates.",
+  "selection_before_random_data": true
+}

@@ -1,0 +1,1198 @@
+{
+  "absolute_tolerance": 2e-11,
+  "actual_joint": [
+    [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1.863343751275871e-05
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      3,
+      0,
+      2.3711936352329718e-05
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      5,
+      0,
+      2.2392762408721827e-06
+    ],
+    [
+      0,
+      1,
+      1,
+      2,
+      4,
+      0,
+      2.2392762408721827e-06
+    ],
+    [
+      0,
+      1,
+      2,
+      1,
+      1,
+      0,
+      2.93294770122617e-06
+    ],
+    [
+      0,
+      1,
+      2,
+      1,
+      2,
+      0,
+      2.2392762408721827e-06
+    ],
+    [
+      0,
+      2,
+      1,
+      1,
+      0,
+      0,
+      2.2392762408721827e-06
+    ],
+    [
+      0,
+      2,
+      1,
+      1,
+      3,
+      0,
+      2.93294770122617e-06
+    ],
+    [
+      0,
+      2,
+      2,
+      0,
+      5,
+      0,
+      2.93294770122617e-06
+    ],
+    [
+      0,
+      2,
+      2,
+      2,
+      4,
+      0,
+      2.93294770122617e-06
+    ],
+    [
+      0,
+      2,
+      3,
+      1,
+      2,
+      0,
+      2.5062750686903608e-05
+    ],
+    [
+      0,
+      3,
+      2,
+      1,
+      0,
+      0,
+      3.191800707476304e-05
+    ],
+    [
+      1,
+      3,
+      1,
+      1,
+      0,
+      0,
+      0.2768993377406306
+    ],
+    [
+      1,
+      3,
+      2,
+      1,
+      0,
+      0,
+      0.0013946183496709372
+    ],
+    [
+      2,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0.32721955253558394
+    ],
+    [
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0.005064710948126213
+    ],
+    [
+      2,
+      1,
+      1,
+      1,
+      3,
+      0,
+      0.0003837400711918689
+    ],
+    [
+      2,
+      1,
+      2,
+      1,
+      1,
+      0,
+      6.305121368739264e-05
+    ],
+    [
+      2,
+      1,
+      2,
+      1,
+      2,
+      0,
+      0.0029525393138911784
+    ],
+    [
+      2,
+      2,
+      1,
+      1,
+      0,
+      0,
+      0.17226076928103054
+    ],
+    [
+      2,
+      2,
+      1,
+      1,
+      3,
+      0,
+      0.0002086022083086115
+    ],
+    [
+      2,
+      2,
+      2,
+      1,
+      0,
+      0,
+      0.00011598763706920436
+    ],
+    [
+      2,
+      2,
+      2,
+      1,
+      2,
+      0,
+      0.0015308379275772027
+    ],
+    [
+      3,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0.03752234491549418
+    ],
+    [
+      3,
+      0,
+      2,
+      1,
+      1,
+      0,
+      0.001600058153650513
+    ],
+    [
+      3,
+      1,
+      0,
+      1,
+      3,
+      0,
+      0.030413469204816537
+    ],
+    [
+      3,
+      1,
+      1,
+      0,
+      5,
+      0,
+      0.02985258155560929
+    ],
+    [
+      3,
+      1,
+      1,
+      2,
+      4,
+      0,
+      0.02985258155560929
+    ],
+    [
+      3,
+      1,
+      2,
+      0,
+      5,
+      0,
+      0.0011727296496138893
+    ],
+    [
+      3,
+      1,
+      2,
+      2,
+      4,
+      0,
+      0.0011727296496138893
+    ],
+    [
+      3,
+      1,
+      3,
+      1,
+      2,
+      0,
+      0.021183513492252594
+    ],
+    [
+      3,
+      2,
+      0,
+      1,
+      3,
+      0,
+      0.015794593260281018
+    ],
+    [
+      3,
+      2,
+      1,
+      0,
+      5,
+      0,
+      0.015478020518274021
+    ],
+    [
+      3,
+      2,
+      1,
+      2,
+      4,
+      0,
+      0.015478020518274021
+    ],
+    [
+      3,
+      2,
+      2,
+      0,
+      5,
+      0,
+      0.0006374992163279325
+    ],
+    [
+      3,
+      2,
+      2,
+      2,
+      4,
+      0,
+      0.0006374992163279325
+    ],
+    [
+      3,
+      2,
+      3,
+      1,
+      2,
+      0,
+      0.01099059683969227
+    ]
+  ],
+  "build_seconds": 10.326994300005026,
+  "depth": 802,
+  "identity": {
+    "actual_profile": {
+      "cleanup_alive_ledger": false,
+      "compact_interaction_ledger": false,
+      "drain_interaction_ledger": true,
+      "early_absorb_erase": false,
+      "full_history_mode": false,
+      "name": "baseline",
+      "use_absorb_tape": true,
+      "use_dir_tape": true,
+      "use_scatter_tape": false,
+      "use_term_tape": true
+    },
+    "backend": {
+      "max_states": 60000,
+      "method": "sparse_actual_gates"
+    },
+    "compile": {
+      "evolution": "original actual gate definitions",
+      "transpiled": false
+    },
+    "config": {
+      "geom": {
+        "detector_x": 3,
+        "duct_y0": 1,
+        "duct_y1": 1,
+        "duct_z0": 1,
+        "duct_z1": 1,
+        "nx": 5,
+        "ny": 4,
+        "nz": 3,
+        "roi_y0": 1,
+        "roi_y1": 2,
+        "roi_z0": 1,
+        "roi_z1": 1,
+        "slab_x0": 1,
+        "slab_x1": 2
+      },
+      "groups": {
+        "boundaries": [
+          1.0,
+          0.0
+        ],
+        "n_groups": 1
+      },
+      "h": 1.0,
+      "layers": [],
+      "mats": {
+        "air": {
+          "p_abs": [
+            0.65
+          ],
+          "p_int": [
+            0.5034146962085905
+          ],
+          "q_down": [
+            0.0
+          ]
+        },
+        "concrete": {
+          "p_abs": [
+            0.0
+          ],
+          "p_int": [
+            0.0
+          ],
+          "q_down": [
+            0.0
+          ]
+        },
+        "tungsten": {
+          "p_abs": [
+            0.3
+          ],
+          "p_int": [
+            0.3296799539643607
+          ],
+          "q_down": [
+            0.0
+          ]
+        }
+      },
+      "model": "legacy_duct",
+      "source": {
+        "dir0": 0,
+        "g0": 0,
+        "x0": 1,
+        "y0": 1,
+        "z0": 1
+      }
+    },
+    "extra": {
+      "original_A_fingerprint": "c20ccb99745050e08a5df6a4263847dd801002c935de862e820515f492177690",
+      "sparse_engine_sha256": "55bcbf61567c24cd70ebb5ec968a4fc4c519e3907bc8e5f222f1f6a1751f4a21",
+      "steps": 5
+    },
+    "identity_hash": "ea23c40dc6b6baedd5a616575fe17ac20f48a7172c17215f4812435f057dd988",
+    "measurement": {
+      "register_map": {
+        "cA": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "cI": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "dir": [
+          8,
+          9,
+          10
+        ],
+        "dirT": [
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "g": [
+          7
+        ],
+        "status": [
+          51,
+          52
+        ],
+        "tA": [
+          46,
+          47,
+          48,
+          49,
+          50
+        ],
+        "tB": [
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "tD": [
+          41,
+          42,
+          43,
+          44,
+          45
+        ],
+        "work": [
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69
+        ],
+        "x": [
+          0,
+          1,
+          2
+        ],
+        "y": [
+          3,
+          4
+        ],
+        "z": [
+          5,
+          6
+        ]
+      },
+      "status_order": [
+        "survive",
+        "detect",
+        "absorb",
+        "boundary"
+      ]
+    },
+    "phase": "validate",
+    "schema_version": 2,
+    "sources": {
+      "__init__.py": "fccee91dfb4c53924bff125b5e21172197ef3fddb9ee6817df2bfffdf700b724",
+      "ae_execution.py": "4a58a4fc56817ed38a8611fdb38f3b79627c1017babe66bc90b86b52a2071172",
+      "ae_likelihood.py": "32d78467f1b394e59ef100d2f844832c5a610342975b29cae2dc5198a7d985da",
+      "ae_runtime.py": "b8a10d6458a52b448e49a0e59fba8fd1ae9ad845b2db953894398d9364f11196",
+      "analyze_alignment_paper1.py": "44a680489babfbc66e28f2dcb945557e889c4eaf058ef572a25587dbe8eed93f",
+      "compare_mc_test.py": "84e8e93b4dcad0a160f63e90f267669c8d2392e545a0febbbbd96bd3dccfa5bf",
+      "config.py": "a0ae6f2bd55cdf8d0840da7c07595b0155846347ba97d5d1738a563d34a1a867",
+      "diagnostic_fullstep_a1a2.py": "25f1ffbaad4387cd1e8dbcd095ef4b7275b007686d6f411221c695771a940c93",
+      "diagnostic_only.py": "1d793fc3e8eec969cb3e73b357861b4a12ef2bb2c161ddc38cbea34c72bbd452",
+      "geometry.py": "b6fd795bfe93b98861dccc5d64ed0b51fe9337cd7dedec3ae780d1f4be6036da",
+      "iqae.py": "c965b75cf05a2704b9e6cb27f8fcf965bbf445d031a4a63a76150cff7fbd4d0d",
+      "main.py": "59155a27f24d2c3f3a9ac659cd5cf923c36a0d860a981e33dafd406d369617f2",
+      "mc.py": "080e2bb3df8a931fc8fae89532b89dbfd47e77ef815369b8f74367d01b0f444d",
+      "mc_diag.py": "a3727c9b21c08fd066455f74b144882db726cf5c27349a1118c527bbc568b950",
+      "merge_shards.py": "e38c3f1a7669a454f7a899d19b23aee95686cc5197bc33d53cce9aede1be83ba",
+      "models.py": "181d0617fe73c11e5808f34b10cbdc298960633c05822e0a2a88d1b6fd7d7e06",
+      "output_guard.py": "7d32497d4cc7ec80cd3c9111ffac1378a6b385b9aa84ac0c0221d41ccb4e8e14",
+      "plotting.py": "ff93e01107c02e947d2d732e3d5bb9755ac7b3807f91aff21aa3c38f6f894ad1",
+      "postprocess_alignment.py": "dc631dbb1c57a39a1327c58ac081cbec2de2c7b30eb9d0c5f017f778c5b60671",
+      "reference_solver.py": "cd8e1c48cde93172bae72ef10277279c48df77a2bc214f11bc699ef6a6eba64b",
+      "rrk/__init__.py": "2339209d76ac9493948d8ac2ac98e6cc368a09a4dcf5bc7a1f3a0e4679b6f376",
+      "rrk/model.py": "1f9fc56c19f5bfe0f60478bfc5a0604090d5b69a1ddb566d3243b786215dddef",
+      "run.py": "ded018fcc3e1a69392b7d0c224cf44d83cdcb1ab1b83a56c0fb6af5e41d3fa62",
+      "runtime_identity.py": "d4ee7e25600fadb4b5352bbe8cf2df53c0535206f70c0432b5b90d3e336ff759",
+      "screening.py": "1d73632b0fe1392d61afaad4e0102dbc8537ec4754beddd381733fd7b6d16cf6",
+      "shard_runner.py": "b5ca262c19e8dc622f69f82068c0ed2bc580b3ebfed552234667faa3c9fa579a",
+      "stats_utils.py": "1500000a9600b96ba533866ed74503c6ba248984da728cfcc07f34f93abf0bc8",
+      "tools/build_advantage_boundary_summary.py": "a2e0d389fe4e724155a9c2fd59ca97a8fb2819155c588fabef65bdb94b85e819",
+      "tools/build_paper_extension_tables.py": "3f90cd0d418cf44890f99d2cc9e41bf345ac2d51a486a5b4979077c57aa844f9",
+      "tools/cloud_pilot.py": "14fab803597c3219be9f53ae6471535848a07f389df16eee0ca374403eebf492",
+      "tools/collect_rrk_ae_runs.py": "93d58b3543dfdc1a935af38022594fe4d59f1e6646052eeb81daa03bce4826f5",
+      "tools/collect_weighted_rare_mc.py": "12ac1e4fb5b4b88b9b7f4797b4aadcfc52b515ff57c0c8cd71c492bd52bd6682",
+      "tools/exact_reference_solver.py": "4cfecf27afa397d873d99645d2c075c4f91ea4980f474f94ab13b8d064dfe450",
+      "tools/fit_fixed_depth_ae.py": "e009d65acf21bf05978f75245a6de84cea58e928e8a608070e96a2d761acf942",
+      "tools/make_rare_response_run_commands.py": "990c4d42cbdb12423f948431980fb697944c99be593ea00826293774a2c0cc5a",
+      "tools/plot_advantage_boundary.py": "7a0013805fe337fb42fc644ef2503d0c24c9f325022bef8d34b7a56284de91a3",
+      "tools/plot_archived_rare_response_validation.py": "76fbb020f0dcde69d89284114b69f346826c4d223968497688ca681c2adaf5b6",
+      "tools/plot_extension_main_figure.py": "694435fe5a77770edcc70a969a9016ab2a6ecb6734c1789e801c97b5928be8e8",
+      "tools/plot_fig1_geometry.py": "09b748fc4f1177ab1690df155518c829e635dd8c6b722d3cf49a7f14d3b8a74a",
+      "tools/plot_rare_response_boundary.py": "a75001e30214a7a226f7880f3aa98d83ee9992cf189abfa9239c24013c7a9bce",
+      "tools/postprocess_archived_highbond_rare_response.py": "2989f74beaa0627e0dcd15c214fe1b9c6e1adcadfdbcfa5cc476e1b3fe85f0d7",
+      "tools/postprocess_rare_response_mps.py": "a6566a6505153af657f09a4e366b64cad20c104b384e27bab997a546cacd6a06",
+      "tools/rare_response_mc.py": "a1a968d46dbf863ef5084fe6723e04da35c808a4407f384b3a8d1b181702d84a",
+      "tools/rrk_amplification_planner.py": "556a19b7270c1b5b2da98c136c0d5fbbdafa2174ad5beb683065263bd151d9f6",
+      "tools/rrk_smoke.py": "1526e37c013ff28fd02126f9219eb19142c6febb6999b5da699d208dda0c9b88",
+      "tools/run_local_validation.py": "57e7afe72f7f3c1c76b4cb6a44c36c05c4e6f19755ab75425f8be9cbf01f71da",
+      "tools/supervised.py": "d8043359f04425a8f77a0f799b342063849ba4db87412f73a19eb362e2ab2adc",
+      "unitary_circuit.py": "b2566824a91d7f2a6796c495286a5a4c1ff9d07f347a2732bb355345facc6ea7",
+      "validation.py": "89acb5a905a602c5d6f07a669017d70acc8496164c4d41d595da889b12620a5b"
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.13",
+      "qiskit": "2.5.2",
+      "qiskit-aer": "0.17.2",
+      "qiskit-algorithms": "0.4.0",
+      "scipy": "1.17.1"
+    }
+  },
+  "max_joint_error": 1.1102230246251565e-16,
+  "model": "legacy_duct",
+  "observed": {
+    "norm": 1.0000000000000002,
+    "probabilities": [
+      0.00012001502739514848,
+      0.27829395609030155,
+      0.5097997911364661,
+      0.21178623774583732
+    ],
+    "w_abs_term_nonzero": 0.0,
+    "w_dir_pred_nonzero": 0.0,
+    "work_nonzero": 0.0,
+    "work_nonzero_outside_detect": 0.0
+  },
+  "passed": true,
+  "peak_process_memory_mb": 126.74609375,
+  "physical_joint_columns": [
+    "status",
+    "x",
+    "y",
+    "z",
+    "dir",
+    "g",
+    "probability"
+  ],
+  "profile": "baseline",
+  "qubits": 70,
+  "reference_joint": [
+    [
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1.8633437512758687e-05
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      3,
+      0,
+      2.3711936352329684e-05
+    ],
+    [
+      0,
+      1,
+      1,
+      0,
+      5,
+      0,
+      2.239276240872179e-06
+    ],
+    [
+      0,
+      1,
+      1,
+      2,
+      4,
+      0,
+      2.239276240872179e-06
+    ],
+    [
+      0,
+      1,
+      2,
+      1,
+      1,
+      0,
+      2.9329477012261638e-06
+    ],
+    [
+      0,
+      1,
+      2,
+      1,
+      2,
+      0,
+      2.239276240872179e-06
+    ],
+    [
+      0,
+      2,
+      1,
+      1,
+      0,
+      0,
+      2.239276240872179e-06
+    ],
+    [
+      0,
+      2,
+      1,
+      1,
+      3,
+      0,
+      2.9329477012261638e-06
+    ],
+    [
+      0,
+      2,
+      2,
+      0,
+      5,
+      0,
+      2.9329477012261638e-06
+    ],
+    [
+      0,
+      2,
+      2,
+      2,
+      4,
+      0,
+      2.9329477012261638e-06
+    ],
+    [
+      0,
+      2,
+      3,
+      1,
+      2,
+      0,
+      2.5062750686903578e-05
+    ],
+    [
+      0,
+      3,
+      2,
+      1,
+      0,
+      0,
+      3.1918007074763e-05
+    ],
+    [
+      1,
+      3,
+      1,
+      1,
+      0,
+      0,
+      0.2768993377406306
+    ],
+    [
+      1,
+      3,
+      2,
+      1,
+      0,
+      0,
+      0.0013946183496709361
+    ],
+    [
+      2,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0.3272195525355838
+    ],
+    [
+      2,
+      1,
+      1,
+      1,
+      1,
+      0,
+      0.0050647109481262095
+    ],
+    [
+      2,
+      1,
+      1,
+      1,
+      3,
+      0,
+      0.0003837400711918686
+    ],
+    [
+      2,
+      1,
+      2,
+      1,
+      1,
+      0,
+      6.305121368739257e-05
+    ],
+    [
+      2,
+      1,
+      2,
+      1,
+      2,
+      0,
+      0.002952539313891178
+    ],
+    [
+      2,
+      2,
+      1,
+      1,
+      0,
+      0,
+      0.17226076928103048
+    ],
+    [
+      2,
+      2,
+      1,
+      1,
+      3,
+      0,
+      0.00020860220830861125
+    ],
+    [
+      2,
+      2,
+      2,
+      1,
+      0,
+      0,
+      0.00011598763706920427
+    ],
+    [
+      2,
+      2,
+      2,
+      1,
+      2,
+      0,
+      0.0015308379275772023
+    ],
+    [
+      3,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0.03752234491549418
+    ],
+    [
+      3,
+      0,
+      2,
+      1,
+      1,
+      0,
+      0.001600058153650512
+    ],
+    [
+      3,
+      1,
+      0,
+      1,
+      3,
+      0,
+      0.03041346920481654
+    ],
+    [
+      3,
+      1,
+      1,
+      0,
+      5,
+      0,
+      0.029852581555609294
+    ],
+    [
+      3,
+      1,
+      1,
+      2,
+      4,
+      0,
+      0.029852581555609294
+    ],
+    [
+      3,
+      1,
+      2,
+      0,
+      5,
+      0,
+      0.0011727296496138885
+    ],
+    [
+      3,
+      1,
+      2,
+      2,
+      4,
+      0,
+      0.0011727296496138885
+    ],
+    [
+      3,
+      1,
+      3,
+      1,
+      2,
+      0,
+      0.021183513492252587
+    ],
+    [
+      3,
+      2,
+      0,
+      1,
+      3,
+      0,
+      0.015794593260281008
+    ],
+    [
+      3,
+      2,
+      1,
+      0,
+      5,
+      0,
+      0.015478020518274018
+    ],
+    [
+      3,
+      2,
+      1,
+      2,
+      4,
+      0,
+      0.015478020518274018
+    ],
+    [
+      3,
+      2,
+      2,
+      0,
+      5,
+      0,
+      0.0006374992163279319
+    ],
+    [
+      3,
+      2,
+      2,
+      2,
+      4,
+      0,
+      0.0006374992163279319
+    ],
+    [
+      3,
+      2,
+      3,
+      1,
+      2,
+      0,
+      0.010990596839692265
+    ]
+  ],
+  "register_map": {
+    "cA": [
+      31,
+      32,
+      33,
+      34,
+      35
+    ],
+    "cI": [
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "dir": [
+      8,
+      9,
+      10
+    ],
+    "dirT": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "g": [
+      7
+    ],
+    "status": [
+      51,
+      52
+    ],
+    "tA": [
+      46,
+      47,
+      48,
+      49,
+      50
+    ],
+    "tB": [
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "tD": [
+      41,
+      42,
+      43,
+      44,
+      45
+    ],
+    "work": [
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69
+    ],
+    "x": [
+      0,
+      1,
+      2
+    ],
+    "y": [
+      3,
+      4
+    ],
+    "z": [
+      5,
+      6
+    ]
+  },
+  "resource_estimate": {
+    "cA_tape_qubits": 5,
+    "cI_tape_qubits": 5,
+    "coin_qubits": 0,
+    "dir_qubits": 3,
+    "dir_tape_qubits": 15,
+    "g_qubits": 1,
+    "pos_qubits": 7,
+    "qubits_total": 70,
+    "status_qubits": 2,
+    "tS_tape_qubits": 0,
+    "term_qubits": 0,
+    "term_tape_qubits": 15,
+    "work_qubits": 17
+  },
+  "runtime": {
+    "checkpoints": [
+      {
+        "gate_index": 577,
+        "observables": {
+          "max_joint_error": 1.1102230246251565e-16,
+          "norm": 1.0000000000000002,
+          "probabilities": [
+            0.6727804474644162,
+            0.0,
+            0.32721955253558394,
+            0.0
+          ],
+          "w_abs_term_nonzero": 0.0,
+          "w_dir_pred_nonzero": 0.0,
+          "work_nonzero": 0.0,
+          "work_nonzero_outside_detect": 0.0
+        },
+        "source_line": 938,
+        "stage": "step_end",
+        "step": 0
+      },
+      {
+        "gate_index": 1151,
+        "observables": {
+          "max_joint_error": 1.1102230246251565e-16,
+          "norm": 1.0000000000000004,
+          "probabilities": [
+            0.38031111442535953,
+            0.0,
+            0.502225456459303,
+            0.11746342911533775
+          ],
+          "w_abs_term_nonzero": 0.0,
+          "w_dir_pred_nonzero": 0.0,
+          "work_nonzero": 0.0,
+          "work_nonzero_outside_detect": 0.0
+        },
+        "source_line": 938,
+        "stage": "step_end",
+        "step": 1
+      },
+      {
+        "gate_index": 1762,
+        "observables": {
+          "max_joint_error": 1.1102230246251565e-16,
+          "norm": 1.0000000000000002,
+          "probabilities": [
+            0.0260862087244162,
+            0.27662462383113773,
+            0.5092882392424947,
+            0.1880009282019517
+          ],
+          "w_abs_term_nonzero": 0.0,
+          "w_dir_pred_nonzero": 0.0,
+          "work_nonzero": 0.0,
+          "work_nonzero_outside_detect": 0.0
+        },
+        "source_line": 938,
+        "stage": "step_end",
+        "step": 2
+      },
+      {
+        "gate_index": 2373,
+        "observables": {
+          "max_joint_error": 1.1102230246251565e-16,
+          "norm": 1.0000000000000002,
+          "probabilities": [
+            0.001769388893006952,
+            0.2780192421808087,
+            0.5097672973356933,
+            0.21044407159049133
+          ],
+          "w_abs_term_nonzero": 0.0,
+          "w_dir_pred_nonzero": 0.0,
+          "work_nonzero": 0.0,
+          "work_nonzero_outside_detect": 0.0
+        },
+        "source_line": 938,
+        "stage": "step_end",
+        "step": 3
+      },
+      {
+        "gate_index": 2984,
+        "observables": {
+          "max_joint_error": 1.1102230246251565e-16,
+          "norm": 1.0000000000000002,
+          "probabilities": [
+            0.00012001502739514848,
+            0.27829395609030155,
+            0.5097997911364661,
+            0.21178623774583732
+          ],
+          "w_abs_term_nonzero": 0.0,
+          "w_dir_pred_nonzero": 0.0,
+          "work_nonzero": 0.0,
+          "work_nonzero_outside_detect": 0.0
+        },
+        "source_line": 938,
+        "stage": "step_end",
+        "step": 4
+      }
+    ],
+    "effective_deadline_monotonic": null,
+    "final_basis": 323,
+    "max_states": 60000,
+    "parent_deadline_monotonic": null,
+    "peak_basis": 323,
+    "primitive_gates": 2984,
+    "seconds": 0.3489259000052698,
+    "timeout_seconds": null
+  },
+  "status": "complete",
+  "steps": 5,
+  "top_level_gates": 2984,
+  "total_build_evolution_identity_seconds": 11.327956499997526
+}

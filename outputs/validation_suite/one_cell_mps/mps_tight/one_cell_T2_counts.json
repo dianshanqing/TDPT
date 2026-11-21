@@ -1,0 +1,54 @@
+{
+  "backend_options": {
+    "matrix_product_state_max_bond_dimension": 64,
+    "matrix_product_state_truncation_threshold": 1e-16,
+    "max_parallel_experiments": 1,
+    "max_parallel_shots": 1,
+    "max_parallel_threads": 1,
+    "method": "matrix_product_state",
+    "mps_log_data": true,
+    "mps_omp_threads": 1,
+    "seed_simulator": 20261030
+  },
+  "case": {
+    "config": "configs/models/q_mps_one_cell.json",
+    "id": "one_cell_T2",
+    "profile": "compressed",
+    "steps": 2
+  },
+  "decoded_status_counts": [
+    0,
+    181,
+    23,
+    52
+  ],
+  "measured_fingerprint": "47b414a78aa06dde66bad4026f97c46882531a2e736e53fd1566aa8a9b51144b",
+  "original_A_fingerprint": "856a33aada435cf968cc7317157f84ebdbdfc60382847069a2bc5580b2b4b33a",
+  "purpose": "measurement ordering and finite-count interface; not certification of MPS systematic error",
+  "raw_counts": {
+    "01": 181,
+    "10": 23,
+    "11": 52
+  },
+  "reference": [
+    0.0,
+    0.7087827073314814,
+    0.0989039861893082,
+    0.19231330647921038
+  ],
+  "sample_probabilities": [
+    0.0,
+    0.70703125,
+    0.08984375,
+    0.203125
+  ],
+  "sampling_seconds": 0.2949847999843769,
+  "shots": 256,
+  "status": "complete",
+  "status_order": [
+    "survive",
+    "detect",
+    "absorb",
+    "boundary"
+  ]
+}

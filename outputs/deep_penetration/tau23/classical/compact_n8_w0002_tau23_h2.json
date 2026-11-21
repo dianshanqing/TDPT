@@ -1,0 +1,1065 @@
+{
+  "order": [
+    "survive",
+    "detect",
+    "absorb",
+    "boundary"
+  ],
+  "config": {
+    "geom": {
+      "nx": 33,
+      "ny": 17,
+      "nz": 17,
+      "slab_x0": 8,
+      "slab_x1": 23,
+      "duct_y0": 8,
+      "duct_y1": 8,
+      "duct_z0": 8,
+      "duct_z1": 8,
+      "detector_x": 28,
+      "roi_y0": 6,
+      "roi_y1": 10,
+      "roi_z0": 6,
+      "roi_z1": 10
+    },
+    "groups": {
+      "n_groups": 1,
+      "boundaries": [
+        1,
+        0
+      ]
+    },
+    "mats": {
+      "concrete": {
+        "p_int": [
+          -0.0
+        ],
+        "p_abs": [
+          0
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "tungsten": {
+        "p_int": [
+          0.7624791809045419
+        ],
+        "p_abs": [
+          0.998
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "air": {
+        "p_int": [
+          0.39346934028736663
+        ],
+        "p_abs": [
+          0.09999999999999998
+        ],
+        "q_down": [
+          0
+        ]
+      }
+    },
+    "source": {
+      "x0": 4,
+      "y0": 8,
+      "z0": 8,
+      "g0": 0,
+      "dir0": 0
+    },
+    "model": "uniform_slab",
+    "layers": [
+      {
+        "x0": 8,
+        "x1": 23,
+        "material": "tungsten"
+      }
+    ],
+    "h": 0.25
+  },
+  "rows": [
+    {
+      "steps": 1,
+      "probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p_S": 1.0,
+      "p_D": 0.0,
+      "p_A": 0.0,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 1.0,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 1
+    },
+    {
+      "steps": 2,
+      "probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p_S": 1.0,
+      "p_D": 0.0,
+      "p_A": 0.0,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 1.0,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 1
+    },
+    {
+      "steps": 3,
+      "probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p_S": 1.0,
+      "p_D": 0.0,
+      "p_A": 0.0,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 1.0,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 1
+    },
+    {
+      "steps": 4,
+      "probabilities": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p_S": 1.0,
+      "p_D": 0.0,
+      "p_A": 0.0,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 1.0,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 1
+    },
+    {
+      "steps": 5,
+      "probabilities": [
+        0.23904577745726718,
+        0.0,
+        0.7609542225427328,
+        0.0
+      ],
+      "p_S": 0.23904577745726718,
+      "p_D": 0.0,
+      "p_A": 0.7609542225427328,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.7609542225427328,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 0.23904577745726718,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 6
+    },
+    {
+      "steps": 6,
+      "probabilities": [
+        0.05733628763758604,
+        0.0,
+        0.942663712362414,
+        0.0
+      ],
+      "p_S": 0.05733628763758604,
+      "p_D": 0.0,
+      "p_A": 0.942663712362414,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.18170948981968113,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 0.05733628763758604,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 31
+    },
+    {
+      "steps": 7,
+      "probabilities": [
+        0.013899597994224397,
+        0.0,
+        0.9861004020057756,
+        0.0
+      ],
+      "p_S": 0.013899597994224397,
+      "p_D": 0.0,
+      "p_A": 0.9861004020057756,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.04343668964336163,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 0.013899597994224397,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 89
+    },
+    {
+      "steps": 8,
+      "probabilities": [
+        0.0035272221157395434,
+        0.0,
+        0.9964727778842605,
+        0.0
+      ],
+      "p_S": 0.0035272221157395434,
+      "p_D": 0.0,
+      "p_A": 0.9964727778842605,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.010372375878484828,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 0.0035272221157395434,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 194
+    },
+    {
+      "steps": 9,
+      "probabilities": [
+        0.0010477717877684966,
+        0.0,
+        0.9989522282122315,
+        0.0
+      ],
+      "p_S": 0.0010477717877684966,
+      "p_D": 0.0,
+      "p_A": 0.9989522282122315,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.002479450327971043,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 0.0010477717877684966,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 360
+    },
+    {
+      "steps": 10,
+      "probabilities": [
+        0.0004556931844841355,
+        0.0,
+        0.9995443068155159,
+        0.0
+      ],
+      "p_S": 0.0004556931844841355,
+      "p_D": 0.0,
+      "p_A": 0.9995443068155159,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.0005920786032843599,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 0.0004556931844841355,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 601
+    },
+    {
+      "steps": 11,
+      "probabilities": [
+        0.0003141611960992561,
+        0.0,
+        0.9996858388039007,
+        0.0
+      ],
+      "p_S": 0.0003141611960992561,
+      "p_D": 0.0,
+      "p_A": 0.9996858388039007,
+      "p_B": 0.0,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        0.00014153198838487972,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 0.0003141611960992561,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 931
+    },
+    {
+      "steps": 12,
+      "probabilities": [
+        0.00028036397684698633,
+        0.0,
+        0.999719636023153,
+        0.0
+      ],
+      "p_S": 0.00028036397684698633,
+      "p_D": 0.0,
+      "p_A": 0.999719636023153,
+      "p_B": 0.0,
+      "probability_sum": 0.9999999999999999,
+      "norm_error": 1.1102230246251565e-16,
+      "first_termination": [
+        0.0,
+        0.0,
+        3.379721925226994e-05,
+        0.0
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 0.00028036397684698633,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 1364
+    },
+    {
+      "steps": 13,
+      "probabilities": [
+        1.8114868640579763e-05,
+        0.0,
+        0.9997276817196479,
+        0.00025420341171150185
+      ],
+      "p_S": 1.8114868640579763e-05,
+      "p_D": 0.0,
+      "p_A": 0.9997276817196479,
+      "p_B": 0.00025420341171150185,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        8.045696494904506e-06,
+        0.00025420341171150185
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 1.8114868640579763e-05,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 1889
+    },
+    {
+      "steps": 14,
+      "probabilities": [
+        1.5932703771142287e-05,
+        0.0,
+        0.9997295950862561,
+        0.0002544722099727027
+      ],
+      "p_S": 1.5932703771142287e-05,
+      "p_D": 0.0,
+      "p_A": 0.9997295950862561,
+      "p_B": 0.0002544722099727027,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        1.9133666082366726e-06,
+        2.687982612008114e-07
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 1.5932703771142287e-05,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 2490
+    },
+    {
+      "steps": 15,
+      "probabilities": [
+        1.043686787768507e-06,
+        0.0,
+        0.9997300505686776,
+        0.0002689057445346681
+      ],
+      "p_S": 1.043686787768507e-06,
+      "p_D": 0.0,
+      "p_A": 0.9997300505686776,
+      "p_B": 0.0002689057445346681,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        4.5548242140840116e-07,
+        1.4433534561965393e-05
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 1.043686787768507e-06,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 3151
+    },
+    {
+      "steps": 16,
+      "probabilities": [
+        9.054351552438923e-07,
+        0.0,
+        0.9997301588858836,
+        0.0002689356789611652
+      ],
+      "p_S": 9.054351552438923e-07,
+      "p_D": 0.0,
+      "p_A": 0.9997301588858836,
+      "p_B": 0.0002689356789611652,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        1.0831720602748603e-07,
+        2.993442649712785e-08
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 9.054351552438923e-07,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 3856
+    },
+    {
+      "steps": 17,
+      "probabilities": [
+        6.01062222432105e-08,
+        0.0,
+        0.99973018467055,
+        0.00026975522322780776
+      ],
+      "p_S": 6.01062222432105e-08,
+      "p_D": 0.0,
+      "p_A": 0.99973018467055,
+      "p_B": 0.00026975522322780776,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        2.578466635814352e-08,
+        8.195442666425389e-07
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 6.01062222432105e-08,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 4589
+    },
+    {
+      "steps": 18,
+      "probabilities": [
+        5.144181206462169e-08,
+        0.0,
+        0.9997301908022159,
+        0.00026975775597198263
+      ],
+      "p_S": 5.144181206462169e-08,
+      "p_D": 0.0,
+      "p_A": 0.9997301908022159,
+      "p_B": 0.00026975775597198263,
+      "probability_sum": 1.0,
+      "norm_error": 0.0,
+      "first_termination": [
+        0.0,
+        0.0,
+        6.131666003728408e-09,
+        2.53274417486043e-09
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 5.144181206462169e-08,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 5334
+    },
+    {
+      "steps": 19,
+      "probabilities": [
+        3.4471272614170213e-09,
+        0.0,
+        0.9997301922618133,
+        0.0002698042910594062
+      ],
+      "p_S": 3.4471272614170213e-09,
+      "p_D": 0.0,
+      "p_A": 0.9997301922618133,
+      "p_B": 0.0002698042910594062,
+      "probability_sum": 0.9999999999999999,
+      "norm_error": 1.1102230246251565e-16,
+      "first_termination": [
+        0.0,
+        0.0,
+        1.4595973796521661e-09,
+        4.6535087423552404e-08
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 3.4471272614170213e-09,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 6075
+    },
+    {
+      "steps": 20,
+      "probabilities": [
+        2.908926984711823e-09,
+        0.0,
+        0.9997301926089024,
+        0.0002698044821705194
+      ],
+      "p_S": 2.908926984711823e-09,
+      "p_D": 0.0,
+      "p_A": 0.9997301926089024,
+      "p_B": 0.0002698044821705194,
+      "probability_sum": 0.9999999999999999,
+      "norm_error": 1.1102230246251565e-16,
+      "first_termination": [
+        0.0,
+        0.0,
+        3.470891634797737e-10,
+        1.9111111322542423e-10
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 2.908926984711823e-09,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 6796
+    },
+    {
+      "steps": 21,
+      "probabilities": [
+        2.7445508011114315e-10,
+        0.0,
+        0.9997301926120874,
+        0.00026980711345745697
+      ],
+      "p_S": 2.7445508011114315e-10,
+      "p_D": 0.0,
+      "p_A": 0.9997301926120874,
+      "p_B": 0.00026980711345745697,
+      "probability_sum": 0.9999999999999999,
+      "norm_error": 1.1102230246251565e-16,
+      "first_termination": [
+        0.0,
+        0.0,
+        3.1849670153855984e-12,
+        2.6312869375852964e-09
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 2.7445508011114315e-10,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 7504
+    },
+    {
+      "steps": 22,
+      "probabilities": [
+        2.629157093236789e-10,
+        0.0,
+        0.9997301926127442,
+        0.0002698071243400227
+      ],
+      "p_S": 2.629157093236789e-10,
+      "p_D": 0.0,
+      "p_A": 0.9997301926127442,
+      "p_B": 0.0002698071243400227,
+      "probability_sum": 0.9999999999999999,
+      "norm_error": 1.1102230246251565e-16,
+      "first_termination": [
+        0.0,
+        0.0,
+        6.568050273110085e-13,
+        1.0882565760153224e-11
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 2.629157093236789e-10,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 8181
+    },
+    {
+      "steps": 23,
+      "probabilities": [
+        1.1399813604300302e-10,
+        0.0,
+        0.999730192612881,
+        0.00026980727312078966
+      ],
+      "p_S": 1.1399813604300302e-10,
+      "p_D": 0.0,
+      "p_A": 0.999730192612881,
+      "p_B": 0.00026980727312078966,
+      "probability_sum": 0.9999999999999999,
+      "norm_error": 1.1102230246251565e-16,
+      "first_termination": [
+        0.0,
+        0.0,
+        1.3680633533081228e-13,
+        1.4878076694534524e-10
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 1.1399813604300302e-10,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 8829
+    },
+    {
+      "steps": 24,
+      "probabilities": [
+        1.1335246555119334e-10,
+        0.0,
+        0.9997301926129077,
+        0.00026980727373967936
+      ],
+      "p_S": 1.1335246555119334e-10,
+      "p_D": 0.0,
+      "p_A": 0.9997301926129077,
+      "p_B": 0.00026980727373967936,
+      "probability_sum": 0.9999999999999999,
+      "norm_error": 1.1102230246251565e-16,
+      "first_termination": [
+        0.0,
+        0.0,
+        2.6780807559668925e-14,
+        6.188896842499863e-13
+      ],
+      "p_D_uncollided": 0.0,
+      "p_D_scattered": 0.0,
+      "tail_bound_absolute": 1.1335246555119334e-10,
+      "tail_bound_relative_to_current_D": null,
+      "live_states": 9430
+    },
+    {
+      "steps": 25,
+      "probabilities": [
+        5.449912322632578e-13,
+        1.0438988680368182e-10,
+        0.999730192612913,
+        0.0002698072821520095
+      ],
+      "p_S": 5.449912322632578e-13,
+      "p_D": 1.0438988680368182e-10,
+      "p_A": 0.999730192612913,
+      "p_B": 0.0002698072821520095,
+      "probability_sum": 0.9999999999999999,
+      "norm_error": 1.1102230246251565e-16,
+      "first_termination": [
+        0.0,
+        1.0438988680368182e-10,
+        5.257372548699587e-15,
+        8.412330142699515e-12
+      ],
+      "p_D_uncollided": 1.0261879631701855e-10,
+      "p_D_scattered": 1.771090486663267e-12,
+      "tail_bound_absolute": 5.449912322632578e-13,
+      "tail_bound_relative_to_current_D": 0.0052207282616196496,
+      "live_states": 9985
+    },
+    {
+      "steps": 26,
+      "probabilities": [
+        5.071042246573336e-13,
+        1.0439170184167171e-10,
+        0.9997301926129138,
+        0.0002698072821871602
+      ],
+      "p_S": 5.071042246573336e-13,
+      "p_D": 1.0439170184167171e-10,
+      "p_A": 0.9997301926129138,
+      "p_B": 0.0002698072821871602,
+      "probability_sum": 0.9999999999999998,
+      "norm_error": 2.220446049250313e-16,
+      "first_termination": [
+        0.0,
+        1.815037989896655e-15,
+        9.212892855923864e-16,
+        3.515068033043492e-14
+      ],
+      "p_D_uncollided": 1.0261879631701855e-10,
+      "p_D_scattered": 1.7729055246531595e-12,
+      "tail_bound_absolute": 5.071042246573336e-13,
+      "tail_bound_relative_to_current_D": 0.004857706270814954,
+      "live_states": 10474
+    },
+    {
+      "steps": 27,
+      "probabilities": [
+        3.0776633969599146e-14,
+        1.0439223596037691e-10,
+        0.999730192612914,
+        0.0002698072826627983
+      ],
+      "p_S": 3.0776633969599146e-14,
+      "p_D": 1.0439223596037691e-10,
+      "p_A": 0.999730192612914,
+      "p_B": 0.0002698072826627983,
+      "probability_sum": 0.9999999999999998,
+      "norm_error": 2.220446049250313e-16,
+      "first_termination": [
+        0.0,
+        5.341187051935159e-16,
+        1.553892207465297e-16,
+        4.756380827617936e-13
+      ],
+      "p_D_uncollided": 1.0261879631701855e-10,
+      "p_D_scattered": 1.7734396433583576e-12,
+      "tail_bound_absolute": 3.0776633969599146e-14,
+      "tail_bound_relative_to_current_D": 0.00029481726956476646,
+      "live_states": 10897
+    },
+    {
+      "steps": 28,
+      "probabilities": [
+        2.876376906597597e-14,
+        1.0439223683228151e-10,
+        0.999730192612914,
+        0.0002698072826647921
+      ],
+      "p_S": 2.876376906597597e-14,
+      "p_D": 1.0439223683228151e-10,
+      "p_A": 0.999730192612914,
+      "p_B": 0.0002698072826647921,
+      "probability_sum": 0.9999999999999998,
+      "norm_error": 2.220446049250313e-16,
+      "first_termination": [
+        0.0,
+        8.719046073751121e-19,
+        1.8142742450882787e-17,
+        1.9938502565649172e-15
+      ],
+      "p_D_uncollided": 1.0261879631701855e-10,
+      "p_D_scattered": 1.7734405152629586e-12,
+      "tail_bound_absolute": 2.876376906597597e-14,
+      "tail_bound_relative_to_current_D": 0.0002755355181457446,
+      "live_states": 11238
+    },
+    {
+      "steps": 29,
+      "probabilities": [
+        1.8660964134883074e-15,
+        1.0439224235145589e-10,
+        0.999730192612914,
+        0.00026980728269168007
+      ],
+      "p_S": 1.8660964134883074e-15,
+      "p_D": 1.0439224235145589e-10,
+      "p_A": 0.999730192612914,
+      "p_B": 0.00026980728269168007,
+      "probability_sum": 0.9999999999999998,
+      "norm_error": 2.220446049250313e-16,
+      "first_termination": [
+        0.0,
+        5.519174379207423e-18,
+        4.1969538200550484e-18,
+        2.6887956524288426e-14
+      ],
+      "p_D_uncollided": 1.0261879631701855e-10,
+      "p_D_scattered": 1.7734460344373347e-12,
+      "tail_bound_absolute": 1.8660964134883074e-15,
+      "tail_bound_relative_to_current_D": 1.787581501703687e-05,
+      "live_states": 11517
+    }
+  ],
+  "identity": {
+    "actual_profile": "independent_reference",
+    "backend": {
+      "algorithm": "CSR",
+      "dtype": "float64"
+    },
+    "compile": null,
+    "config": {
+      "geom": {
+        "detector_x": 28,
+        "duct_y0": 8,
+        "duct_y1": 8,
+        "duct_z0": 8,
+        "duct_z1": 8,
+        "nx": 33,
+        "ny": 17,
+        "nz": 17,
+        "roi_y0": 6,
+        "roi_y1": 10,
+        "roi_z0": 6,
+        "roi_z1": 10,
+        "slab_x0": 8,
+        "slab_x1": 23
+      },
+      "groups": {
+        "boundaries": [
+          1,
+          0
+        ],
+        "n_groups": 1
+      },
+      "h": 0.25,
+      "layers": [
+        {
+          "material": "tungsten",
+          "x0": 8,
+          "x1": 23
+        }
+      ],
+      "mats": {
+        "air": {
+          "p_abs": [
+            0.09999999999999998
+          ],
+          "p_int": [
+            0.39346934028736663
+          ],
+          "q_down": [
+            0
+          ]
+        },
+        "concrete": {
+          "p_abs": [
+            0
+          ],
+          "p_int": [
+            -0.0
+          ],
+          "q_down": [
+            0
+          ]
+        },
+        "tungsten": {
+          "p_abs": [
+            0.998
+          ],
+          "p_int": [
+            0.7624791809045419
+          ],
+          "q_down": [
+            0
+          ]
+        }
+      },
+      "model": "uniform_slab",
+      "source": {
+        "dir0": 0,
+        "g0": 0,
+        "x0": 4,
+        "y0": 8,
+        "z0": 8
+      }
+    },
+    "extra": {
+      "steps": 29
+    },
+    "measurement": "deterministic complete classical distribution",
+    "phase": "reference",
+    "schema_version": 2,
+    "sources": {
+      "__init__.py": "fccee91dfb4c53924bff125b5e21172197ef3fddb9ee6817df2bfffdf700b724",
+      "ae_execution.py": "4a58a4fc56817ed38a8611fdb38f3b79627c1017babe66bc90b86b52a2071172",
+      "ae_likelihood.py": "32d78467f1b394e59ef100d2f844832c5a610342975b29cae2dc5198a7d985da",
+      "ae_runtime.py": "b8a10d6458a52b448e49a0e59fba8fd1ae9ad845b2db953894398d9364f11196",
+      "analyze_alignment_paper1.py": "44a680489babfbc66e28f2dcb945557e889c4eaf058ef572a25587dbe8eed93f",
+      "compact_classical.py": "9132be9752c0e20a8dcba2f0f3d6c9d8be2fc8b7760c9c20a24fdef926a3311e",
+      "compare_mc_test.py": "84e8e93b4dcad0a160f63e90f267669c8d2392e545a0febbbbd96bd3dccfa5bf",
+      "config.py": "a0ae6f2bd55cdf8d0840da7c07595b0155846347ba97d5d1738a563d34a1a867",
+      "diagnostic_fullstep_a1a2.py": "25f1ffbaad4387cd1e8dbcd095ef4b7275b007686d6f411221c695771a940c93",
+      "diagnostic_only.py": "1d793fc3e8eec969cb3e73b357861b4a12ef2bb2c161ddc38cbea34c72bbd452",
+      "geometry.py": "b6fd795bfe93b98861dccc5d64ed0b51fe9337cd7dedec3ae780d1f4be6036da",
+      "iqae.py": "c965b75cf05a2704b9e6cb27f8fcf965bbf445d031a4a63a76150cff7fbd4d0d",
+      "main.py": "cb4089789ffef3dbd5fd070a65e467f84a38839fd8fa0d7ae66367480a367070",
+      "mc.py": "080e2bb3df8a931fc8fae89532b89dbfd47e77ef815369b8f74367d01b0f444d",
+      "mc_diag.py": "a3727c9b21c08fd066455f74b144882db726cf5c27349a1118c527bbc568b950",
+      "merge_shards.py": "e38c3f1a7669a454f7a899d19b23aee95686cc5197bc33d53cce9aede1be83ba",
+      "models.py": "181d0617fe73c11e5808f34b10cbdc298960633c05822e0a2a88d1b6fd7d7e06",
+      "output_guard.py": "7d32497d4cc7ec80cd3c9111ffac1378a6b385b9aa84ac0c0221d41ccb4e8e14",
+      "plotting.py": "ff93e01107c02e947d2d732e3d5bb9755ac7b3807f91aff21aa3c38f6f894ad1",
+      "postprocess_alignment.py": "dc631dbb1c57a39a1327c58ac081cbec2de2c7b30eb9d0c5f017f778c5b60671",
+      "rare_precision.py": "9f58f95ddc52a544cbddcab31914bf91e5bfa38b05bd03ff3ce57f78bb73d6a8",
+      "reference_solver.py": "cd8e1c48cde93172bae72ef10277279c48df77a2bc214f11bc699ef6a6eba64b",
+      "rrk/__init__.py": "2339209d76ac9493948d8ac2ac98e6cc368a09a4dcf5bc7a1f3a0e4679b6f376",
+      "rrk/model.py": "1f9fc56c19f5bfe0f60478bfc5a0604090d5b69a1ddb566d3243b786215dddef",
+      "run.py": "ded018fcc3e1a69392b7d0c224cf44d83cdcb1ab1b83a56c0fb6af5e41d3fa62",
+      "runtime_identity.py": "7709e906e3cc58ea98780dae80c99b90fd962c5a72295d919dfcd6cbee4aa5bc",
+      "screening.py": "7c2de4d0f88149efe86b94c80a336189c4d3e934fdb93db02f452eaf2e1f94bc",
+      "shard_runner.py": "b5ca262c19e8dc622f69f82068c0ed2bc580b3ebfed552234667faa3c9fa579a",
+      "stats_utils.py": "1500000a9600b96ba533866ed74503c6ba248984da728cfcc07f34f93abf0bc8",
+      "tools/build_advantage_boundary_summary.py": "a2e0d389fe4e724155a9c2fd59ca97a8fb2819155c588fabef65bdb94b85e819",
+      "tools/build_paper_extension_tables.py": "3f90cd0d418cf44890f99d2cc9e41bf345ac2d51a486a5b4979077c57aa844f9",
+      "tools/cloud_pilot.py": "14fab803597c3219be9f53ae6471535848a07f389df16eee0ca374403eebf492",
+      "tools/collect_rrk_ae_runs.py": "93d58b3543dfdc1a935af38022594fe4d59f1e6646052eeb81daa03bce4826f5",
+      "tools/collect_weighted_rare_mc.py": "12ac1e4fb5b4b88b9b7f4797b4aadcfc52b515ff57c0c8cd71c492bd52bd6682",
+      "tools/exact_reference_solver.py": "4cfecf27afa397d873d99645d2c075c4f91ea4980f474f94ab13b8d064dfe450",
+      "tools/fit_fixed_depth_ae.py": "e009d65acf21bf05978f75245a6de84cea58e928e8a608070e96a2d761acf942",
+      "tools/make_rare_response_run_commands.py": "990c4d42cbdb12423f948431980fb697944c99be593ea00826293774a2c0cc5a",
+      "tools/plot_advantage_boundary.py": "7a0013805fe337fb42fc644ef2503d0c24c9f325022bef8d34b7a56284de91a3",
+      "tools/plot_archived_rare_response_validation.py": "76fbb020f0dcde69d89284114b69f346826c4d223968497688ca681c2adaf5b6",
+      "tools/plot_extension_main_figure.py": "694435fe5a77770edcc70a969a9016ab2a6ecb6734c1789e801c97b5928be8e8",
+      "tools/plot_fig1_geometry.py": "09b748fc4f1177ab1690df155518c829e635dd8c6b722d3cf49a7f14d3b8a74a",
+      "tools/plot_rare_response_boundary.py": "a75001e30214a7a226f7880f3aa98d83ee9992cf189abfa9239c24013c7a9bce",
+      "tools/postprocess_archived_highbond_rare_response.py": "2989f74beaa0627e0dcd15c214fe1b9c6e1adcadfdbcfa5cc476e1b3fe85f0d7",
+      "tools/postprocess_rare_response_mps.py": "a6566a6505153af657f09a4e366b64cad20c104b384e27bab997a546cacd6a06",
+      "tools/rare_response_mc.py": "a1a968d46dbf863ef5084fe6723e04da35c808a4407f384b3a8d1b181702d84a",
+      "tools/rrk_amplification_planner.py": "556a19b7270c1b5b2da98c136c0d5fbbdafa2174ad5beb683065263bd151d9f6",
+      "tools/rrk_smoke.py": "1526e37c013ff28fd02126f9219eb19142c6febb6999b5da699d208dda0c9b88",
+      "tools/run_local_validation.py": "57e7afe72f7f3c1c76b4cb6a44c36c05c4e6f19755ab75425f8be9cbf01f71da",
+      "tools/supervised.py": "d8043359f04425a8f77a0f799b342063849ba4db87412f73a19eb362e2ab2adc",
+      "unitary_circuit.py": "b2566824a91d7f2a6796c495286a5a4c1ff9d07f347a2732bb355345facc6ea7",
+      "validation.py": "e25c24ba4a993cc1dc67e3655f036072f11b9130055c5c9d7818bc02ed32db60"
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.13",
+      "qiskit": "2.5.2",
+      "qiskit-aer": "0.17.2",
+      "qiskit-algorithms": "0.4.0",
+      "scipy": "1.17.1"
+    },
+    "identity_hash": "336e74a5cf490f12a6b25a88ad3565f4dcdf9068e030f1e6a8fe8a14ab4664c9",
+    "config_sha256": "b81b0a3be88809c07cbb8fb7831221a326b2ccb947e4138cefe62a16a86a5be5",
+    "reference_source_sha256": "cd8e1c48cde93172bae72ef10277279c48df77a2bc214f11bc699ef6a6eba64b",
+    "steps": 29,
+    "algorithm": "reachable CSR deterministic recursion",
+    "dtype": "float64"
+  },
+  "diagnostics": {
+    "earliest_detection_step": 25,
+    "first_detection_by_step": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0438988680368182e-10,
+      1.815037989896655e-15,
+      5.341187051935159e-16,
+      8.719046073751121e-19,
+      5.519174379207423e-18
+    ],
+    "p_D_uncollided": 1.0261879631701855e-10,
+    "p_D_scattered": 1.7734460344373347e-12,
+    "detected_mean_scatter_count": 0.0171476721236662,
+    "leakage": {
+      "front": 0.0002697499244723625,
+      "side": 5.7358219317630966e-08,
+      "rear": 0.0
+    },
+    "absorption_by_material": {
+      "concrete": 0.0,
+      "tungsten": 0.999730192612914,
+      "air": 0.0
+    },
+    "straight_effective_optical_thickness": 23.000000000000004,
+    "reachable_states": 24880,
+    "transition_nnz": 124425,
+    "max_live_states": 11517,
+    "one_step_mass_error": 0.0,
+    "build_seconds": 0.22064680000767112,
+    "total_seconds": 0.27891539997654036,
+    "process_peak_rss_bytes": 249106432,
+    "memory_scope": "process lifetime high-water RSS on Windows; current RSS fallback elsewhere",
+    "numerical_status": "float64 unsampled reference; tail inequality is analytic, evaluated without interval arithmetic",
+    "termination_argument": "bounded rectangular domain and reachable escape paths; no nonterminating closed class in screening cases",
+    "tail_method": "p_S conservative upper bound; no floating-point linear solve claimed as certification"
+  },
+  "candidate": {
+    "id": "compact_n8_w0002_tau23_h2",
+    "config": "configs/models/compact_deep/compact_n8_w0002_tau23_h2.json",
+    "role": "refinement",
+    "reason": "tau23 omega=.003 passed target and tail, but coarse/fine-1=5.1156044% still exceeds unchanged 5% screening gate. Add exactly one lower nonzero omega=.002 family, retaining geometry, target tau14/19/23 and three grid levels. This is uncalibrated mechanism sensitivity, not fitted material data.",
+    "max_steps": 256
+  },
+  "config_file_sha256": "b6019ef2bffa50de9994692d84333ba9bfb1a2dbc07f0e97b2833e5188d63e1d"
+}

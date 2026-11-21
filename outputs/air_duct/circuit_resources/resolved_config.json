@@ -1,0 +1,244 @@
+{
+  "arguments": {
+    "absorb_tape": false,
+    "aer_heartbeat_sec": 30.0,
+    "aer_max_mem_mb": 0,
+    "aer_safe_basis": false,
+    "aer_shot_chunk": 100,
+    "aer_threads": 1,
+    "compile_only": false,
+    "compiled_qpy": "",
+    "config": "configs/models/legacy_duct.json",
+    "cpu_budget": 4,
+    "debug_measure_work": false,
+    "dir_tape": false,
+    "dry_run": false,
+    "full_history_mode": false,
+    "global_shot_offset": 0,
+    "histories": 200000,
+    "internal_worker": "5eab868281074c928908ff90bfed17c1",
+    "iqae_alpha": 0.05,
+    "iqae_debug": false,
+    "iqae_debug_print_ops": false,
+    "iqae_eps": 0.05,
+    "iqae_good": "detect",
+    "iqae_heartbeat_sec": 30.0,
+    "iqae_max_call_sec": null,
+    "iqae_max_grover_power": -1,
+    "iqae_shot_chunk": 100,
+    "iqae_target_g": -1,
+    "iqae_use_aer": true,
+    "kernel_profile": "",
+    "mlae_powers": "0,1",
+    "mps_max_bond": null,
+    "mps_threads": null,
+    "mps_trunc": null,
+    "num_shards": 1,
+    "outdir": "outputs/air_duct/circuit_resources",
+    "phase": "circuit",
+    "plot": false,
+    "rare_eta": -1.0,
+    "rare_p_target": 0.0,
+    "request_hash": "",
+    "resource_settings": {
+      "aer_threads": 1,
+      "blas_threads": 1,
+      "deadline_environment": null,
+      "effective_cpu_budget": 4,
+      "mps_threads": 1,
+      "requested_cpu_budget": 4,
+      "workers": 1
+    },
+    "root_seed": null,
+    "run_id": "5358d4b4cc584bebacb068d125433015",
+    "run_memory_mib": 768,
+    "run_timeout_sec": null,
+    "save_compiled_qpy": "",
+    "scatter_tape": false,
+    "seed": 1234,
+    "shard_id": -1,
+    "shard_seed_offset": 0,
+    "shots": 20000,
+    "skip_transpile": false,
+    "steps": 15,
+    "suite": null,
+    "term_tape": false,
+    "test_measure_coins": false,
+    "test_measure_dir": false,
+    "test_measure_x": false,
+    "total_samples": null,
+    "transpiler_seed": 1234,
+    "unitary_matched_energy": false,
+    "xt_disable_boundary": false,
+    "xt_disable_detector": false,
+    "xt_no_interaction": false
+  },
+  "config": {
+    "geom": {
+      "detector_x": 12,
+      "duct_y0": 3,
+      "duct_y1": 4,
+      "duct_z0": 3,
+      "duct_z1": 4,
+      "nx": 16,
+      "ny": 8,
+      "nz": 8,
+      "roi_y0": 3,
+      "roi_y1": 4,
+      "roi_z0": 3,
+      "roi_z1": 4,
+      "slab_x0": 8,
+      "slab_x1": 9
+    },
+    "groups": {
+      "boundaries": [
+        0.7,
+        0.3,
+        0.05
+      ],
+      "n_groups": 2
+    },
+    "h": 1.0,
+    "layers": [],
+    "mats": {
+      "air": {
+        "p_abs": [
+          0.02,
+          0.03
+        ],
+        "p_int": [
+          0.02,
+          0.02
+        ],
+        "q_down": [
+          0.0,
+          0.0
+        ]
+      },
+      "concrete": {
+        "p_abs": [
+          0.1,
+          0.15
+        ],
+        "p_int": [
+          0.1,
+          0.12
+        ],
+        "q_down": [
+          0.0,
+          0.0
+        ]
+      },
+      "tungsten": {
+        "p_abs": [
+          0.45,
+          0.55
+        ],
+        "p_int": [
+          0.28,
+          0.32
+        ],
+        "q_down": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "model": "legacy_duct",
+    "source": {
+      "dir0": 0,
+      "g0": 0,
+      "x0": 1,
+      "y0": 3,
+      "z0": 3
+    }
+  },
+  "model_document": {
+    "geom": {
+      "detector_x": 12,
+      "duct_y0": 3,
+      "duct_y1": 4,
+      "duct_z0": 3,
+      "duct_z1": 4,
+      "nx": 16,
+      "ny": 8,
+      "nz": 8,
+      "roi_y0": 3,
+      "roi_y1": 4,
+      "roi_z0": 3,
+      "roi_z1": 4,
+      "slab_x0": 8,
+      "slab_x1": 9
+    },
+    "groups": {
+      "boundaries": [
+        0.7,
+        0.3,
+        0.05
+      ],
+      "n_groups": 2
+    },
+    "h": 1.0,
+    "layers": [],
+    "mats": {
+      "air": {
+        "p_abs": [
+          0.02,
+          0.03
+        ],
+        "p_int": [
+          0.02,
+          0.02
+        ],
+        "q_down": [
+          0.0,
+          0.0
+        ]
+      },
+      "concrete": {
+        "p_abs": [
+          0.1,
+          0.15
+        ],
+        "p_int": [
+          0.1,
+          0.12
+        ],
+        "q_down": [
+          0.0,
+          0.0
+        ]
+      },
+      "tungsten": {
+        "p_abs": [
+          0.45,
+          0.55
+        ],
+        "p_int": [
+          0.28,
+          0.32
+        ],
+        "q_down": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "metadata": {
+      "historical_checkpoint": 15,
+      "legacy_expected_D_T15_approx": 0.4375588181,
+      "parameter_type": "unaltered legacy discrete probabilities; no physical material calibration asserted"
+    },
+    "model": "legacy_duct",
+    "source": {
+      "dir0": 0,
+      "g0": 0,
+      "x0": 1,
+      "y0": 3,
+      "z0": 3
+    }
+  },
+  "precedence": "CLI steps > model JSON steps > legacy default 15",
+  "steps": 15,
+  "suite_controls_cases": false
+}

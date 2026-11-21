@@ -1,0 +1,23 @@
+{
+  "verified_utc": "2026-11-09T02:51:24.002297+00:00",
+  "checks_passed": true,
+  "native_raw_files_unchanged_by_analysis": true,
+  "successful_transport_runs": 1,
+  "native_completed_batches": 100,
+  "histories": 1000000,
+  "seed": 20261107,
+  "original_tally_integer_count_from_decimal": "49505.999999999994000000",
+  "binomial_tail_at_L": 0.025000000000001094,
+  "binomial_tail_at_U": 0.02499999999999999,
+  "interface_source_snapshots_match": true,
+  "transport_rerun_for_verification": false,
+  "native_xml_non_data_PI_ignored_in_memory": true,
+  "formal_precision_pass": true,
+  "analytic_reference_contained": true,
+  "manifest_file_count_before_verification": 14,
+  "midpoint": 0.049507305899440364,
+  "midpoint_relative_error_bound_over_CI": 0.008672488099350412,
+  "empirical_mean_relative_error_bound_over_CI": 0.008645881423552024,
+  "empirical_mean_precision_pass": true,
+  "original_precision_criterion_preserved": true
+}

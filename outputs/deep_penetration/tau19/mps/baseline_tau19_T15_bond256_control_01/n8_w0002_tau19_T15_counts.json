@@ -1,0 +1,19 @@
+{
+  "case": {
+    "config": "compact_n8_w0002_tau19",
+    "id": "n8_w0002_tau19_T15",
+    "profile": "baseline",
+    "steps": 15
+  },
+  "decoded_status_counts": null,
+  "executed": false,
+  "measured_fingerprint": null,
+  "original_A_fingerprint": "6336b46ebf21208338abdc42bdf21da0ce0f47c1a7889a388ba6f31aadd014a5",
+  "purpose": "No main-case finite-count measurement validation was performed",
+  "raw_counts": null,
+  "reason": "counts_check=false; the main measured A was not constructed or executed",
+  "sample_probabilities": null,
+  "sampling_seconds": null,
+  "shots": null,
+  "status": "skipped"
+}

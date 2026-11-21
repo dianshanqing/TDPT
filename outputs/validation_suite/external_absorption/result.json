@@ -1,0 +1,77 @@
+{
+  "status": "completed",
+  "code": "Light pre-existing serial executable",
+  "histories": 1000000,
+  "seed": 20261107,
+  "batches_completed": 100,
+  "native_tally": {
+    "Id": "1",
+    "Type": "Current",
+    "Universe": "0",
+    "Particle Type": "Neutron",
+    "Unidirectional Surface Id": "5",
+    "Cell Id": "4",
+    "Mean": "0.049505999999999994",
+    "RSD": "0.004364911337158944"
+  },
+  "native_tally_path": "raw/TallyResults.xml",
+  "native_xml_parsing": {
+    "exact_non_data_line_removed_in_memory": "<?:anonymous mso-application progid=\"Excel.Sheet\"?>",
+    "removed_line_count": 1,
+    "original_file_unchanged": true
+  },
+  "hit_count_from_native_mean_times_n": 49505.99999999999,
+  "hit_count": 49506,
+  "count_reconstruction_absolute_residual": 7.275957614183426e-12,
+  "count_reconstruction": "Light exports a 17-digit native mean, not the raw event sum. Its product with n uniquely identifies the integer hit count; no stochastic rerun or Python transport is used.",
+  "sum_history_scores": 49506,
+  "sum_squared_history_scores": 49506,
+  "miss_count": 950494,
+  "per_source_history_score_support": [
+    0,
+    1
+  ],
+  "estimate": 0.049506,
+  "analytic_reference": 0.049787068367863944,
+  "empirical_mean_relative_error": 0.005645409080671323,
+  "bernoulli_standard_error": 0.0002169220043333548,
+  "native_batch_RSD": 0.004364911337158944,
+  "native_batch_standard_error": 0.00021608930065739068,
+  "confidence": 0.95,
+  "confidence_interval": [
+    0.04908164590939461,
+    0.04993296588948612
+  ],
+  "confidence_interval_midpoint": 0.049507305899440364,
+  "interval_method": "two-sided exact Clopper-Pearson binomial interval",
+  "confidence_scope": "one prespecified external absorption run; no simultaneous-family claim",
+  "analytic_reference_contained": true,
+  "formal_precision_criterion": "L > 0 and (U-L)/(2L) <= 0.01",
+  "formal_precision_estimator": "confidence-interval midpoint (L+U)/2",
+  "formal_precision_guarantee": "On the event that the true Bernoulli probability p lies in [L,U], the midpoint has relative error at most (U-L)/(2L). This interval-width certificate alone is not a certificate for the empirical mean.",
+  "formal_precision_measure": 0.008672488099350412,
+  "formal_precision_threshold": 0.01,
+  "formal_precision_pass": true,
+  "empirical_mean_precision_criterion": "L > 0 and max((mean-L)/L, (U-mean)/U) <= 0.01",
+  "empirical_mean_precision_measure": 0.008645881423552024,
+  "empirical_mean_precision_pass": true,
+  "empirical_mean_precision_guarantee": "For every p in [L,U], abs(mean-p)/p is no larger than this endpoint maximum. The coverage confidence is 95% under the Bernoulli sampling model and excludes physical-model or implementation bias.",
+  "combined_acceptance": true,
+  "source_weight_and_scoring_justification": [
+    "Source fraction 1 and Particle.Wgt=1; ordinary surface current adds Particle.Wgt with filter weight 1.",
+    "Only reaction MT102 is present: total microscopic cross section equals absorption cross section, 1 barn; all scattering and multiplication cross sections are zero.",
+    "A collision removes the entire weight; the positive cutoff then kills it with probability 1. An uncollided history retains unit weight.",
+    "The fixed +x direction, zero scattering, nonreflecting geometry and no splitting imply at most one positive crossing of x=5 per source history.",
+    "The cell 4 and positive surface 5 filters select the detector square. A source history contributes either one first crossing or zero."
+  ],
+  "physical_comparability": [
+    "Matches absorption_AB source (1,2,2), direction +x, domain [0,6]x[0,4]x[0,4], A slab [2,3], B slab [3,4], Sigma_A=1 and Sigma_B=2, and the detector square at x=5.",
+    "The XML library is a synthetic mathematical absorber, not physical evaluated hydrogen or material data; length units are mapped u to cm.",
+    "Light samples continuous exponential flights; the project uses a grid with h=0.5 and survival exp(-Sigma*h). Their absorption transmission agrees analytically for this straight path and aligned interfaces.",
+    "This checks only the absorption subproblem against an independently implemented transport engine and exp(-3). It does not validate scattering rules, the finite-step terminal logic, quantum embedding, MPS accuracy, IQAE or the complete manuscript transport model.",
+    "Light is the research group's existing code. This is code-path independence from VRQO, not independent institutional validation or a claim of certification by an established public transport benchmark."
+  ],
+  "analysis_python": "C:\\ProgramData\\anaconda3\\python.exe",
+  "scipy_version": "1.16.3",
+  "analysis_utc": "2026-11-09T02:51:23.930856+00:00"
+}

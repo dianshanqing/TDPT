@@ -1,0 +1,157 @@
+{
+  "cache_policy": "Reuse an actual evolved prefix only; fresh binomial draws for every batch; no pruning or normalization.",
+  "config": {
+    "geom": {
+      "detector_x": 3,
+      "duct_y0": 1,
+      "duct_y1": 1,
+      "duct_z0": 1,
+      "duct_z1": 1,
+      "nx": 5,
+      "ny": 3,
+      "nz": 3,
+      "roi_y0": 1,
+      "roi_y1": 1,
+      "roi_z0": 1,
+      "roi_z1": 1,
+      "slab_x0": 1,
+      "slab_x1": 2
+    },
+    "groups": {
+      "boundaries": [
+        1.0,
+        0.0
+      ],
+      "n_groups": 1
+    },
+    "h": 0.5,
+    "layers": [
+      {
+        "material": "tungsten",
+        "x0": 1,
+        "x1": 2
+      }
+    ],
+    "mats": {
+      "air": {
+        "p_abs": [
+          0.09999999999999998
+        ],
+        "p_int": [
+          0.39346934028736663
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "concrete": {
+        "p_abs": [
+          0
+        ],
+        "p_int": [
+          -0.0
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "tungsten": {
+        "p_abs": [
+          0.998
+        ],
+        "p_int": [
+          0.9069855107893365
+        ],
+        "q_down": [
+          0
+        ]
+      }
+    },
+    "model": "uniform_slab",
+    "source": {
+      "dir0": 0,
+      "g0": 0,
+      "x0": 1,
+      "y0": 1,
+      "z0": 1
+    }
+  },
+  "driver_sha256": "688f1c398e5eb38d336347abc93441d6b358959b3db464e44c0c7dcf267c34d3",
+  "preselected_before_counts": true,
+  "production_sources": {
+    "__init__.py": "fccee91dfb4c53924bff125b5e21172197ef3fddb9ee6817df2bfffdf700b724",
+    "ae_execution.py": "37dc9344715f6efe6fd602db633c42f24fe2fb5f44423727d26afab6837369bb",
+    "ae_likelihood.py": "32d78467f1b394e59ef100d2f844832c5a610342975b29cae2dc5198a7d985da",
+    "ae_runtime.py": "2d5e31ea7e2ef2b9f69bbc9c301896985e9f3ee0fba38d5f44a635e872812b9f",
+    "analyze_alignment_paper1.py": "793e7b3ca4b0f8d1c812154424430676351036d077f00f242d335e354ae34dea",
+    "batch_runtime.py": "4afe844562ede9a8688901443525530c0703f9333d0dd8125791c7871540fd1e",
+    "cloud_pilot.py": "cc1ae87d68358ccf57ca27547b0662e030a0589a20066cb61643f27f2db2faf8",
+    "compact_classical.py": "c71efdfb8b11f90c5ebe96075180e2a599cb87e9d98cd4622df3d1d80fd071c8",
+    "compare_mc_test.py": "d3eb657054795f52fc5b847e53f1e64aea1db01ed9f67e589dc044e37935f000",
+    "config.py": "a0ae6f2bd55cdf8d0840da7c07595b0155846347ba97d5d1738a563d34a1a867",
+    "diagnostic_fullstep_a1a2.py": "25f1ffbaad4387cd1e8dbcd095ef4b7275b007686d6f411221c695771a940c93",
+    "diagnostic_only.py": "dbc6c5e19df00e9dcc5361240ff8575d89bc65dc96e9dc468b5d9ad28e9de7b7",
+    "geometry.py": "b6fd795bfe93b98861dccc5d64ed0b51fe9337cd7dedec3ae780d1f4be6036da",
+    "iqae.py": "eddb1a9ed766e7ec430b97f085ed1cf28ddc26923ac0832fa1b63d5ffcc65fd7",
+    "iqae_diagnostics.py": "d23595edf75e3922b828268d14fc410981059787aaa73dc29b39759c01bff55d",
+    "main.py": "482f3a50432c2ceb84c474b218e57bff9d89474b0938a8deefbf107306844720",
+    "mc.py": "080e2bb3df8a931fc8fae89532b89dbfd47e77ef815369b8f74367d01b0f444d",
+    "mc_diag.py": "a3727c9b21c08fd066455f74b144882db726cf5c27349a1118c527bbc568b950",
+    "merge_shards.py": "1433a79648642b37fd3d4db7f3e2dd5757d2cfa28e86247e7379ea8889b6c4a7",
+    "models.py": "b37956eda05c1595ee72e7d3f2772eb3bb77d4dc64fef8fe28137d75dd5f3ccd",
+    "mps_numerical.py": "65d654fdc6a26685d218137787886d4effcf937ccbfe2fef91801c6eaadd544f",
+    "mps_performance.py": "262374ae72584f6d31ccff2b1f24337907abfb982e752b78c80b1a70e853402c",
+    "numerical_runtime.py": "e61eb0de7a5dc7d72d78637c179a2731853e794e633ed62afdde59ee0a9902cc",
+    "output_guard.py": "7d32497d4cc7ec80cd3c9111ffac1378a6b385b9aa84ac0c0221d41ccb4e8e14",
+    "plotting.py": "ff93e01107c02e947d2d732e3d5bb9755ac7b3807f91aff21aa3c38f6f894ad1",
+    "postprocess_alignment.py": "65d3dcb0f90e0df2b5e4533dd901db25c41cfe00de698be24f9d0a4e200cd09f",
+    "presets.py": "0076446dfd97982e02e666d04ca4ad4e847451f8c4b9261dcdea9dd01731f5f8",
+    "qc_environment.py": "9fcc8fb4308d80f9a569ca946d700ecfcfd5c3c4cccde50143ad3250b13f71a8",
+    "qc_versions.py": "81314845d36fbea223b324d95d9ada1a8e41e1dcc10b493b659a79ac15fe22ea",
+    "rare_precision.py": "d0eba21a4622128b86559e4e4dc54c6355a6273b3a69616eb275ece0cfbd7dd8",
+    "reference_engine.py": "047ca9ec83c562547da92b8a403419267b751094f7ed90a529282cf09cf21662",
+    "reference_solver.py": "cd8e1c48cde93172bae72ef10277279c48df77a2bc214f11bc699ef6a6eba64b",
+    "result_storage.py": "20f9bdb5d003695c2fe0301f6ac05226cde5ebaf86b28019f8ba38da56ac91f3",
+    "rrk_model.py": "1f9fc56c19f5bfe0f60478bfc5a0604090d5b69a1ddb566d3243b786215dddef",
+    "run.py": "b5bdca8b24d7805590db78498ddf7b9d73c09ad63d029cc1824e9d423b6e58a5",
+    "run_local_validation.py": "db6bb5f39f4e786c0b05d850b1b4973dd77404c40196a3fd343bab052be59600",
+    "run_request.py": "ef1fce82ec1914f8aeaa496e0c0f5e5345291efeb46593129b23fdc745c56b8e",
+    "runtime_identity.py": "5ecd839549edaa7890d9d4f948259e7e82d7f20e06e22cddc4de07d01711e73d",
+    "screening.py": "da10a6facb1a39594ad1674f6d4792dd17084a92f114813aa157e3d8cb216e6e",
+    "shard_runner.py": "39effafe921d7474fc714fb29ae5fa4dbd9f19f1fcd2490cbf7927d948b0dd0c",
+    "stats_utils.py": "d93c440c4c1954f340eeddeb58ffc1e3fc4c6f6e51a3cf69a3bedeac5d46e023",
+    "supervised.py": "8047e0218083578291cb17e2da0dbbfcb829aef244ec41125db707e97b59d154",
+    "unitary_circuit.py": "4e049256bd532409dd88f7d6b93f7985ec865d446b4f0542259f567bde749656",
+    "validation.py": "dcdc2689992521ea7e0ca9f78f69d0cbdf4699b1b330aa7d13282d2f4a8a9a03"
+  },
+  "protocol": {
+    "confidence": 0.95,
+    "max_actual_primitive_gate_applications": 2000000,
+    "max_power": 256,
+    "max_queries": 10000000,
+    "max_shots": 20000,
+    "max_states": 60000,
+    "memory_mib": 1536,
+    "model": "q_tau19_two_cell",
+    "norm_work_tolerance": 2e-11,
+    "objective": "detect",
+    "profile": "baseline",
+    "relative_error": 0.01,
+    "seed": 2026111001,
+    "shots_per_round": 512,
+    "steps": 3,
+    "threads": 1,
+    "wall_deadline_seconds": null
+  },
+  "reference_used_for_power_or_stop": false,
+  "scientific_scope": "Single natural low-probability short transport case; conditional statistical precision, no full numerical certification.",
+  "versions": {
+    "numpy": "2.4.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.13",
+    "qiskit": "2.5.2",
+    "qiskit-aer": "0.17.2",
+    "qiskit-algorithms": "0.4.0",
+    "scipy": "1.17.1"
+  }
+}

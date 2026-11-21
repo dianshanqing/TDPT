@@ -1,0 +1,4 @@
+encoding,built_qubits,estimated_qubits,raw_gates,raw_depth,compiled_gates,compiled_cx,compiled_depth,source
+baseline,156,156,11292,2504,93447,29901,57958,outputs/circuit_resources/tau23_T15/baseline/results.json
+compressed,156,156,11787,2515,95472,30546,58486,outputs/circuit_resources/tau23_T15/compressed/results.json
+full_history,171,171,8802,2204,81537,26481,50564,outputs/circuit_resources/tau23_T15/full_history/results.json

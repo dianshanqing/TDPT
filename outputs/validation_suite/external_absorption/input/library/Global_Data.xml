@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Synthetic verification library, not an evaluated nuclear-data library. -->
+<global_data>
+  <reaction_map>
+    <reaction mt="102" name="Synthetic capture" />
+  </reaction_map>
+  <nuclide_map>
+    <nuclide name="Absorber" id="1001" />
+  </nuclide_map>
+</global_data>

@@ -1,0 +1,115 @@
+{
+  "phase": "exact_reference",
+  "steps": 3,
+  "seed_ignored": 1234,
+  "unitary_matched_energy": false,
+  "status_codes": {
+    "alive": "00",
+    "detect": "01",
+    "absorb": "10",
+    "boundary": "11"
+  },
+  "step_summaries": [
+    {
+      "step": 1,
+      "p_detect_reach": 0.0,
+      "p_absorb": 0.010000000000000002,
+      "p_boundary": 0.0,
+      "p_survive": 0.99,
+      "sum_prob": 1.0,
+      "active_states": 6,
+      "terminal_this_step": {
+        "detect": 0.0,
+        "absorb": 0.010000000000000002,
+        "boundary": 0.0
+      }
+    },
+    {
+      "step": 2,
+      "p_detect_reach": 0.0,
+      "p_absorb": 0.019750000000000007,
+      "p_boundary": 0.015000000000000001,
+      "p_survive": 0.96525,
+      "sum_prob": 1.0,
+      "active_states": 30,
+      "terminal_this_step": {
+        "detect": 0.0,
+        "absorb": 0.009750000000000005,
+        "boundary": 0.015000000000000001
+      }
+    },
+    {
+      "step": 3,
+      "p_detect_reach": 0.0,
+      "p_absorb": 0.029393499999999975,
+      "p_boundary": 0.0159,
+      "p_survive": 0.9547065,
+      "sum_prob": 1.0,
+      "active_states": 84,
+      "terminal_this_step": {
+        "detect": 0.0,
+        "absorb": 0.009643500000000011,
+        "boundary": 0.0009000000000000002
+      }
+    }
+  ],
+  "final": {
+    "step": 3,
+    "p_detect_reach": 0.0,
+    "p_absorb": 0.029393499999999975,
+    "p_boundary": 0.0159,
+    "p_survive": 0.9547065,
+    "sum_prob": 1.0,
+    "active_states": 84,
+    "terminal_this_step": {
+      "detect": 0.0,
+      "absorb": 0.009643500000000011,
+      "boundary": 0.0009000000000000002
+    }
+  },
+  "mc_reference": {
+    "path": "outputs\\MC\\mc_s3_h4e6_seed1234\\results.json",
+    "comparison": [
+      {
+        "state": "detect",
+        "exact_p": 0.0,
+        "mc_p": 0.0,
+        "mc_se": 0.0,
+        "diff": 0.0,
+        "z_vs_mc": null,
+        "within_3sigma": true
+      },
+      {
+        "state": "absorb",
+        "exact_p": 0.029393499999999975,
+        "mc_p": 0.02931325,
+        "mc_se": 8.434154281022713e-05,
+        "diff": 8.024999999997617e-05,
+        "z_vs_mc": 0.9514884044810854,
+        "within_3sigma": true
+      },
+      {
+        "state": "boundary",
+        "exact_p": 0.0159,
+        "mc_p": 0.01583425,
+        "mc_se": 6.241699793913814e-05,
+        "diff": 6.574999999999984e-05,
+        "z_vs_mc": 1.0533989485382116,
+        "within_3sigma": true
+      },
+      {
+        "state": "survive",
+        "exact_p": 0.9547065,
+        "mc_p": 0.9548525,
+        "mc_se": 0.00010381377948489065,
+        "diff": -0.00014599999999997948,
+        "z_vs_mc": -1.4063643643879542,
+        "within_3sigma": true
+      }
+    ]
+  },
+  "notes": [
+    "The exact solver is deterministic; --seed is accepted only for output metadata.",
+    "p_survive is the active alive mass after the requested number of steps."
+  ]
+}

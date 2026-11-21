@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Artificial constant-cross-section absorber. Z/A/AWR are inert metadata.
+     Sigma_t = Sigma_a = 1 barn on the entire energy grid, Sigma_s = 0.
+     No fission, neutron products, photon products or thermal scattering. -->
+<Absorber Z="1" A="1" atomic_weight_ratio="1" temperature="294" unresolved_resonance_region="false">
+  <energy_grid>1e-5 2e7</energy_grid>
+  <reactions>
+    <reaction mt="102" reference_frame="laboratory">
+      <cross_sections energy_threshold="0">1 1</cross_sections>
+    </reaction>
+  </reactions>
+</Absorber>

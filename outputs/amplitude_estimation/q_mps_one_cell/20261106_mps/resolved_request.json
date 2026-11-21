@@ -1,0 +1,171 @@
+{
+  "arguments": {
+    "aer_threads": 1,
+    "blas_threads": 1,
+    "bond": null,
+    "case_id": null,
+    "confidence": 0.95,
+    "config": "q_mps_one_cell",
+    "counts_check": true,
+    "cpu_budget": 2,
+    "dry_run": false,
+    "iqae_max_grover_power": 16,
+    "iqae_max_queries": 1000000,
+    "iqae_max_shots": 8192,
+    "memory_mib": 2048,
+    "mps_lapack": null,
+    "mps_threads": 1,
+    "mps_trunc": null,
+    "outdir": "outputs/amplitude_estimation/q_mps_one_cell/20261106_mps",
+    "perf_prefix_gates": null,
+    "perf_reference": null,
+    "profile": "baseline",
+    "relative_error": 0.01,
+    "seed": 20261106,
+    "shots": 512,
+    "steps": 2,
+    "suite": null,
+    "task": "iqae"
+  },
+  "backend": {},
+  "backend_options": {},
+  "cases": [
+    {
+      "config": "q_mps_one_cell",
+      "config_sha256": "bb5ff28b67c3d8e2f547d537ebd3d33f828c01068e6d1693427b958889e92d0d",
+      "id": "model",
+      "model_document": {
+        "geom": {
+          "detector_x": 2,
+          "duct_y0": 1,
+          "duct_y1": 1,
+          "duct_z0": 1,
+          "duct_z1": 1,
+          "nx": 4,
+          "ny": 3,
+          "nz": 3,
+          "roi_y0": 1,
+          "roi_y1": 1,
+          "roi_z0": 1,
+          "roi_z1": 1,
+          "slab_x0": 1,
+          "slab_x1": 1
+        },
+        "groups": {
+          "boundaries": [
+            1.0,
+            0.0
+          ],
+          "n_groups": 1
+        },
+        "h": 1.0,
+        "layers": [
+          {
+            "material": "tungsten",
+            "x0": 1,
+            "x1": 1
+          }
+        ],
+        "mats": {
+          "air": {
+            "p_abs": [
+              0.65
+            ],
+            "p_int": [
+              0.5034146962085905
+            ],
+            "q_down": [
+              0.0
+            ]
+          },
+          "concrete": {
+            "p_abs": [
+              0.0
+            ],
+            "p_int": [
+              0.0
+            ],
+            "q_down": [
+              0.0
+            ]
+          },
+          "tungsten": {
+            "p_abs": [
+              0.3
+            ],
+            "p_int": [
+              0.3296799539643607
+            ],
+            "q_down": [
+              0.0
+            ]
+          }
+        },
+        "model": "uniform_slab",
+        "source": {
+          "dir0": 0,
+          "g0": 0,
+          "x0": 1,
+          "y0": 1,
+          "z0": 1
+        }
+      },
+      "profile": "baseline",
+      "steps": 2
+    }
+  ],
+  "counts_check": true,
+  "dry_run": false,
+  "effective_suite": null,
+  "outdir": "outputs/amplitude_estimation/q_mps_one_cell/20261106_mps",
+  "overrides": [],
+  "precedence": "explicit CLI > explicit CMD > selected suite/model > default",
+  "precision_contract": {
+    "budget_exhaustion": "budget_within_target_not_achieved",
+    "confidence": 0.95,
+    "failure_probability": 0.050000000000000044,
+    "numerical_parameters": "bond and mps_trunc control simulator error separately; statistical precision does not certify total error",
+    "reference_used_for_stopping": false,
+    "relative_error": 0.01,
+    "scope": "single_case_complete_estimation",
+    "stop_rule": "valid confidence interval [L,U], L>0 and (U-L)/(2*L)<=relative_error; estimate=(L+U)/2"
+  },
+  "provenance": {
+    "aer_threads": "cli",
+    "blas_threads": "default",
+    "bond": "default",
+    "case_id": "default",
+    "confidence": "cli",
+    "config": "cli",
+    "counts_check": "default",
+    "cpu_budget": "cli",
+    "dry_run": "default",
+    "iqae_max_grover_power": "cli",
+    "iqae_max_queries": "cli",
+    "iqae_max_shots": "cli",
+    "memory_mib": "cli",
+    "mps_lapack": "default",
+    "mps_threads": "cli",
+    "mps_trunc": "default",
+    "outdir": "cli",
+    "perf_prefix_gates": "default",
+    "perf_reference": "default",
+    "profile": "cli",
+    "relative_error": "cli",
+    "seed": "cli",
+    "shots": "cli",
+    "steps": "cli",
+    "suite": "default",
+    "task": "cli"
+  },
+  "resources": {
+    "aer_threads": 1,
+    "blas_threads": 1,
+    "cpu_budget": 2,
+    "memory_mib": 2048,
+    "mps_threads": 1
+  },
+  "schema_version": 1,
+  "simulation_executed": false,
+  "task": "iqae"
+}

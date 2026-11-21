@@ -1,0 +1,1661 @@
+{
+  "absolute_errors": [
+    1.0505574934039805e-11,
+    8.421424906189056e-07,
+    8.625559456798548e-06,
+    7.783416271438845e-06
+  ],
+  "backend": {
+    "effective": {
+      "accept_distributed_results": null,
+      "batched_shots_gpu": false,
+      "batched_shots_gpu_max_qubits": 16,
+      "blocking_enable": false,
+      "blocking_qubits": null,
+      "chop_threshold": 0.0,
+      "chunk_swap_buffer_qubits": null,
+      "cuStateVec_enable": false,
+      "device": "CPU",
+      "enable_truncation": true,
+      "executor": null,
+      "extended_stabilizer_approximation_error": 0.05,
+      "extended_stabilizer_metropolis_mixing_time": 5000,
+      "extended_stabilizer_norm_estimation_repetitions": 3,
+      "extended_stabilizer_norm_estimation_samples": 100,
+      "extended_stabilizer_parallel_threshold": 100,
+      "extended_stabilizer_probabilities_snapshot_samples": 3000,
+      "extended_stabilizer_sampling_method": "resampled_metropolis",
+      "fusion_enable": true,
+      "fusion_max_qubit": null,
+      "fusion_threshold": null,
+      "fusion_verbose": false,
+      "matrix_product_state_max_bond_dimension": 32,
+      "matrix_product_state_truncation_threshold": 1e-16,
+      "max_job_size": null,
+      "max_memory_mb": null,
+      "max_parallel_experiments": 1,
+      "max_parallel_shots": 1,
+      "max_parallel_threads": 1,
+      "max_shot_size": null,
+      "memory": null,
+      "method": "matrix_product_state",
+      "mps_lapack": false,
+      "mps_log_data": false,
+      "mps_omp_threads": 1,
+      "mps_parallel_threshold": 14,
+      "mps_sample_measure_algorithm": "mps_heuristic",
+      "mps_swap_direction": "mps_swap_left",
+      "noise_model": null,
+      "num_threads_per_device": 1,
+      "precision": "double",
+      "runtime_parameter_bind_enable": false,
+      "seed_simulator": 20261030,
+      "shot_branching_enable": false,
+      "shot_branching_sampling_enable": false,
+      "shots": 1024,
+      "stabilizer_max_snapshot_probabilities": 32,
+      "statevector_parallel_threshold": 14,
+      "statevector_sample_measure_opt": 10,
+      "tensor_network_num_sampling_qubits": 10,
+      "use_cuTensorNet_autotuning": false,
+      "validation_threshold": null,
+      "zero_threshold": 0.0
+    },
+    "requested": {
+      "chop_threshold": 0.0,
+      "matrix_product_state_max_bond_dimension": 32,
+      "matrix_product_state_truncation_threshold": 1e-16,
+      "max_parallel_experiments": 1,
+      "max_parallel_shots": 1,
+      "max_parallel_threads": 1,
+      "method": "matrix_product_state",
+      "mps_log_data": false,
+      "mps_omp_threads": 1,
+      "precision": "double",
+      "seed_simulator": 20261030,
+      "zero_threshold": 0.0
+    }
+  },
+  "backend_options": {
+    "chop_threshold": 0.0,
+    "matrix_product_state_max_bond_dimension": 32,
+    "matrix_product_state_truncation_threshold": 1e-16,
+    "max_parallel_experiments": 1,
+    "max_parallel_shots": 1,
+    "max_parallel_threads": 1,
+    "method": "matrix_product_state",
+    "mps_log_data": false,
+    "mps_omp_threads": 1,
+    "precision": "double",
+    "seed_simulator": 20261030,
+    "zero_threshold": 0.0
+  },
+  "bond": 32,
+  "build_seconds": 0.1830915999598801,
+  "case": {
+    "config": "configs/models/compact_deep/compact_n8_w0002_tau14.json",
+    "id": "n8_w0002_tau14_T15",
+    "profile": "compressed",
+    "steps": 15
+  },
+  "compile_seconds": 0.4050656999461353,
+  "compiled_A_fingerprint": "319ec1390775b2c6cae52c5874dd71637be590f580331139bf687460fd83fbe3",
+  "compiled_depth": 58486,
+  "compiled_fingerprint_seconds": 1.4580585000221618,
+  "compiled_gates": 95472,
+  "compiled_sparse": null,
+  "compiled_two_qubit_gates": 30546,
+  "config": {
+    "geom": {
+      "detector_x": 14,
+      "duct_y0": 4,
+      "duct_y1": 4,
+      "duct_z0": 4,
+      "duct_z1": 4,
+      "nx": 17,
+      "ny": 9,
+      "nz": 9,
+      "roi_y0": 3,
+      "roi_y1": 5,
+      "roi_z0": 3,
+      "roi_z1": 5,
+      "slab_x0": 4,
+      "slab_x1": 11
+    },
+    "groups": {
+      "boundaries": [
+        1,
+        0
+      ],
+      "n_groups": 1
+    },
+    "h": 0.5,
+    "layers": [
+      {
+        "material": "tungsten",
+        "x0": 4,
+        "x1": 11
+      }
+    ],
+    "mats": {
+      "air": {
+        "p_abs": [
+          0.09999999999999998
+        ],
+        "p_int": [
+          0.39346934028736663
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "concrete": {
+        "p_abs": [
+          0
+        ],
+        "p_int": [
+          -0.0
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "tungsten": {
+        "p_abs": [
+          0.998
+        ],
+        "p_int": [
+          0.8262260565495548
+        ],
+        "q_down": [
+          0
+        ]
+      }
+    },
+    "model": "uniform_slab",
+    "source": {
+      "dir0": 0,
+      "g0": 0,
+      "x0": 2,
+      "y0": 4,
+      "z0": 4
+    }
+  },
+  "diagnostic_fingerprint": "fd5cfed78c7d32415875d854705968340204d68558b0a928e677d0c92b31bae0",
+  "diagnostic_fingerprint_seconds": 1.4000960999983363,
+  "evolution_and_observable_read_seconds": 43.97970450000139,
+  "identity": {
+    "actual_profile": {
+      "cleanup_alive_ledger": false,
+      "compact_interaction_ledger": true,
+      "drain_interaction_ledger": true,
+      "early_absorb_erase": true,
+      "full_history_mode": false,
+      "name": "compressed",
+      "use_absorb_tape": true,
+      "use_dir_tape": true,
+      "use_scatter_tape": false,
+      "use_term_tape": true
+    },
+    "backend": {
+      "effective": {
+        "accept_distributed_results": null,
+        "batched_shots_gpu": false,
+        "batched_shots_gpu_max_qubits": 16,
+        "blocking_enable": false,
+        "blocking_qubits": null,
+        "chop_threshold": 0.0,
+        "chunk_swap_buffer_qubits": null,
+        "cuStateVec_enable": false,
+        "device": "CPU",
+        "enable_truncation": true,
+        "executor": null,
+        "extended_stabilizer_approximation_error": 0.05,
+        "extended_stabilizer_metropolis_mixing_time": 5000,
+        "extended_stabilizer_norm_estimation_repetitions": 3,
+        "extended_stabilizer_norm_estimation_samples": 100,
+        "extended_stabilizer_parallel_threshold": 100,
+        "extended_stabilizer_probabilities_snapshot_samples": 3000,
+        "extended_stabilizer_sampling_method": "resampled_metropolis",
+        "fusion_enable": true,
+        "fusion_max_qubit": null,
+        "fusion_threshold": null,
+        "fusion_verbose": false,
+        "matrix_product_state_max_bond_dimension": 32,
+        "matrix_product_state_truncation_threshold": 1e-16,
+        "max_job_size": null,
+        "max_memory_mb": null,
+        "max_parallel_experiments": 1,
+        "max_parallel_shots": 1,
+        "max_parallel_threads": 1,
+        "max_shot_size": null,
+        "memory": null,
+        "method": "matrix_product_state",
+        "mps_lapack": false,
+        "mps_log_data": false,
+        "mps_omp_threads": 1,
+        "mps_parallel_threshold": 14,
+        "mps_sample_measure_algorithm": "mps_heuristic",
+        "mps_swap_direction": "mps_swap_left",
+        "noise_model": null,
+        "num_threads_per_device": 1,
+        "precision": "double",
+        "runtime_parameter_bind_enable": false,
+        "seed_simulator": 20261030,
+        "shot_branching_enable": false,
+        "shot_branching_sampling_enable": false,
+        "shots": 1024,
+        "stabilizer_max_snapshot_probabilities": 32,
+        "statevector_parallel_threshold": 14,
+        "statevector_sample_measure_opt": 10,
+        "tensor_network_num_sampling_qubits": 10,
+        "use_cuTensorNet_autotuning": false,
+        "validation_threshold": null,
+        "zero_threshold": 0.0
+      },
+      "requested": {
+        "chop_threshold": 0.0,
+        "matrix_product_state_max_bond_dimension": 32,
+        "matrix_product_state_truncation_threshold": 1e-16,
+        "max_parallel_experiments": 1,
+        "max_parallel_shots": 1,
+        "max_parallel_threads": 1,
+        "method": "matrix_product_state",
+        "mps_log_data": false,
+        "mps_omp_threads": 1,
+        "precision": "double",
+        "seed_simulator": 20261030,
+        "zero_threshold": 0.0
+      }
+    },
+    "compile": {
+      "basis_gates": [
+        "u",
+        "cx"
+      ],
+      "num_processes": 1,
+      "optimization_level": 0,
+      "seed_transpiler": 917
+    },
+    "config": {
+      "geom": {
+        "detector_x": 14,
+        "duct_y0": 4,
+        "duct_y1": 4,
+        "duct_z0": 4,
+        "duct_z1": 4,
+        "nx": 17,
+        "ny": 9,
+        "nz": 9,
+        "roi_y0": 3,
+        "roi_y1": 5,
+        "roi_z0": 3,
+        "roi_z1": 5,
+        "slab_x0": 4,
+        "slab_x1": 11
+      },
+      "groups": {
+        "boundaries": [
+          1,
+          0
+        ],
+        "n_groups": 1
+      },
+      "h": 0.5,
+      "layers": [
+        {
+          "material": "tungsten",
+          "x0": 4,
+          "x1": 11
+        }
+      ],
+      "mats": {
+        "air": {
+          "p_abs": [
+            0.09999999999999998
+          ],
+          "p_int": [
+            0.39346934028736663
+          ],
+          "q_down": [
+            0
+          ]
+        },
+        "concrete": {
+          "p_abs": [
+            0
+          ],
+          "p_int": [
+            -0.0
+          ],
+          "q_down": [
+            0
+          ]
+        },
+        "tungsten": {
+          "p_abs": [
+            0.998
+          ],
+          "p_int": [
+            0.8262260565495548
+          ],
+          "q_down": [
+            0
+          ]
+        }
+      },
+      "model": "uniform_slab",
+      "source": {
+        "dir0": 0,
+        "g0": 0,
+        "x0": 2,
+        "y0": 4,
+        "z0": 4
+      }
+    },
+    "extra": {
+      "original_A_fingerprint": "7edce7f4711531e433b4790d77e79fb80af77d3cc2de182df5d58f114381db96",
+      "sparse_engine_sha256": "55bcbf61567c24cd70ebb5ec968a4fc4c519e3907bc8e5f222f1f6a1751f4a21",
+      "steps": 15
+    },
+    "identity_hash": "9ff6a636f251a4535fb9af0c839fda666df458c4aef41cfd64682986fdc87ba0",
+    "measurement": {
+      "register_map": {
+        "cA": [
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ],
+        "cI": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76
+        ],
+        "dir": [
+          14,
+          15,
+          16
+        ],
+        "dirT": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61
+        ],
+        "g": [
+          13
+        ],
+        "status": [
+          137,
+          138
+        ],
+        "tA": [
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136
+        ],
+        "tB": [
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106
+        ],
+        "tD": [
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121
+        ],
+        "work": [
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155
+        ],
+        "x": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "y": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "z": [
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "status_order": [
+        "survive",
+        "detect",
+        "absorb",
+        "boundary"
+      ]
+    },
+    "phase": "mps_probe",
+    "schema_version": 2,
+    "sources": {
+      "__init__.py": "fccee91dfb4c53924bff125b5e21172197ef3fddb9ee6817df2bfffdf700b724",
+      "ae_execution.py": "4a58a4fc56817ed38a8611fdb38f3b79627c1017babe66bc90b86b52a2071172",
+      "ae_likelihood.py": "32d78467f1b394e59ef100d2f844832c5a610342975b29cae2dc5198a7d985da",
+      "ae_runtime.py": "b8a10d6458a52b448e49a0e59fba8fd1ae9ad845b2db953894398d9364f11196",
+      "analyze_alignment_paper1.py": "44a680489babfbc66e28f2dcb945557e889c4eaf058ef572a25587dbe8eed93f",
+      "compact_classical.py": "9132be9752c0e20a8dcba2f0f3d6c9d8be2fc8b7760c9c20a24fdef926a3311e",
+      "compare_mc_test.py": "84e8e93b4dcad0a160f63e90f267669c8d2392e545a0febbbbd96bd3dccfa5bf",
+      "config.py": "a0ae6f2bd55cdf8d0840da7c07595b0155846347ba97d5d1738a563d34a1a867",
+      "diagnostic_fullstep_a1a2.py": "25f1ffbaad4387cd1e8dbcd095ef4b7275b007686d6f411221c695771a940c93",
+      "diagnostic_only.py": "1d793fc3e8eec969cb3e73b357861b4a12ef2bb2c161ddc38cbea34c72bbd452",
+      "geometry.py": "b6fd795bfe93b98861dccc5d64ed0b51fe9337cd7dedec3ae780d1f4be6036da",
+      "iqae.py": "c965b75cf05a2704b9e6cb27f8fcf965bbf445d031a4a63a76150cff7fbd4d0d",
+      "main.py": "cb4089789ffef3dbd5fd070a65e467f84a38839fd8fa0d7ae66367480a367070",
+      "mc.py": "080e2bb3df8a931fc8fae89532b89dbfd47e77ef815369b8f74367d01b0f444d",
+      "mc_diag.py": "a3727c9b21c08fd066455f74b144882db726cf5c27349a1118c527bbc568b950",
+      "merge_shards.py": "e38c3f1a7669a454f7a899d19b23aee95686cc5197bc33d53cce9aede1be83ba",
+      "models.py": "181d0617fe73c11e5808f34b10cbdc298960633c05822e0a2a88d1b6fd7d7e06",
+      "output_guard.py": "7d32497d4cc7ec80cd3c9111ffac1378a6b385b9aa84ac0c0221d41ccb4e8e14",
+      "plotting.py": "ff93e01107c02e947d2d732e3d5bb9755ac7b3807f91aff21aa3c38f6f894ad1",
+      "postprocess_alignment.py": "dc631dbb1c57a39a1327c58ac081cbec2de2c7b30eb9d0c5f017f778c5b60671",
+      "rare_precision.py": "e61f2590651314dcdd9ec0b510d8fb5d060aab21f0c3070dd942bb4d5bc4aa39",
+      "reference_solver.py": "cd8e1c48cde93172bae72ef10277279c48df77a2bc214f11bc699ef6a6eba64b",
+      "rrk/__init__.py": "2339209d76ac9493948d8ac2ac98e6cc368a09a4dcf5bc7a1f3a0e4679b6f376",
+      "rrk/model.py": "1f9fc56c19f5bfe0f60478bfc5a0604090d5b69a1ddb566d3243b786215dddef",
+      "run.py": "ded018fcc3e1a69392b7d0c224cf44d83cdcb1ab1b83a56c0fb6af5e41d3fa62",
+      "runtime_identity.py": "7709e906e3cc58ea98780dae80c99b90fd962c5a72295d919dfcd6cbee4aa5bc",
+      "screening.py": "7c2de4d0f88149efe86b94c80a336189c4d3e934fdb93db02f452eaf2e1f94bc",
+      "shard_runner.py": "b5ca262c19e8dc622f69f82068c0ed2bc580b3ebfed552234667faa3c9fa579a",
+      "stats_utils.py": "1500000a9600b96ba533866ed74503c6ba248984da728cfcc07f34f93abf0bc8",
+      "tools/build_advantage_boundary_summary.py": "a2e0d389fe4e724155a9c2fd59ca97a8fb2819155c588fabef65bdb94b85e819",
+      "tools/build_paper_extension_tables.py": "3f90cd0d418cf44890f99d2cc9e41bf345ac2d51a486a5b4979077c57aa844f9",
+      "tools/cloud_pilot.py": "14fab803597c3219be9f53ae6471535848a07f389df16eee0ca374403eebf492",
+      "tools/collect_rrk_ae_runs.py": "93d58b3543dfdc1a935af38022594fe4d59f1e6646052eeb81daa03bce4826f5",
+      "tools/collect_weighted_rare_mc.py": "12ac1e4fb5b4b88b9b7f4797b4aadcfc52b515ff57c0c8cd71c492bd52bd6682",
+      "tools/exact_reference_solver.py": "4cfecf27afa397d873d99645d2c075c4f91ea4980f474f94ab13b8d064dfe450",
+      "tools/fit_fixed_depth_ae.py": "e009d65acf21bf05978f75245a6de84cea58e928e8a608070e96a2d761acf942",
+      "tools/make_rare_response_run_commands.py": "990c4d42cbdb12423f948431980fb697944c99be593ea00826293774a2c0cc5a",
+      "tools/plot_advantage_boundary.py": "7a0013805fe337fb42fc644ef2503d0c24c9f325022bef8d34b7a56284de91a3",
+      "tools/plot_archived_rare_response_validation.py": "76fbb020f0dcde69d89284114b69f346826c4d223968497688ca681c2adaf5b6",
+      "tools/plot_extension_main_figure.py": "694435fe5a77770edcc70a969a9016ab2a6ecb6734c1789e801c97b5928be8e8",
+      "tools/plot_fig1_geometry.py": "09b748fc4f1177ab1690df155518c829e635dd8c6b722d3cf49a7f14d3b8a74a",
+      "tools/plot_rare_response_boundary.py": "a75001e30214a7a226f7880f3aa98d83ee9992cf189abfa9239c24013c7a9bce",
+      "tools/postprocess_archived_highbond_rare_response.py": "2989f74beaa0627e0dcd15c214fe1b9c6e1adcadfdbcfa5cc476e1b3fe85f0d7",
+      "tools/postprocess_rare_response_mps.py": "a6566a6505153af657f09a4e366b64cad20c104b384e27bab997a546cacd6a06",
+      "tools/rare_response_mc.py": "a1a968d46dbf863ef5084fe6723e04da35c808a4407f384b3a8d1b181702d84a",
+      "tools/rrk_amplification_planner.py": "556a19b7270c1b5b2da98c136c0d5fbbdafa2174ad5beb683065263bd151d9f6",
+      "tools/rrk_smoke.py": "1526e37c013ff28fd02126f9219eb19142c6febb6999b5da699d208dda0c9b88",
+      "tools/run_local_validation.py": "57e7afe72f7f3c1c76b4cb6a44c36c05c4e6f19755ab75425f8be9cbf01f71da",
+      "tools/supervised.py": "d8043359f04425a8f77a0f799b342063849ba4db87412f73a19eb362e2ab2adc",
+      "unitary_circuit.py": "b2566824a91d7f2a6796c495286a5a4c1ff9d07f347a2732bb355345facc6ea7",
+      "validation.py": "1c02de5500de8b4ba75c35a6a577dae3af3baf73d06ebda2457019244543f29c"
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "python": "3.13.13",
+      "qiskit": "2.5.2",
+      "qiskit-aer": "0.17.2",
+      "qiskit-algorithms": "0.4.0",
+      "scipy": "1.17.1"
+    }
+  },
+  "metadata": {
+    "active_input_qubits": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155
+    ],
+    "batched_shots_optimization": false,
+    "device": "CPU",
+    "fusion": {
+      "enabled": false
+    },
+    "input_qubit_map": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        6,
+        6
+      ],
+      [
+        7,
+        7
+      ],
+      [
+        8,
+        8
+      ],
+      [
+        9,
+        9
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        11,
+        11
+      ],
+      [
+        12,
+        12
+      ],
+      [
+        13,
+        13
+      ],
+      [
+        14,
+        14
+      ],
+      [
+        15,
+        15
+      ],
+      [
+        16,
+        16
+      ],
+      [
+        17,
+        17
+      ],
+      [
+        18,
+        18
+      ],
+      [
+        19,
+        19
+      ],
+      [
+        20,
+        20
+      ],
+      [
+        21,
+        21
+      ],
+      [
+        22,
+        22
+      ],
+      [
+        23,
+        23
+      ],
+      [
+        24,
+        24
+      ],
+      [
+        25,
+        25
+      ],
+      [
+        26,
+        26
+      ],
+      [
+        27,
+        27
+      ],
+      [
+        28,
+        28
+      ],
+      [
+        29,
+        29
+      ],
+      [
+        30,
+        30
+      ],
+      [
+        31,
+        31
+      ],
+      [
+        32,
+        32
+      ],
+      [
+        33,
+        33
+      ],
+      [
+        34,
+        34
+      ],
+      [
+        35,
+        35
+      ],
+      [
+        36,
+        36
+      ],
+      [
+        37,
+        37
+      ],
+      [
+        38,
+        38
+      ],
+      [
+        39,
+        39
+      ],
+      [
+        40,
+        40
+      ],
+      [
+        41,
+        41
+      ],
+      [
+        42,
+        42
+      ],
+      [
+        43,
+        43
+      ],
+      [
+        44,
+        44
+      ],
+      [
+        45,
+        45
+      ],
+      [
+        46,
+        46
+      ],
+      [
+        47,
+        47
+      ],
+      [
+        48,
+        48
+      ],
+      [
+        49,
+        49
+      ],
+      [
+        50,
+        50
+      ],
+      [
+        51,
+        51
+      ],
+      [
+        52,
+        52
+      ],
+      [
+        53,
+        53
+      ],
+      [
+        54,
+        54
+      ],
+      [
+        55,
+        55
+      ],
+      [
+        56,
+        56
+      ],
+      [
+        57,
+        57
+      ],
+      [
+        58,
+        58
+      ],
+      [
+        59,
+        59
+      ],
+      [
+        60,
+        60
+      ],
+      [
+        61,
+        61
+      ],
+      [
+        62,
+        62
+      ],
+      [
+        63,
+        63
+      ],
+      [
+        64,
+        64
+      ],
+      [
+        65,
+        65
+      ],
+      [
+        66,
+        66
+      ],
+      [
+        67,
+        67
+      ],
+      [
+        68,
+        68
+      ],
+      [
+        69,
+        69
+      ],
+      [
+        70,
+        70
+      ],
+      [
+        71,
+        71
+      ],
+      [
+        72,
+        72
+      ],
+      [
+        73,
+        73
+      ],
+      [
+        74,
+        74
+      ],
+      [
+        75,
+        75
+      ],
+      [
+        76,
+        76
+      ],
+      [
+        77,
+        77
+      ],
+      [
+        78,
+        78
+      ],
+      [
+        79,
+        79
+      ],
+      [
+        80,
+        80
+      ],
+      [
+        81,
+        81
+      ],
+      [
+        82,
+        82
+      ],
+      [
+        83,
+        83
+      ],
+      [
+        84,
+        84
+      ],
+      [
+        85,
+        85
+      ],
+      [
+        86,
+        86
+      ],
+      [
+        87,
+        87
+      ],
+      [
+        88,
+        88
+      ],
+      [
+        89,
+        89
+      ],
+      [
+        90,
+        90
+      ],
+      [
+        91,
+        91
+      ],
+      [
+        92,
+        92
+      ],
+      [
+        93,
+        93
+      ],
+      [
+        94,
+        94
+      ],
+      [
+        95,
+        95
+      ],
+      [
+        96,
+        96
+      ],
+      [
+        97,
+        97
+      ],
+      [
+        98,
+        98
+      ],
+      [
+        99,
+        99
+      ],
+      [
+        100,
+        100
+      ],
+      [
+        101,
+        101
+      ],
+      [
+        102,
+        102
+      ],
+      [
+        103,
+        103
+      ],
+      [
+        104,
+        104
+      ],
+      [
+        105,
+        105
+      ],
+      [
+        106,
+        106
+      ],
+      [
+        107,
+        107
+      ],
+      [
+        119,
+        108
+      ],
+      [
+        120,
+        109
+      ],
+      [
+        121,
+        110
+      ],
+      [
+        122,
+        111
+      ],
+      [
+        123,
+        112
+      ],
+      [
+        124,
+        113
+      ],
+      [
+        125,
+        114
+      ],
+      [
+        126,
+        115
+      ],
+      [
+        127,
+        116
+      ],
+      [
+        128,
+        117
+      ],
+      [
+        129,
+        118
+      ],
+      [
+        130,
+        119
+      ],
+      [
+        131,
+        120
+      ],
+      [
+        132,
+        121
+      ],
+      [
+        133,
+        122
+      ],
+      [
+        134,
+        123
+      ],
+      [
+        135,
+        124
+      ],
+      [
+        136,
+        125
+      ],
+      [
+        137,
+        126
+      ],
+      [
+        138,
+        127
+      ],
+      [
+        139,
+        128
+      ],
+      [
+        140,
+        129
+      ],
+      [
+        141,
+        130
+      ],
+      [
+        142,
+        131
+      ],
+      [
+        143,
+        132
+      ],
+      [
+        144,
+        133
+      ],
+      [
+        145,
+        134
+      ],
+      [
+        146,
+        135
+      ],
+      [
+        147,
+        136
+      ],
+      [
+        148,
+        137
+      ],
+      [
+        149,
+        138
+      ],
+      [
+        150,
+        139
+      ],
+      [
+        151,
+        140
+      ],
+      [
+        152,
+        141
+      ],
+      [
+        153,
+        142
+      ],
+      [
+        154,
+        143
+      ],
+      [
+        155,
+        144
+      ]
+    ],
+    "matrix_product_state_lapack": false,
+    "matrix_product_state_max_bond_dimension": 32,
+    "matrix_product_state_sample_measure_algorithm": 0,
+    "matrix_product_state_truncation_threshold": 1e-16,
+    "max_memory_mb": 16021,
+    "measure_sampling": true,
+    "method": "matrix_product_state",
+    "noise": "ideal",
+    "num_bind_params": 1,
+    "num_clbits": 0,
+    "num_qubits": 145,
+    "parallel_shots": 1,
+    "parallel_state_update": 1,
+    "remapped_qubits": true,
+    "required_memory_mb": 0,
+    "result_subtypes": {
+      "status_probability": "average",
+      "work_0": "average",
+      "work_1": "average",
+      "work_10": "average",
+      "work_11": "average",
+      "work_12": "average",
+      "work_13": "average",
+      "work_14": "average",
+      "work_15": "average",
+      "work_16": "average",
+      "work_2": "average",
+      "work_3": "average",
+      "work_4": "average",
+      "work_5": "average",
+      "work_6": "average",
+      "work_7": "average",
+      "work_8": "average",
+      "work_9": "average"
+    },
+    "result_types": {
+      "status_probability": "save_probabilities",
+      "work_0": "save_probabilities",
+      "work_1": "save_probabilities",
+      "work_10": "save_probabilities",
+      "work_11": "save_probabilities",
+      "work_12": "save_probabilities",
+      "work_13": "save_probabilities",
+      "work_14": "save_probabilities",
+      "work_15": "save_probabilities",
+      "work_16": "save_probabilities",
+      "work_2": "save_probabilities",
+      "work_3": "save_probabilities",
+      "work_4": "save_probabilities",
+      "work_5": "save_probabilities",
+      "work_6": "save_probabilities",
+      "work_7": "save_probabilities",
+      "work_8": "save_probabilities",
+      "work_9": "save_probabilities"
+    },
+    "runtime_parameter_bind": false,
+    "time_taken": 42.4827468
+  },
+  "original_A_fingerprint": "7edce7f4711531e433b4790d77e79fb80af77d3cc2de182df5d58f114381db96",
+  "original_fingerprint_seconds": 5.612373700016178,
+  "p_D_relative_error": 1.0,
+  "passed_absolute_tolerance": false,
+  "passed_status_absolute_tolerance": false,
+  "passed_work_upper_bound": true,
+  "passes_1_percent": false,
+  "passes_5_percent": false,
+  "peak_process_memory_mb": 534.04296875,
+  "probabilities": [
+    0.0,
+    0.0,
+    0.9997163561174032,
+    0.000283643872785988
+  ],
+  "qubits": 156,
+  "rare_comparison": {
+    "absolute_error": 8.421424906189056e-07,
+    "formal_absolute_error_budget": 8.421424906189056e-09,
+    "legacy_absolute_tolerance": 2e-11,
+    "observed": 0.0,
+    "passes_formal_1pct": false,
+    "passes_legacy_absolute": false,
+    "passes_pilot_5pct": false,
+    "passes_zero_reference": null,
+    "reference": 8.421424906189056e-07,
+    "relative_error": 1.0
+  },
+  "reference": [
+    1.0505574934039805e-11,
+    8.421424906189056e-07,
+    0.9997077305579464,
+    0.00029142728905742684
+  ],
+  "register_map": {
+    "cA": [
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91
+    ],
+    "cI": [
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76
+    ],
+    "dir": [
+      14,
+      15,
+      16
+    ],
+    "dirT": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+    ],
+    "g": [
+      13
+    ],
+    "status": [
+      137,
+      138
+    ],
+    "tA": [
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136
+    ],
+    "tB": [
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106
+    ],
+    "tD": [
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121
+    ],
+    "work": [
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155
+    ],
+    "x": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "y": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "z": [
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "save_qubit_count": 2,
+  "separate_evolution_and_read_timing": "not exposed by this Aer execution API",
+  "sparse_actual": null,
+  "sparse_crosscheck": false,
+  "sparse_passed": null,
+  "sparse_runtime": null,
+  "sparse_skip_reason": "Explicit suite/case sparse_crosscheck=false for a main-candidate probe; independent DP remains active. No sparse accuracy claim.",
+  "sparse_status_max_error": null,
+  "status": "complete",
+  "top_level_gates": 11787,
+  "truncation_threshold": 1e-16,
+  "work_any_nonzero_union_upper_bound": 1.9004819947999326e-19,
+  "work_bit_probabilities": [
+    2.8765555286342307e-20,
+    3.2623069452724715e-21,
+    1.0995455696291355e-20,
+    8.745131106336707e-22,
+    3.8516464424425635e-21,
+    9.843621340945119e-21,
+    2.0644541518023056e-20,
+    1.86981152389859e-20,
+    1.2925542309352336e-20,
+    1.1902893865313893e-20,
+    1.5405924617697858e-20,
+    2.3496735714875054e-20,
+    4.671568717240263e-21,
+    6.402529334927775e-21,
+    2.6514237169892255e-24,
+    1.199941999393898e-20,
+    6.305177923993673e-21
+  ]
+}

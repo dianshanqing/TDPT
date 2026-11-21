@@ -1,0 +1,45 @@
+{
+  "ae_structure": {
+    "max_grover_probability_error": 1.1102230246251565e-16,
+    "max_inverse_error": 1.1102230246251565e-16,
+    "objective_power_checks": 36,
+    "profiles": 3
+  },
+  "broad_scientific_regression": {
+    "log": "scientific_regression.log",
+    "seconds": 678.594,
+    "status": "passed",
+    "tests": 34
+  },
+  "failures_preserved": [
+    "collection.log",
+    "historical_reuse_audit_precanonical.json",
+    "historical_reuse_audit_before_reference_filter.json",
+    "precision_review_red.log",
+    "work_bound_red.log"
+  ],
+  "final_affected_regression": {
+    "log": "precision_review_final.log",
+    "seconds": 14.097,
+    "status": "passed",
+    "tests": 19
+  },
+  "scope": "The broad suite ran before the final reference-normalization/work-bit defensive checks; final affected suite validates those changes. Circuit builders unchanged during broad evolution. Final repository-wide source identity handled by root verification.",
+  "three_models": {
+    "cases": 18,
+    "max_joint_error": 1.1102230246251565e-16,
+    "max_work_nonzero": 0.0
+  },
+  "transport": {
+    "cases": 45,
+    "full_step_checkpoints": 54,
+    "max_joint_error": 2.220446049250313e-16,
+    "max_work_nonzero": 0.0
+  },
+  "unexecuted": [
+    "full production baseline T15 MPS",
+    "main-candidate amplified Q^k A MPS",
+    "new quantum fine-grid simulations",
+    "cloud tasks"
+  ]
+}

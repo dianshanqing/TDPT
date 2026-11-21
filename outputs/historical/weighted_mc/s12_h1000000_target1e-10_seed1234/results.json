@@ -1,0 +1,25 @@
+{
+  "phase": "rare_response_mc",
+  "steps": 12,
+  "histories": 1000000,
+  "seed": 1234,
+  "eta": 2.3007398791895893e-10,
+  "p_target": 1e-10,
+  "p_detect_reach_for_eta": 0.43464278993253214,
+  "feasible": true,
+  "reason": "ok",
+  "unitary_matched_energy": false,
+  "p_detect_reach_hat": 0.433885,
+  "p_rare_analog_hat": 0.0,
+  "p_rare_weighted_hat": 9.98256522482175e-11,
+  "se_detect_reach": 0.0004956095305530353,
+  "se_rare_analog": 0.0,
+  "se_rare_weighted": 1.1402686114497994e-13,
+  "detect_reach_count": 433885,
+  "analog_rare_count": 0,
+  "naive_MC_required_histories": {
+    "R=0.5": 40069860897.62435,
+    "R=0.2": 250436630610.1522,
+    "R=0.1": 1001746522440.6088
+  }
+}

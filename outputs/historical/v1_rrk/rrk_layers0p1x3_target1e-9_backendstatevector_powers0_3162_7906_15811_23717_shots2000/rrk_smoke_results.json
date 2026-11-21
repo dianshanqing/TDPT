@@ -1,0 +1,219 @@
+{
+  "phase": "rrk_smoke",
+  "layers": [
+    0.1,
+    0.1,
+    0.1
+  ],
+  "targets": [
+    1e-06,
+    1e-07,
+    1e-08,
+    1e-09,
+    1e-10
+  ],
+  "selected_p_target": 1e-09,
+  "selected_eta": 9.999999999999997e-07,
+  "sampler_type": "quantum_circuit",
+  "backend_method": "statevector",
+  "exact": {
+    "p_reach_exact": 0.0010000000000000002,
+    "eta": 9.999999999999997e-07,
+    "p_rare_exact": 1e-09,
+    "layers": [
+      0.1,
+      0.1,
+      0.1
+    ]
+  },
+  "mc": {
+    "p_reach_exact": 0.0010000000000000002,
+    "eta": 9.999999999999997e-07,
+    "p_rare_exact": 1e-09,
+    "layers": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "histories": 100000,
+    "seed": 1234,
+    "reach_count": 85,
+    "analog_rare_count": 0,
+    "p_reach_hat": 0.00085,
+    "p_rare_analog_hat": 0.0,
+    "p_rare_weighted_hat": 8.499999999999998e-10,
+    "se_reach": 9.215625317904369e-05,
+    "se_rare_analog": 0.0,
+    "se_rare_weighted": 9.215625317904367e-11
+  },
+  "quantum": {
+    "phase": "rrk_fixed_depth_ae",
+    "sampler_type": "quantum_circuit",
+    "backend_method": "statevector",
+    "backend_options": {
+      "max_parallel_threads": 64
+    },
+    "exact": {
+      "p_reach_exact": 0.0010000000000000002,
+      "eta": 9.999999999999997e-07,
+      "p_rare_exact": 1e-09,
+      "layers": [
+        0.1,
+        0.1,
+        0.1
+      ]
+    },
+    "powers": [
+      0,
+      3162,
+      7906,
+      15811,
+      23717
+    ],
+    "shots": 2000,
+    "seed": 1234,
+    "rows": [
+      {
+        "sampler_type": "quantum_circuit",
+        "backend_method": "statevector",
+        "m": 0,
+        "oracle_calls": 1,
+        "shots": 2000,
+        "success_count": 0,
+        "failure_count": 2000,
+        "success_probability": 0.0,
+        "expected_success_probability": 1e-09,
+        "success_se": 0.0,
+        "circuit_depth": 98,
+        "gate_count": {
+          "rz": 72,
+          "sx": 34,
+          "cx": 20,
+          "measure": 1
+        },
+        "qubit_count": 4,
+        "build_time_sec": 0.04774928092956543,
+        "elapsed_time_sec": 0.10092496871948242
+      },
+      {
+        "sampler_type": "quantum_circuit",
+        "backend_method": "statevector",
+        "m": 3162,
+        "oracle_calls": 6325,
+        "shots": 2000,
+        "success_count": 76,
+        "failure_count": 1924,
+        "success_probability": 0.038,
+        "expected_success_probability": 0.03947497919659948,
+        "success_se": 0.004275277768753745,
+        "circuit_depth": 686252,
+        "gate_count": {
+          "rz": 531288,
+          "sx": 227698,
+          "cx": 170768,
+          "x": 25296,
+          "measure": 1
+        },
+        "qubit_count": 4,
+        "build_time_sec": 20.618382453918457,
+        "elapsed_time_sec": 37.780673027038574
+      },
+      {
+        "sampler_type": "quantum_circuit",
+        "backend_method": "statevector",
+        "m": 7906,
+        "oracle_calls": 15813,
+        "shots": 2000,
+        "success_count": 468,
+        "failure_count": 1532,
+        "success_probability": 0.234,
+        "expected_success_probability": 0.22989173528830684,
+        "success_se": 0.009466889668734923,
+        "circuit_depth": 1715700,
+        "gate_count": {
+          "rz": 1328280,
+          "sx": 569266,
+          "cx": 426944,
+          "x": 63248,
+          "measure": 1
+        },
+        "qubit_count": 4,
+        "build_time_sec": 63.87140369415283,
+        "elapsed_time_sec": 102.34802865982056
+      },
+      {
+        "sampler_type": "quantum_circuit",
+        "backend_method": "statevector",
+        "m": 15811,
+        "oracle_calls": 31623,
+        "shots": 2000,
+        "success_count": 1394,
+        "failure_count": 606,
+        "success_probability": 0.697,
+        "expected_success_probability": 0.7080798421133339,
+        "success_se": 0.010275967107771414,
+        "circuit_depth": 3431085,
+        "gate_count": {
+          "rz": 2656320,
+          "sx": 1138426,
+          "cx": 853814,
+          "x": 126488,
+          "measure": 1
+        },
+        "qubit_count": 4,
+        "build_time_sec": 136.5579478740692,
+        "elapsed_time_sec": 208.5112109184265
+      },
+      {
+        "sampler_type": "quantum_circuit",
+        "backend_method": "statevector",
+        "m": 23717,
+        "oracle_calls": 47435,
+        "shots": 2000,
+        "success_count": 1985,
+        "failure_count": 15,
+        "success_probability": 0.9925,
+        "expected_success_probability": 0.9949999743564876,
+        "success_se": 0.0019292161620720412,
+        "circuit_depth": 5146687,
+        "gate_count": {
+          "rz": 3984528,
+          "sx": 1707658,
+          "cx": 1280738,
+          "x": 189736,
+          "measure": 1
+        },
+        "qubit_count": 4,
+        "build_time_sec": 211.29609775543213,
+        "elapsed_time_sec": 288.2510561943054
+      }
+    ],
+    "meta": {
+      "p_reach_exact": 0.0010000000000000002,
+      "eta": 9.999999999999997e-07,
+      "p_rare_exact": 1e-09,
+      "layers": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "objective_qubit": 3,
+      "depth": 2,
+      "qubit_count": 4,
+      "gate_count": {
+        "ry": 3,
+        "c3ry": 1
+      },
+      "grover_depth": 1,
+      "grover_gate_count": {
+        "Q": 1
+      }
+    },
+    "total_wall_time_sec": 1215.5620772838593
+  },
+  "notes": [
+    "RRK is a reduced layered attenuation response kernel.",
+    "It is intended for low-cost quantum AE validation, not as a full 3D transport replacement.",
+    "Analytic sampler rows are for MLE/power cross-checks and are not quantum-circuit evidence."
+  ]
+}

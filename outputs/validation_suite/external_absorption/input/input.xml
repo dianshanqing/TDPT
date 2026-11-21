@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Paper1 absorption_AB: one mechanism length unit maps to one Light cm.
+     Original external-code input for a single prespecified experiment.
+     100 batches x 10000 histories = 1000000 histories; seed is fixed. -->
+<input>
+  <library_path>outputs/validation_suite/external_absorption/input/library</library_path>
+  <nuclear_data>
+    <temperature_settings default="294" tolerance="0.01" doppler="false" />
+    <!-- Light converts atoms/cm^3 to atoms/(barn cm) with a factor 1e-24. -->
+    <material id="1" atomic_density="1e24" temperature="294">
+      <nuclide name="Absorber" atom_fraction="1" />
+    </material>
+    <material id="2" atomic_density="2e24" temperature="294">
+      <nuclide name="Absorber" atom_fraction="1" />
+    </material>
+  </nuclear_data>
+  <geometry>
+    <universe id="0" basic="true">
+      <!-- In Light, -1 is traversable collision-free space; 0 kills particles. -->
+      <cell id="1" material="-1" surfaces="1#-2#11#-12#13#-14" />
+      <cell id="2" material="1" surfaces="2#-3#11#-12#13#-14" />
+      <cell id="3" material="2" surfaces="3#-4#11#-12#13#-14" />
+      <!-- The cell filter at plane 5 restricts the detector to its square ROI. -->
+      <cell id="4" material="-1" surfaces="4#-5#21#-22#23#-24" />
+      <cell id="5" material="-1" surfaces="4#-5#11#-12#13#-14#(-21|22|-23|24)" />
+      <cell id="6" material="-1" surfaces="5#-6#11#-12#13#-14" />
+      <cell id="7" material="0" surfaces="-1|6|-11|12|-13|14" />
+    </universe>
+    <surface id="1" type="x-plane" parameters="0" />
+    <surface id="2" type="x-plane" parameters="2" />
+    <surface id="3" type="x-plane" parameters="3" />
+    <surface id="4" type="x-plane" parameters="4" />
+    <surface id="5" type="x-plane" parameters="5" />
+    <surface id="6" type="x-plane" parameters="6" />
+    <surface id="11" type="y-plane" parameters="0" />
+    <surface id="12" type="y-plane" parameters="4" />
+    <surface id="13" type="z-plane" parameters="0" />
+    <surface id="14" type="z-plane" parameters="4" />
+    <surface id="21" type="y-plane" parameters="1.5" />
+    <surface id="22" type="y-plane" parameters="2.5" />
+    <surface id="23" type="z-plane" parameters="1.5" />
+    <surface id="24" type="z-plane" parameters="2.5" />
+  </geometry>
+  <run_mode type="fixed_source" seed="20261107" fission_neutron="false">
+    <particles_per_batch>10000</particles_per_batch>
+    <batches>100</batches>
+  </run_mode>
+  <transport>
+    <energy_cutoff neutron="0" />
+  </transport>
+  <parallel omp="false" omp_threads="1" />
+  <output xml_style="true" write_summaries="true"
+    path="outputs/validation_suite/external_absorption/raw" />
+  <external_source>
+    <distribution id="1" type="discrete"><parameters>2000000 1</parameters></distribution>
+    <distribution id="2" type="discrete"><parameters>1 1</parameters></distribution>
+    <distribution id="3" type="discrete"><parameters>0 1</parameters></distribution>
+    <source id="1" type="point">
+      <fraction>1</fraction>
+      <particle>neutron</particle>
+      <energy>1</energy>
+      <shape r="1 2 2" />
+      <!-- Light's unrotated cosine polar axis is x. cos(theta)=1 gives +x. -->
+      <angle cos_theta="2" phi="3" />
+    </source>
+  </external_source>
+  <!-- No splitting or biasing method. Full capture sets weight to zero,
+       after which this positive cutoff terminates the particle with certainty. -->
+  <variance_reduction survival_weight="1" cutoff_weight="0.25" />
+  <tally>
+    <detector id="1" type="current">
+      <particles>neutron</particles>
+      <dirsurfaces>5</dirsurfaces>
+      <cells>4</cells>
+    </detector>
+  </tally>
+</input>

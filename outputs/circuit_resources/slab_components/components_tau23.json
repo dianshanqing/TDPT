@@ -1,0 +1,565 @@
+{
+  "compile": {
+    "basis_gates": [
+      "u",
+      "cx"
+    ],
+    "num_processes": 1,
+    "optimization_level": 0,
+    "seed_transpiler": 917
+  },
+  "config": {
+    "geom": {
+      "detector_x": 14,
+      "duct_y0": 4,
+      "duct_y1": 4,
+      "duct_z0": 4,
+      "duct_z1": 4,
+      "nx": 17,
+      "ny": 9,
+      "nz": 9,
+      "roi_y0": 3,
+      "roi_y1": 5,
+      "roi_z0": 3,
+      "roi_z1": 5,
+      "slab_x0": 4,
+      "slab_x1": 11
+    },
+    "groups": {
+      "boundaries": [
+        1,
+        0
+      ],
+      "n_groups": 1
+    },
+    "h": 0.5,
+    "layers": [
+      {
+        "material": "tungsten",
+        "x0": 4,
+        "x1": 11
+      }
+    ],
+    "mats": {
+      "air": {
+        "p_abs": [
+          0.09999999999999998
+        ],
+        "p_int": [
+          0.39346934028736663
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "concrete": {
+        "p_abs": [
+          0
+        ],
+        "p_int": [
+          -0.0
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "tungsten": {
+        "p_abs": [
+          0.998
+        ],
+        "p_int": [
+          0.9435838604962227
+        ],
+        "q_down": [
+          0
+        ]
+      }
+    },
+    "model": "uniform_slab",
+    "source": {
+      "dir0": 0,
+      "g0": 0,
+      "x0": 2,
+      "y0": 4,
+      "z0": 4
+    }
+  },
+  "config_hash": "f0032bf3d626c7ffca85b9f18f9c2935c71b2c8045803df635fab218b43e1e5c",
+  "profiles": {
+    "baseline": {
+      "Atilde": {
+        "cx": 29907,
+        "depth": 57969,
+        "fingerprint": "1908db1e08d1d56e762418431eb3160aa13bfa988b962f64e6583cbd1ed11df0",
+        "gates": 93464,
+        "qubits": 157
+      },
+      "Atilde_inverse": {
+        "cx": 29907,
+        "depth": 54948,
+        "fingerprint": "3590838c93598e2e63a9ad180dfed747e17bbd9464ff7b7c87357eba973b70cf",
+        "gates": 93464,
+        "qubits": 157
+      },
+      "S0": {
+        "cx": 20366,
+        "depth": 30411,
+        "fingerprint": "338b2c87d520e8cc1e41700437a313d529f6c6ebbcbacd24b9542fd6564d9e72",
+        "gates": 44467,
+        "qubits": 157
+      },
+      "Sf": {
+        "cx": 0,
+        "depth": 1,
+        "fingerprint": "2628ca2a7c64cdd44bc0e47b3848db1d90a17a621980814b886594568220ecdd",
+        "gates": 1,
+        "qubits": 157
+      },
+      "build_compile_fingerprint_seconds": 15.703286400064826,
+      "compiled_A": {
+        "cx": 29901,
+        "depth": 57958,
+        "fingerprint": "c542f8d5bdd78714f870243ecb4e73ee6ee0dd798ab7ca667aad8717e0d01866",
+        "gates": 93447,
+        "qubits": 156
+      },
+      "internal_profile": {
+        "cleanup_alive_ledger": false,
+        "compact_interaction_ledger": false,
+        "drain_interaction_ledger": true,
+        "early_absorb_erase": false,
+        "full_history_mode": false,
+        "name": "baseline",
+        "use_absorb_tape": true,
+        "use_dir_tape": true,
+        "use_scatter_tape": false,
+        "use_term_tape": true
+      },
+      "objective_qubits": [
+        156
+      ],
+      "observation": {
+        "cx": 29901,
+        "depth": 57958,
+        "fingerprint": "de76ea043e7faf5007806f63968eef5c7a5b03fed3f32375b9ff6dea5b5191d1",
+        "gates": 93465,
+        "qubits": 156
+      },
+      "original_A": {
+        "cx": 213,
+        "depth": 2504,
+        "fingerprint": "1fcb0f0cbe7a43d9c09ae3774ce20de108219b40063cf4643797fbb355cc3cfb",
+        "gates": 11292,
+        "qubits": 156
+      },
+      "registers": {
+        "cA": [
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ],
+        "cI": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76
+        ],
+        "dir": [
+          14,
+          15,
+          16
+        ],
+        "dirT": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61
+        ],
+        "g": [
+          13
+        ],
+        "status": [
+          137,
+          138
+        ],
+        "tA": [
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136
+        ],
+        "tB": [
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106
+        ],
+        "tD": [
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121
+        ],
+        "work": [
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155
+        ],
+        "x": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "y": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "z": [
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "resource_scope": "Actual independent component compilations; no expanded Q^k A and no state evolution. Sum of component depths is a compositional upper bound, not optimized whole-circuit depth."
+    },
+    "compressed": {
+      "build_compile_fingerprint_seconds": 10.544292400008999,
+      "compiled_A": {
+        "cx": 30546,
+        "depth": 58486,
+        "fingerprint": "76dbf4e877e823bd19cec740ea2aa76bb1e417b706b2cec5d1218ff25415f31b",
+        "gates": 95472,
+        "qubits": 156
+      },
+      "internal_profile": {
+        "cleanup_alive_ledger": false,
+        "compact_interaction_ledger": true,
+        "drain_interaction_ledger": true,
+        "early_absorb_erase": true,
+        "full_history_mode": false,
+        "name": "compressed",
+        "use_absorb_tape": true,
+        "use_dir_tape": true,
+        "use_scatter_tape": false,
+        "use_term_tape": true
+      },
+      "observation": {
+        "cx": 30546,
+        "depth": 58486,
+        "fingerprint": "dfaead6924ed109b4276cab9690150fe52a86307b915e12893e4f036da365705",
+        "gates": 95490,
+        "qubits": 156
+      },
+      "original_A": {
+        "cx": 228,
+        "depth": 2515,
+        "fingerprint": "b8f0ceeddaa5f6f8d74094377c72dc0ecdd09c096887c7cc1507151c8c686b15",
+        "gates": 11787,
+        "qubits": 156
+      },
+      "registers": {
+        "cA": [
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ],
+        "cI": [
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76
+        ],
+        "dir": [
+          14,
+          15,
+          16
+        ],
+        "dirT": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61
+        ],
+        "g": [
+          13
+        ],
+        "status": [
+          137,
+          138
+        ],
+        "tA": [
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133,
+          134,
+          135,
+          136
+        ],
+        "tB": [
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106
+        ],
+        "tD": [
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121
+        ],
+        "work": [
+          139,
+          140,
+          141,
+          142,
+          143,
+          144,
+          145,
+          146,
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155
+        ],
+        "x": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "y": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "z": [
+          9,
+          10,
+          11,
+          12
+        ]
+      }
+    }
+  },
+  "simulation_executed": false,
+  "steps": 15,
+  "tau": 23
+}

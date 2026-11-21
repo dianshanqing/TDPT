@@ -1,0 +1,105 @@
+{
+  "fit_status": "ok",
+  "method": "log_p_grid_profile_likelihood",
+  "p_min": 0.0,
+  "p_max": 1e-09,
+  "grid_size_requested": 100000,
+  "grid_points_evaluated": 100003,
+  "grid_type": "log_p",
+  "log_grid": true,
+  "theta_grid": false,
+  "detect_aliases": true,
+  "expected_low_p": true,
+  "low_p_suggestion": {
+    "suggested_p_min": 0.0,
+    "suggested_p_max": 1e-09,
+    "basis": "exact_p"
+  },
+  "p_mle": 9.915182909072573e-11,
+  "exact_p": 1e-10,
+  "relative_deviation_vs_exact": -0.008481709092742745,
+  "exact_in_confidence_interval": true,
+  "confidence": 0.95,
+  "confidence_interval": [
+    9.674529568500947e-11,
+    1.0148224447197504e-10
+  ],
+  "negative_log_likelihood": 2694.521646065302,
+  "fit_warning": [
+    "multi_peak_likelihood"
+  ],
+  "local_minima": [
+    {
+      "p": 9.915393703345017e-11,
+      "negative_log_likelihood": 2694.521647576636,
+      "delta_nll": 0.0
+    }
+  ],
+  "alias_candidates": [
+    {
+      "p": 9.915393703345017e-11,
+      "negative_log_likelihood": 2694.521647576636,
+      "delta_nll": 0.0
+    },
+    {
+      "p": 1.1384410917354303e-10,
+      "negative_log_likelihood": 2735.5806986166954,
+      "delta_nll": 41.05905104005933
+    },
+    {
+      "p": 2.8491449673862515e-10,
+      "negative_log_likelihood": 6776.866823223633,
+      "delta_nll": 4082.345175646997
+    },
+    {
+      "p": 6.350940271770003e-10,
+      "negative_log_likelihood": 8130.800425460942,
+      "delta_nll": 5436.278777884307
+    },
+    {
+      "p": 1.0000000000000007e-09,
+      "negative_log_likelihood": 25808.519204258824,
+      "delta_nll": 23113.99755668219
+    }
+  ],
+  "powers_used": [
+    0,
+    10000,
+    25000,
+    50000,
+    75000
+  ],
+  "total_shots": 10000,
+  "total_oracle_calls": 640010000,
+  "rows_used": [
+    {
+      "m": 0,
+      "shots": 2000,
+      "success_count": 0
+    },
+    {
+      "m": 10000,
+      "shots": 2000,
+      "success_count": 75
+    },
+    {
+      "m": 25000,
+      "shots": 2000,
+      "success_count": 462
+    },
+    {
+      "m": 50000,
+      "shots": 2000,
+      "success_count": 1390
+    },
+    {
+      "m": 75000,
+      "shots": 2000,
+      "success_count": 1990
+    }
+  ],
+  "note": "CI is a simple one-parameter profile-likelihood interval on a finite grid. For rare AE, use p-range constraints with log-grid or theta-grid to avoid alias peaks.",
+  "input": "outputs\\rrk_runs\\rrk_layers0p1x3_target1e-10_backendstatevector_powers0_10000_25000_50000_75000_shots2000\\rrk_quantum_rows.csv",
+  "likelihood_profile_points": 100003,
+  "likelihood_profile_csv": "outputs\\rrk_runs\\rrk_layers0p1x3_target1e-10_backendstatevector_powers0_10000_25000_50000_75000_shots2000\\fit\\likelihood_profile.csv"
+}

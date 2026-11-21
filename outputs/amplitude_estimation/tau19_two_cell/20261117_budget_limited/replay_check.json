@@ -1,0 +1,28 @@
+{
+  "counts_only_replay": true,
+  "identical_estimator_result": true,
+  "last_interval_contains_posthoc_reference": true,
+  "last_relative_midpoint_bound": 0.01231991053238555,
+  "new_sampling_or_evolution": false,
+  "power_selections": [
+    {
+      "power": 0,
+      "upper_half_circle": true
+    },
+    {
+      "power": 5,
+      "upper_half_circle": true
+    },
+    {
+      "power": 56,
+      "upper_half_circle": true
+    },
+    {
+      "power": 668,
+      "upper_half_circle": false
+    }
+  ],
+  "remaining_query_budget": 9936000,
+  "remaining_shots_budget": 18464,
+  "target_met": false
+}

@@ -1,0 +1,160 @@
+{
+  "compile_scope": "Same safe basis and seed as iqae._PubsToAerObjectiveSampler._compile_for_aer; independently compiled components. No whole expanded Q^k A circuit, no evolution.",
+  "depth_scope": "Sum of independent component depths is a compositional upper bound, not measured whole expanded circuit depth.",
+  "measurement_cost": "One final objective measurement per shot; separately add one measurement to gates/depth if included.",
+  "rows": [
+    {
+      "Atilde": {
+        "cx": 29907,
+        "depth": 78509,
+        "fingerprint": "7da5ac3a614601a5594a5bdf1b2e0a6499a73db619df1fdb15c592d55c440713",
+        "gates": 129000,
+        "qubits": 157
+      },
+      "Atilde_inverse": {
+        "cx": 29907,
+        "depth": 73350,
+        "fingerprint": "9f65dfda12ba149fabf68ea88ac95d56f10cb4a29d84fc9cf0434f45337dc100",
+        "gates": 129000,
+        "qubits": 157
+      },
+      "S0": {
+        "cx": 20366,
+        "depth": 39314,
+        "fingerprint": "f4d009b4787d6f5e0e8ac313aa27459966d8d769a4f10a3d180268260a1ce54c",
+        "gates": 54331,
+        "qubits": 157
+      },
+      "Sf": {
+        "cx": 0,
+        "depth": 1,
+        "fingerprint": "ab4548733932df8b4fe0e665bd5f09476e1d01d14fe34b1ac9b9f7316a12eccc",
+        "gates": 1,
+        "qubits": 157
+      },
+      "compile": {
+        "basis_gates": [
+          "rz",
+          "sx",
+          "x",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "seed_transpiler": 20261030
+      },
+      "config_hash": "6ce7b6e8132a3e9bf345c7f451ba6e5aa6c28776956718911b16b3504849597c",
+      "objective_qubits": [
+        156
+      ],
+      "profile": "baseline",
+      "simulation_executed": false,
+      "steps": 15,
+      "tau": 14
+    },
+    {
+      "Atilde": {
+        "cx": 29907,
+        "depth": 78509,
+        "fingerprint": "3e4bdfcec492a9d103c15dbaa728ab9adab31aa37f921954168545a878f1fd0e",
+        "gates": 129000,
+        "qubits": 157
+      },
+      "Atilde_inverse": {
+        "cx": 29907,
+        "depth": 73350,
+        "fingerprint": "44bf1b5362b133ce48ec957c6d7c6be9f8546b077afdbcf5bd9c585e87914609",
+        "gates": 129000,
+        "qubits": 157
+      },
+      "S0": {
+        "cx": 20366,
+        "depth": 39314,
+        "fingerprint": "f4d009b4787d6f5e0e8ac313aa27459966d8d769a4f10a3d180268260a1ce54c",
+        "gates": 54331,
+        "qubits": 157
+      },
+      "Sf": {
+        "cx": 0,
+        "depth": 1,
+        "fingerprint": "ab4548733932df8b4fe0e665bd5f09476e1d01d14fe34b1ac9b9f7316a12eccc",
+        "gates": 1,
+        "qubits": 157
+      },
+      "compile": {
+        "basis_gates": [
+          "rz",
+          "sx",
+          "x",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "seed_transpiler": 20261030
+      },
+      "config_hash": "9120b1b822d02366b690bd61cba94ebcd7c39eae58d17be3067e7359781bbe02",
+      "objective_qubits": [
+        156
+      ],
+      "profile": "baseline",
+      "simulation_executed": false,
+      "steps": 15,
+      "tau": 19
+    },
+    {
+      "Atilde": {
+        "cx": 29907,
+        "depth": 78509,
+        "fingerprint": "d8cff8aa0085dcf56a50636896fb210340a9371ffde6c069d3e3369db440222a",
+        "gates": 129000,
+        "qubits": 157
+      },
+      "Atilde_inverse": {
+        "cx": 29907,
+        "depth": 73350,
+        "fingerprint": "888eb1986b5fa037bfbf3c4bdfa696c06a69c2f48df8369cf55168a103b82c7e",
+        "gates": 129000,
+        "qubits": 157
+      },
+      "S0": {
+        "cx": 20366,
+        "depth": 39314,
+        "fingerprint": "f4d009b4787d6f5e0e8ac313aa27459966d8d769a4f10a3d180268260a1ce54c",
+        "gates": 54331,
+        "qubits": 157
+      },
+      "Sf": {
+        "cx": 0,
+        "depth": 1,
+        "fingerprint": "ab4548733932df8b4fe0e665bd5f09476e1d01d14fe34b1ac9b9f7316a12eccc",
+        "gates": 1,
+        "qubits": 157
+      },
+      "compile": {
+        "basis_gates": [
+          "rz",
+          "sx",
+          "x",
+          "cx"
+        ],
+        "optimization_level": 0,
+        "seed_transpiler": 20261030
+      },
+      "config_hash": "f0032bf3d626c7ffca85b9f18f9c2935c71b2c8045803df635fab218b43e1e5c",
+      "objective_qubits": [
+        156
+      ],
+      "profile": "baseline",
+      "simulation_executed": false,
+      "steps": 15,
+      "tau": 23
+    }
+  ],
+  "versions": {
+    "numpy": "2.4.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.13",
+    "qiskit": "2.5.2",
+    "qiskit-aer": "0.17.2",
+    "qiskit-algorithms": "0.4.0",
+    "scipy": "1.17.1"
+  }
+}

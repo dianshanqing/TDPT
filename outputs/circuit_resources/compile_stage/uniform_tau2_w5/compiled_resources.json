@@ -1,0 +1,27 @@
+{
+  "compile_options": {
+    "basis_gates": [
+      "rz",
+      "sx",
+      "x",
+      "cx"
+    ],
+    "num_processes": 1,
+    "optimization_level": 0,
+    "seed_transpiler": 1234
+  },
+  "compiled_gate_fingerprint": null,
+  "resources": {
+    "build_seconds": 0.22053930000402033,
+    "compile_seconds": 0.5820819000073243,
+    "compiled_depth": 79839,
+    "compiled_gates": 132379,
+    "compiled_two_qubit_gates": 31032,
+    "raw_depth": 2640,
+    "raw_gates": 12011,
+    "raw_two_qubit_gates": 248
+  },
+  "simulation_executed": false,
+  "status": "compiled_identity_pending",
+  "steps": 16
+}

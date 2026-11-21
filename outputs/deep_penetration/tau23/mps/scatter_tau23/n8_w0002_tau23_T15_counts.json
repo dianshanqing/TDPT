@@ -1,0 +1,55 @@
+{
+  "backend_options": {
+    "chop_threshold": 0.0,
+    "matrix_product_state_max_bond_dimension": 64,
+    "matrix_product_state_truncation_threshold": 1e-16,
+    "max_parallel_experiments": 1,
+    "max_parallel_shots": 1,
+    "max_parallel_threads": 1,
+    "method": "matrix_product_state",
+    "mps_log_data": false,
+    "mps_omp_threads": 1,
+    "precision": "double",
+    "seed_simulator": 20261030,
+    "zero_threshold": 0.0
+  },
+  "case": {
+    "config": "configs/models/compact_deep/compact_n8_w0002_tau23.json",
+    "id": "n8_w0002_tau23_T15",
+    "profile": "compressed",
+    "steps": 15
+  },
+  "decoded_status_counts": [
+    0,
+    0,
+    1,
+    0
+  ],
+  "measured_fingerprint": "944f2502f73db45066d38c47b98590ffcd208feb13758e6c6ebe3d387723f1f7",
+  "original_A_fingerprint": "b8f0ceeddaa5f6f8d74094377c72dc0ecdd09c096887c7cc1507151c8c686b15",
+  "purpose": "measurement ordering and finite-count interface; not certification of MPS systematic error",
+  "raw_counts": {
+    "10": 1
+  },
+  "reference": [
+    5.652242209894055e-16,
+    1.0729208963459933e-10,
+    0.9996837914824892,
+    0.000316208410218315
+  ],
+  "sample_probabilities": [
+    0.0,
+    0.0,
+    1.0,
+    0.0
+  ],
+  "sampling_seconds": 184.62186479999218,
+  "shots": 1,
+  "status": "complete",
+  "status_order": [
+    "survive",
+    "detect",
+    "absorb",
+    "boundary"
+  ]
+}

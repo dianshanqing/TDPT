@@ -1,0 +1,363 @@
+{
+  "A_inverse_state_error_squared": 1.657300403724399e-33,
+  "actual_evolutions": [
+    {
+      "amplified_probability_absolute_difference": 2.7755575615628914e-17,
+      "final_basis": 8,
+      "ideal_formula_for_comparison": 0.09331681771425991,
+      "norm_residual": 1.1102230246251565e-16,
+      "peak_basis": 8,
+      "power": 0,
+      "primitive_gate_applications": 1073,
+      "probability": 0.09331681771425988,
+      "raw_norm": 0.9999999999999999,
+      "seconds": 0.0021193999564275146
+    },
+    {
+      "amplified_probability_absolute_difference": 4.440892098500626e-16,
+      "final_basis": 17,
+      "ideal_formula_for_comparison": 0.6438603642724008,
+      "norm_residual": 5.551115123125783e-16,
+      "peak_basis": 48,
+      "power": 1,
+      "primitive_gate_applications": 3316,
+      "probability": 0.6438603642724003,
+      "raw_norm": 0.9999999999999994,
+      "seconds": 0.009457600070163608
+    },
+    {
+      "amplified_probability_absolute_difference": 6.661338147750939e-16,
+      "final_basis": 21,
+      "ideal_formula_for_comparison": 0.9996542909654501,
+      "norm_residual": 6.661338147750939e-16,
+      "peak_basis": 48,
+      "power": 2,
+      "primitive_gate_applications": 5559,
+      "probability": 0.9996542909654494,
+      "raw_norm": 0.9999999999999993,
+      "seconds": 0.017844799906015396
+    },
+    {
+      "amplified_probability_absolute_difference": 3.885780586188048e-16,
+      "final_basis": 24,
+      "ideal_formula_for_comparison": 0.07282655999856129,
+      "norm_residual": 1.3322676295501878e-15,
+      "peak_basis": 48,
+      "power": 5,
+      "primitive_gate_applications": 12288,
+      "probability": 0.0728265599985609,
+      "raw_norm": 0.9999999999999987,
+      "seconds": 0.03186639992054552
+    },
+    {
+      "amplified_probability_absolute_difference": 1.3211653993039363e-14,
+      "final_basis": 24,
+      "ideal_formula_for_comparison": 0.24882944466359713,
+      "norm_residual": 1.7319479184152442e-14,
+      "peak_basis": 48,
+      "power": 56,
+      "primitive_gate_applications": 126681,
+      "probability": 0.24882944466358392,
+      "raw_norm": 0.9999999999999827,
+      "seconds": 0.42097149998880923
+    }
+  ],
+  "actual_primitive_gate_applications": 151057,
+  "budgets": {
+    "max_actual_primitive_gate_applications": 2000000,
+    "max_power": 128,
+    "max_states": 60000,
+    "queries": 10000000,
+    "shots": 20000,
+    "wall_clock_deadline": null
+  },
+  "config": {
+    "geom": {
+      "detector_x": 2,
+      "duct_y0": 1,
+      "duct_y1": 1,
+      "duct_z0": 1,
+      "duct_z1": 1,
+      "nx": 4,
+      "ny": 3,
+      "nz": 3,
+      "roi_y0": 1,
+      "roi_y1": 1,
+      "roi_z0": 1,
+      "roi_z1": 1,
+      "slab_x0": 1,
+      "slab_x1": 1
+    },
+    "groups": {
+      "boundaries": [
+        1.0,
+        0.0
+      ],
+      "n_groups": 1
+    },
+    "h": 0.5,
+    "layers": [
+      {
+        "material": "tungsten",
+        "x0": 1,
+        "x1": 1
+      }
+    ],
+    "mats": {
+      "air": {
+        "p_abs": [
+          0.09999999999999998
+        ],
+        "p_int": [
+          0.39346934028736663
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "concrete": {
+        "p_abs": [
+          0
+        ],
+        "p_int": [
+          -0.0
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "tungsten": {
+        "p_abs": [
+          0.998
+        ],
+        "p_int": [
+          0.9069855107893365
+        ],
+        "q_down": [
+          0
+        ]
+      }
+    },
+    "model": "uniform_slab",
+    "source": {
+      "dir0": 0,
+      "g0": 0,
+      "x0": 1,
+      "y0": 1,
+      "z0": 1
+    }
+  },
+  "empirical_coverage_validated": false,
+  "estimator": {
+    "alpha": 0.050000000000000044,
+    "budgets": {
+      "max_power": 128,
+      "max_queries": 10000000,
+      "max_shots": 20000,
+      "shots_per_round": 512,
+      "wall_clock_deadline": null
+    },
+    "confidence": 0.95,
+    "confidence_interval": [
+      0.09297477774852035,
+      0.09363683448977356
+    ],
+    "confidence_scope": "single complete estimation process",
+    "costs": {
+      "A_calls": 32768,
+      "A_inverse_calls": 31232,
+      "grover_iterations": 31232,
+      "max_power": 56,
+      "objective_reflection_calls": 31232,
+      "queries_A_and_inverse": 64000,
+      "shots": 1536,
+      "zero_reflection_calls": 31232
+    },
+    "estimate": 0.09330580611914696,
+    "failure_probability_spending": "alpha_t=(1-confidence)/(t*(t+1)); fresh batches",
+    "failure_probability_spent": 0.03750000000000003,
+    "full_pipeline_certified": false,
+    "last_valid_interval": [
+      0.09297477774852035,
+      0.09363683448977356
+    ],
+    "precision_target_met": true,
+    "reason": "relative midpoint criterion",
+    "relative_error": 0.01,
+    "rounds": [
+      {
+        "alpha": 0.025000000000000022,
+        "confidence_interval": [
+          0.08042278305707123,
+          0.14416039649415105
+        ],
+        "measurement_interval": [
+          0.08042278305707122,
+          0.14416039649415102
+        ],
+        "power": 0,
+        "prior_theta_interval": [
+          0.0,
+          0.25
+        ],
+        "round": 1,
+        "shots": 512,
+        "success_count": 56,
+        "theta_interval": [
+          0.04576258701350633,
+          0.06198374308561907
+        ]
+      },
+      {
+        "alpha": 0.00833333333333334,
+        "confidence_interval": [
+          0.09081779151121915,
+          0.0971696139131109
+        ],
+        "measurement_interval": [
+          0.05008629196267053,
+          0.11465829634133183
+        ],
+        "power": 5,
+        "prior_theta_interval": [
+          0.04576258701350633,
+          0.06198374308561907
+        ],
+        "round": 2,
+        "shots": 512,
+        "success_count": 40,
+        "theta_interval": [
+          0.04872027889958457,
+          0.050452613894519625
+        ]
+      },
+      {
+        "alpha": 0.00416666666666667,
+        "confidence_interval": [
+          0.09297477774852035,
+          0.09363683448977356
+        ],
+        "measurement_interval": [
+          0.19372212932415603,
+          0.3043338458388147
+        ],
+        "power": 56,
+        "prior_theta_interval": [
+          0.04872027889958457,
+          0.050452613894519625
+        ],
+        "round": 3,
+        "shots": 512,
+        "success_count": 126,
+        "theta_interval": [
+          0.04931447234505326,
+          0.049495606871348505
+        ]
+      }
+    ],
+    "simulation_error": "not_bounded_by_estimator",
+    "statistical_precision": "certified_under_ideal_measurement_law",
+    "status": "completed",
+    "stopping_rule": "L>0 and (U-L)/(2L)<=relative_error; midpoint estimate"
+  },
+  "evidence_kind": "real transport actual-gate complex-amplitude evolution and Bernoulli measurement sampling",
+  "fingerprints": {
+    "A": "0e1eccd92f26984df51b64ac16ff18a40620a7dcfceb1fdd1c82870f48156d16",
+    "A_inverse": "ab23c74cc9291fe69b93bd3af97893f3f07be937e95ef151242355f6ddfed1c0",
+    "Q": "b3f667f01381fd733d52f7736379ac6694dafcdb853168aeb40efa7c422bb40b",
+    "marked_A": "498a4d5a9322fd606a261053339d77becab69efdc6e9f01f066d16fb95bd1d5d"
+  },
+  "full_pipeline_certified": false,
+  "independent_classical_reference": 0.09331681771425991,
+  "main_rare_IQAE_completed": false,
+  "measurement_batches": [
+    {
+      "actual_gate_probability": 0.09331681771425988,
+      "power": 0,
+      "shots": 512,
+      "success_count": 56
+    },
+    {
+      "actual_gate_probability": 0.0728265599985609,
+      "power": 5,
+      "shots": 512,
+      "success_count": 40
+    },
+    {
+      "actual_gate_probability": 0.24882944466358392,
+      "power": 56,
+      "shots": 512,
+      "success_count": 126
+    }
+  ],
+  "objective": "detect",
+  "posthoc": {
+    "interval_contains_reference": true,
+    "relative_error": 0.00011800225707083391
+  },
+  "primitive_components": {
+    "Q": 2243,
+    "marked_A": 1073
+  },
+  "process_cpu_seconds": 2.15625,
+  "profile": "baseline",
+  "qubits": 46,
+  "reference_error": "independent binary64 recurrence; floating arithmetic, not an interval enclosure",
+  "seconds": 2.187256900011562,
+  "seed": 2026110702,
+  "simulation_error": "no state pruning; only exactly zero amplitudes removed. Formula/inverse/norm checks quantify observed error, not a certified roundoff bound.",
+  "sources": {
+    "__init__.py": "fccee91dfb4c53924bff125b5e21172197ef3fddb9ee6817df2bfffdf700b724",
+    "ae_execution.py": "03a00647b3a76571c994f5d74823a2d3d40c1c5caf1e548b46f1ee16debda614",
+    "ae_likelihood.py": "32d78467f1b394e59ef100d2f844832c5a610342975b29cae2dc5198a7d985da",
+    "ae_runtime.py": "4dad65ee9b5b460f6173310eafe39bfe43ccd187d7902098e556efc67b8b520b",
+    "analyze_alignment_paper1.py": "44a680489babfbc66e28f2dcb945557e889c4eaf058ef572a25587dbe8eed93f",
+    "batch_runtime.py": "f092e09f0a6d60c131a0f6d0d357bc0a4ce246f938116b7b84f3226dc7021b84",
+    "cloud_pilot.py": "cd6dc63ce57e0f52a6bbb3233f590c3d670c1b4db679c60cb3f2ac0802841f66",
+    "compact_classical.py": "c71efdfb8b11f90c5ebe96075180e2a599cb87e9d98cd4622df3d1d80fd071c8",
+    "compare_mc_test.py": "2491eabbca9549bbcfe6df21f7494d9ede9fe8035b8e575aa68a4eef02abb359",
+    "config.py": "a0ae6f2bd55cdf8d0840da7c07595b0155846347ba97d5d1738a563d34a1a867",
+    "diagnostic_fullstep_a1a2.py": "25f1ffbaad4387cd1e8dbcd095ef4b7275b007686d6f411221c695771a940c93",
+    "diagnostic_only.py": "dbc6c5e19df00e9dcc5361240ff8575d89bc65dc96e9dc468b5d9ad28e9de7b7",
+    "geometry.py": "b6fd795bfe93b98861dccc5d64ed0b51fe9337cd7dedec3ae780d1f4be6036da",
+    "iqae.py": "eddb1a9ed766e7ec430b97f085ed1cf28ddc26923ac0832fa1b63d5ffcc65fd7",
+    "main.py": "80da6b0d2d3f326361f7fb3bfe9dbd6332d25b89c17d8ea748f502e5b707fd2f",
+    "mc.py": "080e2bb3df8a931fc8fae89532b89dbfd47e77ef815369b8f74367d01b0f444d",
+    "mc_diag.py": "a3727c9b21c08fd066455f74b144882db726cf5c27349a1118c527bbc568b950",
+    "merge_shards.py": "e38c3f1a7669a454f7a899d19b23aee95686cc5197bc33d53cce9aede1be83ba",
+    "models.py": "b37956eda05c1595ee72e7d3f2772eb3bb77d4dc64fef8fe28137d75dd5f3ccd",
+    "mps_numerical.py": "65d654fdc6a26685d218137787886d4effcf937ccbfe2fef91801c6eaadd544f",
+    "mps_performance.py": "ae94c058fbb3db7bdd81af1f89534333b4fc9526a6564bae219fdfaf487fc264",
+    "numerical_runtime.py": "e61eb0de7a5dc7d72d78637c179a2731853e794e633ed62afdde59ee0a9902cc",
+    "output_guard.py": "7d32497d4cc7ec80cd3c9111ffac1378a6b385b9aa84ac0c0221d41ccb4e8e14",
+    "plotting.py": "ff93e01107c02e947d2d732e3d5bb9755ac7b3807f91aff21aa3c38f6f894ad1",
+    "postprocess_alignment.py": "c270c13daf3a0f8e5a4d478c43da65b0f6654ac04b85527ab74d6e276a7074dd",
+    "presets.py": "b939e5853bd56b92dc2ca2cadde1f5d1d786076eeae7f37ad4b3fe2e5465b43c",
+    "qc_environment.py": "9fcc8fb4308d80f9a569ca946d700ecfcfd5c3c4cccde50143ad3250b13f71a8",
+    "qc_versions.py": "81314845d36fbea223b324d95d9ada1a8e41e1dcc10b493b659a79ac15fe22ea",
+    "rare_precision.py": "57c3ca46ed61c6f1ac836dfb5ca3157efa55e2bad300bd07af643ac18f2cc31f",
+    "reference_engine.py": "047ca9ec83c562547da92b8a403419267b751094f7ed90a529282cf09cf21662",
+    "reference_solver.py": "cd8e1c48cde93172bae72ef10277279c48df77a2bc214f11bc699ef6a6eba64b",
+    "rrk_model.py": "1f9fc56c19f5bfe0f60478bfc5a0604090d5b69a1ddb566d3243b786215dddef",
+    "run.py": "ddccf171d455f959f8f7835260178b653c4063a088de65d46b95b73bd5373f20",
+    "run_local_validation.py": "c7eeaabfb28c33495905be5ace2fd7ed2459af65962692cced2ba0c6479c17ad",
+    "run_request.py": "0bbfca9613646ae45bf84594b0edf97d229419186ddda0fad664c496e0fba1f2",
+    "runtime_identity.py": "13b16d15a8a87ac36d1d80edbc640af03936621e97c22fc4963752fcf66befdc",
+    "screening.py": "da10a6facb1a39594ad1674f6d4792dd17084a92f114813aa157e3d8cb216e6e",
+    "shard_runner.py": "82b6bac8a84915fdaecaffa8cb8a3f7e54608e0964a26b4420f9427c825a5e8c",
+    "stats_utils.py": "d93c440c4c1954f340eeddeb58ffc1e3fc4c6f6e51a3cf69a3bedeac5d46e023",
+    "supervised.py": "e2e494c22c0dd09356ecb9453cf14561189e55e2946e0222b89a3dc283d7b881",
+    "unitary_circuit.py": "4e049256bd532409dd88f7d6b93f7985ec865d446b4f0542259f567bde749656",
+    "validation.py": "74877e3371a753ec824c57f2db384875b47a2d3a8e4351068e22e68381979418"
+  },
+  "steps": 2,
+  "versions": {
+    "numpy": "2.4.6",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.13",
+    "qiskit": "2.5.2",
+    "qiskit-aer": "0.17.2",
+    "qiskit-algorithms": "0.4.0",
+    "scipy": "1.17.1"
+  }
+}

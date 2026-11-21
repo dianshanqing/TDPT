@@ -1,0 +1,49 @@
+{
+  "validated_utc": "2026-11-09T02:46:06.262565+00:00",
+  "histories": 1000000,
+  "seed": 20261107,
+  "source": [
+    1,
+    2,
+    2
+  ],
+  "direction": [
+    1,
+    0,
+    0
+  ],
+  "energy_eV": 2000000.0,
+  "slab_A": [
+    2,
+    3
+  ],
+  "slab_B": [
+    3,
+    4
+  ],
+  "Sigma_t": [
+    1,
+    2
+  ],
+  "Sigma_a": [
+    1,
+    2
+  ],
+  "Sigma_s": [
+    0,
+    0
+  ],
+  "detector_x": 5,
+  "detector_yz_square": [
+    [
+      1.5,
+      2.5
+    ],
+    [
+      1.5,
+      2.5
+    ]
+  ],
+  "analytic_probability": 0.049787068367863944,
+  "model_unit_map": "one mechanism length u = one Light cm"
+}
