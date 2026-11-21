@@ -12,6 +12,16 @@ Each slab has eight coarse material cells, spacing 0.5, single-group scattering 
 
 These baseline circuits use double precision and a truncation threshold of 1e-16. The percentages use the classical detector probability on the identical grid and at the same step. Direct readout uses the detector marginal of the simulated state. Strict comparison applies an absolute tolerance of 2e-11 to the full four-state distribution. The tau14 record passes its fixed-model detector-channel check while the absorption and leakage discrepancies reach approximately 1.365e-6. The tau19 and tau23 records mark numerical validity as unresolved.
 
+## First detection by path class
+
+For the coarse 15-step slab at optical thickness 23, [tagged_tau23.py](tau23/path_classes/tagged_tau23.py) propagates independent classical live-state probabilities with three history labels at 60-digit decimal precision. [tagged_tau23.json](tau23/path_classes/tagged_tau23.json) contains all nonzero first-detection rows and the cumulative probabilities. From the project root run:
+
+```bat
+python -B outputs\deep_penetration\tau23\path_classes\tagged_tau23.py --check
+```
+
+Uncollided and forward-scattering-only paths first register at step 13. Paths that changed direction first register at steps 14 and 15. The three cumulative probabilities are 1.02618796317e-10, 4.66722647798e-12 and 6.06683959922e-15. Their sum agrees with the archived coarse-grid classical detector probability to 1.19e-16 relative. The script embeds the resolved coarse-grid parameters and compares its computed JSON with the original beside it.
+
 ## Reading the records
 
 - Start with the three result IDs in [the evidence index](../evidence_index.csv). Each row points to the input model, resolved suite, original probability record and recurrence. A compressed JSON can be opened with Python's `gzip.open(path, "rt", encoding="utf-8")`. In the root object, `probabilities[1]` and `reference[1]` give detection. The status order is survival, detection, absorption, boundary leakage.

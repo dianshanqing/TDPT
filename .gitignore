@@ -4,4 +4,5 @@ __pycache__/
 .venv/
 outputs/run_*/
 outputs/user_runs/
+outputs/iqae_sparse_complete_*/
 outputs/test_runs/

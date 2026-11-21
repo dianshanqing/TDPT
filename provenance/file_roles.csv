@@ -125,6 +125,7 @@ figures/fig1/fig1b_uniform_slab.png,Geometry reference export,Uniform deep-penet
 geometry.py,Frozen implementation (run identity),Geometry and material lookup helpers shared by MC and circuit code.,mc.py | mc_diag.py | provenance/runtime_freeze.json
 iqae.py,Frozen implementation (run identity),IQAE and Aer sampler helpers for transport amplitude-estimation checks.,ae_execution.py | ae_runtime.py | provenance/runtime_freeze.json
 iqae_diagnostics.py,Frozen implementation (run identity),"Finite diagnostics of the production IQAE circuits, separate from estimation.",ae_execution.py | main.py | provenance/runtime_freeze.json
+iqae_sparse_complete.py,Historical execution driver,"Runs the completed two-cell sparse gate IQAE protocol, including fresh seeded measurements.",outputs/amplitude_estimation/tau19_two_cell/iqae_sparse_complete_20261117_124813_443bf938/protocol.json
 main.py,Frozen implementation (run identity),"Command-line entry point for MC, circuit, TEST, IQAE, and diagnostics.",cloud_pilot.py | run.py | provenance/runtime_freeze.json
 mc.py,Frozen implementation (run identity),Classical Monte Carlo baseline for the transport benchmark.,__init__.py | main.py | provenance/runtime_freeze.json
 mc_diag.py,Frozen implementation (run identity),Monte Carlo diagnostic utilities for spatial and state distributions.,provenance/runtime_freeze.json
@@ -136,6 +137,10 @@ numerical_runtime.py,Frozen implementation (run identity),Inspect and control al
 output_guard.py,Frozen implementation (run identity),Output contract for auxiliary CLI tools (old input may be read explicitly).,diagnostic_fullstep_a1a2.py | diagnostic_only.py | provenance/runtime_freeze.json
 outputs/README.md,Local usage / archive guide,TDPT benchmark data,README.md
 outputs/air_duct/README.md,Local usage / archive guide,Air-duct transport,outputs/README.md
+outputs/air_duct/channel_marking/baseline_T5/README.md,Result guide,"Describes the channel checks, tolerance, numerical filters and repeat commands.",tools/verify_transport_channels.py
+outputs/air_duct/channel_marking/baseline_T5/cutoff_comparison.json,Numerical cross-check,Repeats all six measurements with a second amplitude cutoff.,tools/verify_transport_channels.py
+outputs/air_duct/channel_marking/baseline_T5/result.json,Measured gate result,"Primary six flag measurements, circuit fingerprints, norms and auditable filter bounds.",tools/verify_transport_channels.py
+outputs/air_duct/channel_marking/baseline_T5/unfiltered_detect_budget.json,Incomplete gate run,Documents the measured k=0 result and the first unfiltered k=1 basis-budget exit.,tools/verify_transport_channels.py
 outputs/air_duct/circuit_resources/README.md,Local usage / archive guide,Explains the T15 circuit build and identifies the path-redacted configuration.,
 outputs/air_duct/circuit_resources/circuit_build.json,Experiment evidence,Circuit resources at build stage for compressed / raw circuit build,DUCT-BUILD-15
 outputs/air_duct/circuit_resources/resolved_config.json,Experiment evidence,Effective input configuration for compressed / raw circuit build,DUCT-BUILD-15
@@ -178,6 +183,9 @@ outputs/amplitude_estimation/tau19_two_cell/20261117_budget_limited/result.json,
 outputs/amplitude_estimation/tau19_two_cell/iqae_sparse_complete_20261117_124813_443bf938/circuit_identity.json,Experiment evidence,Compiled-circuit identity and settings for unpruned sparse actual gates; binomial measurement,AE-TWO-COMPLETE
 outputs/amplitude_estimation/tau19_two_cell/iqae_sparse_complete_20261117_124813_443bf938/protocol.json,Experiment evidence,"Run protocol and measurement settings for fixed-power MPS diagnostic, unpruned sparse actual gates; binomial measurement",AE-TWO-COMPLETE | AE-TWO-K5
 outputs/amplitude_estimation/tau19_two_cell/iqae_sparse_complete_20261117_124813_443bf938/result.json,Experiment evidence,"Recorded output / Reference for Aer MPS; measured IQAE, ideal scalar IQAE budget study, unpruned sparse actual gates; binomial measurement",AE-TWO-COMPLETE | AE-TWO-MPS-INCOMPLETE | HIST-IQAE-CAP2048
+outputs/amplitude_estimation/tau19_two_cell/oracle_audit_v2.0.1/README.md,Result guide,"Explains local compiled depths, archived circuit identity, first-hit history and round checks.",tools/verify_short_oracle.py
+outputs/amplitude_estimation/tau19_two_cell/oracle_audit_v2.0.1/gate_stream.json.gz,Local circuit transcript,"Stores ordered gates, wire indices, parameters, target matrices and global phase of the reconstructed Grover operator.",tools/verify_short_oracle.py
+outputs/amplitude_estimation/tau19_two_cell/oracle_audit_v2.0.1/result.json,Measured gate and protocol result,"Records full-block local compilation, physical checks, protocol replay and mathematical comparisons.",tools/verify_short_oracle.py
 outputs/amplitude_estimation/tau19_two_cell/tau19_cells2_T3_b128_01/README.md,Local usage / archive guide,Identifies path redactions in the two-cell MPS run configuration and request.,
 outputs/amplitude_estimation/tau19_two_cell/tau19_cells2_T3_b128_01/attempts.jsonl,Experiment evidence,"Append-only journal of estimator attempts for Aer MPS; measured IQAE, compile-only fixed-power circuit",AE-TWO-K64-COMPILE | AE-TWO-MPS-INCOMPLETE
 outputs/amplitude_estimation/tau19_two_cell/tau19_cells2_T3_b128_01/resolved_config.json,Experiment evidence,"Effective input configuration for Aer MPS; measured IQAE, compile-only fixed-power circuit",AE-TWO-K64-COMPILE | AE-TWO-MPS-INCOMPLETE
@@ -262,6 +270,8 @@ outputs/deep_penetration/tau23/mps/compressed_tau23_T15_bond256_01/resolved_suit
 outputs/deep_penetration/tau23/mps/scatter_tau23/mps_probability_probe.json,Experiment evidence,"Batch-level MPS probe summary, numerical settings and status for earlier compressed MPS bond/truncation probe",DP-23-SCAN
 outputs/deep_penetration/tau23/mps/scatter_tau23/n8_w0002_tau23_T15_bond64_trunc1e-16.json,Experiment evidence,"Per-setting measurement record with readout probabilities, reference and numerical settings for earlier compressed MPS bond/truncation probe",DP-23-SCAN
 outputs/deep_penetration/tau23/mps/scatter_tau23/n8_w0002_tau23_T15_counts.json,Experiment evidence,Sampled measurement counts for earlier compressed MPS bond/truncation probe,DP-23-SCAN
+outputs/deep_penetration/tau23/path_classes/tagged_tau23.json,Original classical result,"Records 60-digit path-class probabilities, first-hit rows and the frozen total.",outputs/deep_penetration/tau23/path_classes/tagged_tau23.py
+outputs/deep_penetration/tau23/path_classes/tagged_tau23.py,Classical verification,Independently propagates first-hit probabilities for three path-history classes.,outputs/deep_penetration/tau23/path_classes/tagged_tau23.json
 outputs/evidence_index.csv,Entry / release metadata,"223 result IDs; links input, returned observations and independent or embedded references.",README.md | outputs/README.md
 outputs/historical/README.md,Local usage / archive guide,Historical transport and estimator calculations,outputs/README.md
 outputs/historical/archived_validation/README.md,Local usage / archive guide,Weighted postprocessing of MPS detector counts,
@@ -556,6 +566,7 @@ tests/test_shard_launch.py,Regression test,Tests starting and cleaning up Window
 tests/test_statistical_summary.py,Regression test,"Checks simultaneous confidence intervals, state ordering and matching summaries to compatible references.",
 tests/test_supervision.py,Regression test,"Tests Windows process ownership, termination, deadlines and enforcement of memory limits.",
 tests/test_supervisor_progress.py,Regression test,"Tests progress visibility, child failure reporting and atomic updates while a report is open.",
+tests/test_transport_channels.py,Gate verification test,Compares every output basis amplitude and gate count for a short unfiltered evolution with the frozen sparse engine.,tools/verify_transport_channels.py
 tests/test_transport_circuit.py,Regression test,"Checks terminal states, joint distributions and step-end work bits using the actual transport gates.",LOGIC-TRANSPORT
 tests/test_windows_cmd.py,Regression test,"Tests CMD argument forwarding, environment checks, dry runs and output-directory protection.",
 tools/plot_fig1_geometry.py,Importable helper / command,"Author's render source for the full-size duct, uniform slab and combined drawing. Invoke the reproduction tool for a fresh output directory.",tools/reproduce_figure1.py
@@ -564,5 +575,7 @@ tools/postprocess_rare_response_mps.py,Importable helper / command,Postprocess d
 tools/replay_short_iqae.py,Importable helper / command,Replay a two-cell sparse IQAE run from its recorded counts in the QC environment.,
 tools/reproduce_figure1.py,Importable helper / command,Check Figure 1 against the archived models and redraw it in a fresh directory.,
 tools/verify_release.py,Importable helper / command,Verify a TDPT distribution and open all files referenced by its evidence index.,
+tools/verify_short_oracle.py,Gate verification,"Rebuilds the two original drivers, compiles the local oracle, replays adaptive measurements and resolves two detector histories.",outputs/amplitude_estimation/tau19_two_cell/oracle_audit_v2.0.1/README.md
+tools/verify_transport_channels.py,Gate verification,"Evolves three terminal markers at two powers and checks normalization, work qubits and numerical error.",outputs/air_duct/channel_marking/baseline_T5/README.md
 unitary_circuit.py,Frozen implementation (run identity),Qiskit construction of the reversible 3D transport circuit.,__init__.py | batch_runtime.py | provenance/runtime_freeze.json
 validation.py,Frozen implementation (run identity),Bounded actual-gate checks and instrumented Aer marginal-probability probes.,main.py | mps_numerical.py | provenance/runtime_freeze.json

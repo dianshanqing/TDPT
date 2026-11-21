@@ -1,6 +1,8 @@
 """Verify a TDPT distribution and open all files referenced by its evidence index."""
+import argparse
 import csv
 import hashlib
+import os
 from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -16,8 +18,29 @@ def repository_file(name):
     return path
 
 
+def distributed_files():
+    files = set()
+    for directory, children, names in os.walk(ROOT):
+        folder = Path(directory)
+        if folder == ROOT and '.git' in children:
+            children.remove('.git')
+        for name in children + names:
+            path = folder / name
+            if path.is_symlink() or path.is_junction():
+                raise ValueError(f'Redirected path in distribution: {path.relative_to(ROOT)}')
+        for name in names:
+            if folder == ROOT and name == '.git':
+                continue
+            files.add((folder / name).relative_to(ROOT).as_posix())
+    return files
+
+
 def main():
-    listed = set()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--strict-tree', action='store_true',
+                        help='also reject extra files in a clean extraction or checkout')
+    args = parser.parse_args()
+    listed = {}
     for line in (ROOT / 'SHA256SUMS.txt').read_text(encoding='utf-8').splitlines():
         checksum, name = line.split('  ', 1)
         if name in listed:
@@ -25,7 +48,7 @@ def main():
         with repository_file(name).open('rb') as stream:
             if hashlib.file_digest(stream, 'sha256').hexdigest() != checksum:
                 raise ValueError(f'SHA-256 mismatch: {name}')
-        listed.add(name)
+        listed[name] = checksum
 
     with (ROOT / 'outputs/evidence_index.csv').open(encoding='utf-8-sig', newline='') as stream:
         rows = list(csv.DictReader(stream))
@@ -50,11 +73,25 @@ def main():
             if name in described or not row['role'].strip() or not row['purpose'].strip():
                 raise ValueError(f'Duplicate or incomplete file guide entry: {name}')
             described.add(name)
-    expected = listed | {'SHA256SUMS.txt'}
+    expected = set(listed) | {'SHA256SUMS.txt'}
     if described != expected:
         raise ValueError(f'File guide and manifest disagree: {sorted(described ^ expected)}')
+    with (ROOT / 'provenance/source_files.csv').open(encoding='utf-8-sig', newline='') as stream:
+        sourced = set()
+        for row in csv.DictReader(stream):
+            name = row['file']
+            if name in sourced or listed.get(name) != row['public_sha256']:
+                raise ValueError(f'Source map and public file disagree: {name}')
+            sourced.add(name)
+            if row['treatment'] == 'original bytes' and row['source_sha256'] != listed[name]:
+                raise ValueError(f'Original-source digest differs: {name}')
+    if args.strict_tree:
+        actual = distributed_files()
+        if expected != actual:
+            raise ValueError(f'Distribution tree and manifest disagree: {sorted(expected ^ actual)}')
     print(f'{len(listed)} SHA-256 digests matched. Opened {opened} file references across {len(ids)} evidence records.')
     print(f'The file guide describes all {len(expected)} distributed files.')
+    print(f'Checked the public digests of {len(sourced)} sourced files.')
 
 
 if __name__ == '__main__':

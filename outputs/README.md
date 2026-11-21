@@ -24,7 +24,7 @@ Use the activated Windows prompt described in the [project README](../README.md)
 | Sampled transport | `call run.cmd mc --config q_uniform_small --steps 3 --histories 128 --seed 1234 --outdir outputs/user_runs/mc` | Read the four terminal counts in `results.json`, then compare their fractions to the corresponding three-step classical probabilities. The counts carry sampling uncertainty. |
 | Two-shard quantum sampling | `call run.cmd test --execute --config q_uniform_small --steps 1 --shots 4 --num-shards 2 --max-parallel 2 --shot-chunk 2 --mps-max-bond 16 --run-memory-mib 3072 --outdir outputs/user_runs/gate` | Inspect `merged/results_merged.json` under the new run. To summarize the underlying shards, use `call run.cmd summarize --input outputs/user_runs/gate/shards --outdir outputs/user_runs/gate_summary`. Four shots demonstrate the execution and merge. |
 | Small direct MPS readout | `call run.cmd mps_probe --config q_mps_one_cell --steps 1 --mps-max-bond 16 --mps-trunc 1e-12 --outdir outputs/user_runs/probe` | Read `mps_probability_probe.json` and the per-case JSON. Compare the detector marginal with its same-grid reference. Read `strict_status` separately from the process exit code. The distributed one-cell benchmarks use **two** steps. |
-| Two-cell IQAE | Follow the two [recorded-count replay commands](amplitude_estimation/README.md). | Compare the power schedule, interval, stopping decision, shots and preparation counts. The completed batch lacks its exact gate-execution driver. |
+| Two-cell IQAE | Follow the [execution and count-replay commands](amplitude_estimation/README.md). | The recovered driver evolves the circuit and draws measurements. The replay reconstructs the power schedule, intervals, stopping decision and query totals from the archived counts. |
 
 For the T15 resource table, enter this loop directly in the activated prompt. In a saved CMD file, double the percent signs. The `--probe-compile` option selects the archived `u,cx` basis, optimization level 0 and transpiler seed 917.
 
@@ -41,3 +41,9 @@ call run.cmd mps_probe --suite outputs/deep_penetration/tau14/mps/baseline_tau14
 The [historical guide](historical/README.md) identifies v1 sampling, summary-only records and the old solver inputs. The [Light comparison](validation_suite/external_absorption/README.md) supports recomputing the recorded tally and its analytic reference. Repeating Light's particle histories requires its external executable.
 
 Each batch README identifies any path-redacted copies. The [source map](../provenance/source_files.csv) records the original location, original hash and distributed hash of each sourced file. Private machine locations in designated records have been replaced with repository-relative paths or named placeholders. Original run IDs and historical fingerprints refer to the recorded execution. Read input, result and reference paths in the evidence index from the project root. Use `outputs/user_runs/<new-name>/` for new calculations and `python -B tools/verify_release.py` to check the distributed files.
+
+## Additional checks in v2.0.1
+
+- [Three terminal channels on the reduced duct](air_duct/channel_marking/baseline_T5/README.md) compares flag measurements at two Grover powers with independent transport recursion.
+- [Three-step detector oracle](amplitude_estimation/tau19_two_cell/oracle_audit_v2.0.1/README.md) reports local compilation, protocol replay and two unconditional detection probabilities classified by collision history.
+- [Three-class slab recursion](deep_penetration/README.md#first-detection-by-path-class) resolves the first-detection step of uncollided, forward-scattered and direction-changing paths on the coarse grid.

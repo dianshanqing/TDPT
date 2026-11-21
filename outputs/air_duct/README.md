@@ -18,3 +18,7 @@ Open `classical_reference/legacy_duct.json` and select a finite horizon from `ro
 ## Scaled duct
 
 `gate_validation` contains three T5 files for the same scaled geometry. Each file gives the encoding in `profile`, the gate result in `actual_joint`, and the independent recursion in `reference_joint`. Each encoding has maximum joint absolute error 1.1102230246251565 × 10⁻¹⁶. The three records contribute to the 21 checks in `../validation_suite/validation_summary.json`.
+
+## Five-step terminal channel marking
+
+[Three-terminal marking on the reduced duct](channel_marking/baseline_T5/README.md) gives six actual sparse gate readings for the common baseline transport circuit, using the detector, absorption and leakage markers at Grover powers zero and one. The records include the independent classical probabilities, normalization, work-register checks, and discarded-amplitude bounds. A separate unfiltered run records where the basis budget was exhausted.

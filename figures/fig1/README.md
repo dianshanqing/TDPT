@@ -1,6 +1,6 @@
-# Reproduce Figure 1
+# Reproduce the transport geometries
 
-[Figure 1](fig1_geometry.pdf) shows where particles start, where material is present and which lattice nodes count as a detection. Indices start at zero. Both sources point along +x.
+[The geometry diagram](fig1_geometry.pdf) shows where particles start, where material is present and which lattice nodes count as a detection. Indices start at zero. Both sources point along +x.
 
 | Panel | Model input | Grid and material | Detector |
 | --- | --- | --- | --- |

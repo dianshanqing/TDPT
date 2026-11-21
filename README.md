@@ -8,7 +8,7 @@ A history carries position, one of six axial directions, an energy-group label a
 
 The observables refer to this discrete model and observation horizon. The named material slots in the examples carry numerical interaction parameters. The deep-penetration benchmarks use a fixed energy group. The duct regression retains two energy labels with zero downscatter. The circuit supports fixed-group evolution within its declared capabilities. For grid sensitivity, compare classical runs at matched physical dimensions and observation lengths. The remaining survival mass bounds the possible increase in detection with additional steps.
 
-The [geometry diagram](figures/fig1/fig1_geometry.pdf) shows the full-size air duct and the uniform slab shared by the three deep-penetration benchmarks. The [Figure 1 guide](figures/fig1/README.md) connects the two panels to their model inputs and classical results, and gives the command to redraw and compare the six archived files.
+The [geometry diagram](figures/fig1/fig1_geometry.pdf) shows the full-size air duct and the uniform slab shared by the three deep-penetration benchmarks. The [geometry guide](figures/fig1/README.md) connects the two panels to their model inputs and classical results, and gives the command to redraw and compare the six archived files.
 
 ## Run on Windows
 
@@ -96,8 +96,21 @@ The frozen developer runner `run_local_validation.py` also accepts named groups.
 
 Start with [the data guide](outputs/README.md). Look up a model, method or evidence ID in [the evidence index](outputs/evidence_index.csv). Paths in the index start at this repository root. Consult the original per-case record for the resolved input, precision settings, observable definition and outcome. A direct MPS probability, a sampled terminal count and an IQAE confidence interval describe different measurements.
 
-Run `python -B tools/verify_release.py` on a fresh extraction to verify the SHA-256 manifest and resolve the evidence links. The [file guide](provenance/file_roles.csv) identifies the purpose of each distributed file. [The freeze record](provenance/runtime_freeze.json) identifies the 44 root Python files and the frozen launcher. Run identities hash every root Python module, including diagnostic and compatibility entry points. Paths in the [source map](provenance/source_files.csv) describe the original collection. For current input and result locations, use the evidence index. The latest short-range sparse IQAE data were produced after the runtime freeze. Its saved counts reproduce the estimator; the original batch-specific gate driver is unavailable. The [IQAE data guide](outputs/amplitude_estimation/README.md) specifies the replay procedure and its limits.
+Run `python -B tools/verify_release.py` on a fresh extraction to verify the SHA-256 manifest and resolve the evidence links. The [file guide](provenance/file_roles.csv) identifies the purpose of each distributed file. [The freeze record](provenance/runtime_freeze.json) identifies the 44 root Python files and the frozen launcher. Run identities hash every root Python module, including diagnostic and compatibility entry points. Paths in the [source map](provenance/source_files.csv) describe the original collection. For current input and result locations, use the evidence index. The latest short-range sparse IQAE data were produced after the runtime freeze. The [original execution driver](iqae_sparse_complete.py) matches its recorded SHA-256, and all 45 entries in the successful batch's production-source manifest match this project. The [IQAE guide](outputs/amplitude_estimation/README.md) gives separate commands to preview a fresh execution and replay archived counts. Version 2.0.1 adds local verification records alongside the dated calculations. Each record identifies the code and numerical settings used for that calculation.
 
 ## Citation and license
 
 Software attribution and version are in [CITATION.cff](CITATION.cff). The software is distributed under the [MIT License](LICENSE). The setup script installs dependencies in Conda; their respective package distributions carry their own license notices.
+
+## Run the additional verification cases
+
+Use a fresh extraction and the activated QC interpreter. On a clean checkout or extraction, `--strict-tree` checks for unlisted files as well as missing or modified files. Run that check before creating your own results.
+
+```bat
+python -B tools/verify_release.py --strict-tree
+python -B tools/verify_transport_channels.py --out outputs/user_runs/duct_channels/result.json
+python -B tools/verify_short_oracle.py --out-dir outputs/user_runs/short_oracle
+python -B outputs/deep_penetration/tau23/path_classes/tagged_tau23.py --check
+```
+
+Choose fresh destinations for repeated runs. See [reduced duct channel marking](outputs/air_duct/channel_marking/baseline_T5/README.md) for the six flag probabilities and the numerical filters, [two-cell detector oracle](outputs/amplitude_estimation/tau19_two_cell/oracle_audit_v2.0.1/README.md) for the local compilation and protocol checks, and [short transport amplitude estimation](outputs/amplitude_estimation/README.md) for the original execution and count-replay commands.
