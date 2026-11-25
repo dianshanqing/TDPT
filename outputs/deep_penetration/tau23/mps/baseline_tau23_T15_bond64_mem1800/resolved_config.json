@@ -1,0 +1,549 @@
+{
+  "actual_cases": [
+    {
+      "config": "compact_n8_w0002_tau23",
+      "config_sha256": "84ba5f0567e25db17f1a7d6961c47941ee2f020ef486c1f49d0b56903fc14cc1",
+      "id": "n8_w0002_tau23_T15",
+      "model_document": {
+        "geom": {
+          "detector_x": 14,
+          "duct_y0": 4,
+          "duct_y1": 4,
+          "duct_z0": 4,
+          "duct_z1": 4,
+          "nx": 17,
+          "ny": 9,
+          "nz": 9,
+          "roi_y0": 3,
+          "roi_y1": 5,
+          "roi_z0": 3,
+          "roi_z1": 5,
+          "slab_x0": 4,
+          "slab_x1": 11
+        },
+        "groups": {
+          "boundaries": [
+            1,
+            0
+          ],
+          "n_groups": 1
+        },
+        "h": 0.5,
+        "layers": [
+          {
+            "material": "tungsten",
+            "x0": 4,
+            "x1": 11
+          }
+        ],
+        "mats": {
+          "air": {
+            "p_abs": [
+              0.09999999999999998
+            ],
+            "p_int": [
+              0.39346934028736663
+            ],
+            "q_down": [
+              0
+            ]
+          },
+          "concrete": {
+            "p_abs": [
+              0
+            ],
+            "p_int": [
+              -0.0
+            ],
+            "q_down": [
+              0
+            ]
+          },
+          "tungsten": {
+            "p_abs": [
+              0.998
+            ],
+            "p_int": [
+              0.9435838604962227
+            ],
+            "q_down": [
+              0
+            ]
+          }
+        },
+        "metadata": {
+          "Sigma_t": 5.75,
+          "base_cells": 8,
+          "eta": 2.875,
+          "full_geometric_detector_area": 1,
+          "mapping": "interfaces/source/detector support exactly aligned; no rounding; fixed 1 u^2 closed acceptance square",
+          "omega": "0.002",
+          "parameter_interpretation": "dimensionless absorption-dominated mechanism; uncalibrated material slots",
+          "physical_length": 4.0,
+          "physical_window": "independent T chosen at each h until p_S/p_D <=1e-4; near-final response comparison",
+          "rear_detector_gap": 1,
+          "refinement_factor": 1,
+          "source_front_gap": 1,
+          "source_normalization": 1,
+          "tau": "23"
+        },
+        "model": "uniform_slab",
+        "source": {
+          "dir0": 0,
+          "g0": 0,
+          "x0": 2,
+          "y0": 4,
+          "z0": 4
+        }
+      },
+      "profile": "baseline",
+      "steps": 15
+    }
+  ],
+  "arguments": {
+    "absorb_tape": false,
+    "aer_heartbeat_sec": 60.0,
+    "aer_max_mem_mb": 0,
+    "aer_safe_basis": false,
+    "aer_shot_chunk": 100,
+    "aer_threads": 1,
+    "blas_threads": 1,
+    "case_id": null,
+    "compile_only": false,
+    "compiled_qpy": "",
+    "confidence": 0.95,
+    "config": null,
+    "counts_check": false,
+    "cpu_budget": 1,
+    "debug_measure_work": false,
+    "debug_runtime": false,
+    "dir_tape": false,
+    "dry_run": false,
+    "full_history_mode": false,
+    "global_shot_offset": 0,
+    "histories": 200000,
+    "internal_worker": "e5cf13b08ab843bc819767eadacce7a9",
+    "iqae_alpha": 0.05,
+    "iqae_compare_to": null,
+    "iqae_debug": false,
+    "iqae_debug_print_ops": false,
+    "iqae_diagnostic": null,
+    "iqae_eps": 0.05,
+    "iqae_good": "detect",
+    "iqae_heartbeat_sec": 30.0,
+    "iqae_max_call_sec": null,
+    "iqae_max_compiled_gates": 4000000,
+    "iqae_max_grover_power": 10000000,
+    "iqae_max_queries": 100000000000,
+    "iqae_max_shots": 200000,
+    "iqae_max_sparse_states": 60000,
+    "iqae_mode": "relative",
+    "iqae_powers": null,
+    "iqae_shot_chunk": 100,
+    "iqae_target_g": -1,
+    "iqae_use_aer": true,
+    "kernel_profile": "baseline",
+    "mlae_powers": "0,1",
+    "mps_lapack": null,
+    "mps_max_bond": 64,
+    "mps_threads": 1,
+    "mps_trunc": null,
+    "num_shards": 1,
+    "outdir": "outputs/deep_penetration/tau23/mps/baseline_tau23_T15_bond64_mem1800",
+    "perf_prefix_gates": null,
+    "perf_reference": null,
+    "phase": "mps_probe",
+    "plot": false,
+    "poll_sec": 0.1,
+    "probe_compile": false,
+    "rare_eta": -1.0,
+    "rare_p_target": 0.0,
+    "relative_error": 0.01,
+    "request_hash": "",
+    "resolved_request": {
+      "arguments": {
+        "aer_threads": 1,
+        "blas_threads": 1,
+        "bond": 64,
+        "case_id": null,
+        "config": null,
+        "counts_check": false,
+        "cpu_budget": 1,
+        "dry_run": false,
+        "memory_mib": 1800,
+        "mps_lapack": null,
+        "mps_threads": 1,
+        "mps_trunc": null,
+        "outdir": "outputs/deep_penetration/tau23/mps/baseline_tau23_T15_bond64_mem1800",
+        "perf_prefix_gates": null,
+        "perf_reference": null,
+        "profile": "baseline",
+        "seed": 20261030,
+        "shots": 1,
+        "steps": 15,
+        "suite": "outputs/deep_penetration/tau23/mps/baseline_tau23_T15_bond256_threads1_01/resolved_suite.json",
+        "task": "mps_probe"
+      },
+      "backend": {
+        "backend_options": {
+          "chop_threshold": 0.0,
+          "mps_lapack": false,
+          "mps_log_data": true,
+          "precision": "double",
+          "zero_threshold": 0.0
+        },
+        "bond_dimensions": [
+          64
+        ],
+        "counts_check": false,
+        "per_case_options": [
+          {
+            "case_id": "n8_w0002_tau23_T15",
+            "first_setting": {
+              "chop_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 64,
+              "matrix_product_state_truncation_threshold": 1e-16,
+              "max_parallel_experiments": 1,
+              "max_parallel_shots": 1,
+              "max_parallel_threads": 1,
+              "method": "matrix_product_state",
+              "mps_lapack": false,
+              "mps_log_data": true,
+              "mps_omp_threads": 1,
+              "precision": "double",
+              "seed_simulator": 20261030,
+              "zero_threshold": 0.0
+            }
+          }
+        ],
+        "seed": 20261030,
+        "shots": 1,
+        "truncation_thresholds": [
+          1e-16
+        ]
+      },
+      "backend_options": {
+        "backend_options": {
+          "chop_threshold": 0.0,
+          "mps_lapack": false,
+          "mps_log_data": true,
+          "precision": "double",
+          "zero_threshold": 0.0
+        },
+        "bond_dimensions": [
+          64
+        ],
+        "counts_check": false,
+        "per_case_options": [
+          {
+            "case_id": "n8_w0002_tau23_T15",
+            "first_setting": {
+              "chop_threshold": 0.0,
+              "matrix_product_state_max_bond_dimension": 64,
+              "matrix_product_state_truncation_threshold": 1e-16,
+              "max_parallel_experiments": 1,
+              "max_parallel_shots": 1,
+              "max_parallel_threads": 1,
+              "method": "matrix_product_state",
+              "mps_lapack": false,
+              "mps_log_data": true,
+              "mps_omp_threads": 1,
+              "precision": "double",
+              "seed_simulator": 20261030,
+              "zero_threshold": 0.0
+            }
+          }
+        ],
+        "seed": 20261030,
+        "shots": 1,
+        "truncation_thresholds": [
+          1e-16
+        ]
+      },
+      "cases": [
+        {
+          "config": "compact_n8_w0002_tau23",
+          "config_sha256": "84ba5f0567e25db17f1a7d6961c47941ee2f020ef486c1f49d0b56903fc14cc1",
+          "id": "n8_w0002_tau23_T15",
+          "model_document": {
+            "geom": {
+              "detector_x": 14,
+              "duct_y0": 4,
+              "duct_y1": 4,
+              "duct_z0": 4,
+              "duct_z1": 4,
+              "nx": 17,
+              "ny": 9,
+              "nz": 9,
+              "roi_y0": 3,
+              "roi_y1": 5,
+              "roi_z0": 3,
+              "roi_z1": 5,
+              "slab_x0": 4,
+              "slab_x1": 11
+            },
+            "groups": {
+              "boundaries": [
+                1,
+                0
+              ],
+              "n_groups": 1
+            },
+            "h": 0.5,
+            "layers": [
+              {
+                "material": "tungsten",
+                "x0": 4,
+                "x1": 11
+              }
+            ],
+            "mats": {
+              "air": {
+                "p_abs": [
+                  0.09999999999999998
+                ],
+                "p_int": [
+                  0.39346934028736663
+                ],
+                "q_down": [
+                  0
+                ]
+              },
+              "concrete": {
+                "p_abs": [
+                  0
+                ],
+                "p_int": [
+                  -0.0
+                ],
+                "q_down": [
+                  0
+                ]
+              },
+              "tungsten": {
+                "p_abs": [
+                  0.998
+                ],
+                "p_int": [
+                  0.9435838604962227
+                ],
+                "q_down": [
+                  0
+                ]
+              }
+            },
+            "metadata": {
+              "Sigma_t": 5.75,
+              "base_cells": 8,
+              "eta": 2.875,
+              "full_geometric_detector_area": 1,
+              "mapping": "interfaces/source/detector support exactly aligned; no rounding; fixed 1 u^2 closed acceptance square",
+              "omega": "0.002",
+              "parameter_interpretation": "dimensionless absorption-dominated mechanism; uncalibrated material slots",
+              "physical_length": 4.0,
+              "physical_window": "independent T chosen at each h until p_S/p_D <=1e-4; near-final response comparison",
+              "rear_detector_gap": 1,
+              "refinement_factor": 1,
+              "source_front_gap": 1,
+              "source_normalization": 1,
+              "tau": "23"
+            },
+            "model": "uniform_slab",
+            "source": {
+              "dir0": 0,
+              "g0": 0,
+              "x0": 2,
+              "y0": 4,
+              "z0": 4
+            }
+          },
+          "profile": "baseline",
+          "steps": 15
+        }
+      ],
+      "counts_check": false,
+      "diagnostic_contract": null,
+      "dry_run": false,
+      "effective_suite": {
+        "backend_options": {
+          "chop_threshold": 0.0,
+          "mps_lapack": false,
+          "mps_log_data": true,
+          "precision": "double",
+          "zero_threshold": 0.0
+        },
+        "bond_dimensions": [
+          64
+        ],
+        "cases": [
+          {
+            "config": "compact_n8_w0002_tau23",
+            "id": "n8_w0002_tau23_T15",
+            "profile": "baseline",
+            "steps": 15
+          }
+        ],
+        "counts_check": false,
+        "purpose": "User-started baseline tau23/T15/bond256 completion; fixed discrete transport model",
+        "schema_version": 1,
+        "seed": 20261030,
+        "shots": 1,
+        "sparse_crosscheck": false,
+        "truncation_thresholds": [
+          1e-16
+        ]
+      },
+      "outdir": "outputs/deep_penetration/tau23/mps/baseline_tau23_T15_bond64_mem1800",
+      "overrides": [
+        {
+          "field": "bond_dimensions",
+          "previous": [
+            256
+          ],
+          "source": "cli",
+          "value": [
+            64
+          ]
+        }
+      ],
+      "precedence": "explicit CLI > explicit CMD > selected suite/model > default",
+      "precision_contract": {
+        "reference": "independent same-model same-T",
+        "relative_error": 0.01,
+        "scope": "direct_MPS_numerical_response",
+        "statistical_estimation": false
+      },
+      "provenance": {
+        "aer_threads": "cli",
+        "blas_threads": "cli",
+        "bond": "cli",
+        "case_id": "default",
+        "config": "default",
+        "counts_check": "suite",
+        "cpu_budget": "cli",
+        "dry_run": "default",
+        "memory_mib": "cli",
+        "mps_lapack": "default",
+        "mps_threads": "cli",
+        "mps_trunc": "suite",
+        "outdir": "cli",
+        "perf_prefix_gates": "default",
+        "perf_reference": "default",
+        "profile": "suite",
+        "seed": "suite",
+        "shots": "suite",
+        "steps": "suite",
+        "suite": "cli",
+        "task": "cli"
+      },
+      "resources": {
+        "aer_threads": 1,
+        "blas_threads": 1,
+        "cpu_budget": 1,
+        "memory_mib": 1800,
+        "mps_threads": 1
+      },
+      "schema_version": 1,
+      "simulation_executed": false,
+      "task": "mps_probe"
+    },
+    "resource_sample_sec": 1.0,
+    "resource_settings": {
+      "aer_threads": 1,
+      "allocation_performed": true,
+      "available_logical_cpus": 12,
+      "blas_application": [
+        {
+          "applied": true,
+          "config": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY SkylakeX MAX_THREADS=24",
+          "errors": [],
+          "get_num_threads_supported": true,
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "num_threads_after": 1,
+          "num_threads_before": 1,
+          "owner": "numpy",
+          "parallel": 1,
+          "path": "<QC_ENV>/Lib/site-packages/numpy.libs/libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+          "requested_threads": 1,
+          "restored_after_failure": null,
+          "set_num_threads_supported": true,
+          "symbol_prefix": "scipy_openblas_",
+          "symbol_suffix": "64_",
+          "threading_layer": "native_threads",
+          "version": "0.3.31.188.0"
+        }
+      ],
+      "blas_threads": 1,
+      "deadline_environment": null,
+      "effective_cpu_budget": 1,
+      "host_fits_request": true,
+      "loaded_libraries_after": [
+        {
+          "config": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY SkylakeX MAX_THREADS=24",
+          "errors": [],
+          "get_num_threads_supported": true,
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "owner": "numpy",
+          "parallel": 1,
+          "path": "<QC_ENV>/Lib/site-packages/numpy.libs/libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+          "set_num_threads_supported": true,
+          "symbol_prefix": "scipy_openblas_",
+          "symbol_suffix": "64_",
+          "threading_layer": "native_threads",
+          "version": "0.3.31.188.0"
+        }
+      ],
+      "loaded_libraries_before": [
+        {
+          "config": "OpenBLAS 0.3.31.188.0  USE64BITINT DYNAMIC_ARCH NO_AFFINITY SkylakeX MAX_THREADS=24",
+          "errors": [],
+          "get_num_threads_supported": true,
+          "internal_api": "openblas",
+          "num_threads": 1,
+          "owner": "numpy",
+          "parallel": 1,
+          "path": "<QC_ENV>/Lib/site-packages/numpy.libs/libscipy_openblas64_-63c857e738469261263c764a36be9436.dll",
+          "set_num_threads_supported": true,
+          "symbol_prefix": "scipy_openblas_",
+          "symbol_suffix": "64_",
+          "threading_layer": "native_threads",
+          "version": "0.3.31.188.0"
+        }
+      ],
+      "mps_threads": 1,
+      "nested_thread_upper_bound": 1,
+      "requested_cpu_budget": 1,
+      "workers": 1
+    },
+    "root_seed": null,
+    "run_id": "7553b3852c90463b9edddeffd0b7a346",
+    "run_memory_mib": 1800,
+    "run_timeout_sec": null,
+    "save_compiled_qpy": "",
+    "scatter_tape": false,
+    "seed": 20261030,
+    "shard_id": -1,
+    "shard_seed_offset": 0,
+    "shots": 1,
+    "skip_transpile": false,
+    "steps": 15,
+    "suite": "outputs/deep_penetration/tau23/mps/baseline_tau23_T15_bond64_mem1800/resolved_suite.json",
+    "term_tape": false,
+    "test_measure_coins": false,
+    "test_measure_dir": false,
+    "test_measure_x": false,
+    "total_samples": null,
+    "transpiler_seed": 1234,
+    "unitary_matched_energy": false,
+    "xt_disable_boundary": false,
+    "xt_disable_detector": false,
+    "xt_no_interaction": false
+  },
+  "config": null,
+  "model_document": null,
+  "precedence": "explicit CLI > explicit CMD > selected suite/model > default",
+  "steps": 15,
+  "suite_controls_cases": true
+}

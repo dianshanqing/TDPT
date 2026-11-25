@@ -1,0 +1,23 @@
+{
+  "model": "configs/models/q_duct_offaxis.json",
+  "profile": "baseline",
+  "steps": 5,
+  "good": "detect",
+  "shots_per_round": 512,
+  "relative_error": 0.01,
+  "confidence": 0.95,
+  "max_shots": 16384,
+  "max_queries": 15000000,
+  "max_power": 4096,
+  "seed": 2026112501,
+  "amplitude_cutoff": 1e-17,
+  "max_basis_states": 1400000,
+  "absolute_tolerance": 2e-11,
+  "minimum_available_MiB_before_extension": 768,
+  "extension_admission_seconds": 900,
+  "projection_safety_factor": 1.25,
+  "stopping_rule": "Use TDPT estimate_relative_iqae, with L>0 and (U-L)/(2L)<=0.01. Each adaptive batch has a fresh binomial draw. Spending alpha_t=0.05/[t(t+1)].",
+  "admission_rule": "Use the measured native k=1 pilot time as an initial estimate for one Q. Admit a requested power extension only if its additional Q count times the largest observed seconds/Q times 1.25 fits the remaining 900-second admission window, and available physical memory is at least 768 MiB. Recheck before each iterate. A running iterate may finish after this window.",
+  "error_rule": "Sum discarded L2 amplitudes across completed prefix iterates. Require each of the norm residual, nonzero work probability and inconsistent mark probability plus the induced probability bound to be below 2e-11 before drawing counts.",
+  "simulation": "Direct sparse evolution through primitive marked-A and Grover gates. Fresh ideal binomial shots for each admitted batch. Cache the highest computed quantum state; use no transport reference or analytic law for sampling."
+}

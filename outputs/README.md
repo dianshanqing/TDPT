@@ -47,3 +47,11 @@ Each batch README identifies any path-redacted copies. The [source map](../prove
 - [Three terminal channels on the reduced duct](air_duct/channel_marking/baseline_T5/README.md) compares flag measurements at two Grover powers with independent transport recursion.
 - [Three-step detector oracle](amplitude_estimation/tau19_two_cell/oracle_audit_v2.0.1/README.md) reports local compilation, protocol replay and two unconditional detection probabilities classified by collision history.
 - [Three-class slab recursion](deep_penetration/README.md#first-detection-by-path-class) resolves the first-detection step of uncollided, forward-scattered and direction-changing paths on the coarse grid.
+
+## Additional comparisons in v2.0.2
+
+- [Five-step off-axis duct](air_duct/offaxis_T5/README.md) — independent path enumeration, five gate-state checks, marker readout and budget-limited adaptive measurements.
+- [Event records and movement controls](circuit_resources/history_controls/README.md) — inverse checks on three transport steps and five actual compilations of the same 15-step slab.
+- [Bond-dimension sensitivity](deep_penetration/tau23/mps/baseline_tau23_T15_bond64_mem1800/README.md) — two directly comparable baseline states, all four terminal/survival probabilities, normalization and detector errors.
+
+The source map identifies each supplementary run in the 20261125 collection and distinguishes original records from public path-redacted copies. Relative paths in the evidence index point to the corresponding public files.

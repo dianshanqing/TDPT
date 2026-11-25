@@ -1,0 +1,11 @@
+{
+  "seconds": 0.20342059998074546,
+  "peak_basis": 1128,
+  "final_basis": 1128,
+  "primitive_gates": 2847,
+  "checkpoints": [],
+  "timeout_seconds": null,
+  "parent_deadline_monotonic": null,
+  "effective_deadline_monotonic": null,
+  "max_states": 1400000
+}

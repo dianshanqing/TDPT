@@ -1,0 +1,6 @@
+profile,qubits,raw_gates,raw_depth,compiled_u,compiled_cx,compiled_gates,compiled_depth
+baseline,156,11292,2504,63546,29901,93447,57958
+compressed,156,11787,2515,64926,30546,95472,58486
+baseline_scatter_copy,171,11307,2504,63546,29916,93462,57959
+baseline_scatter_control,171,11307,2504,63546,29916,93462,57314
+full_history,171,8802,2204,55056,26481,81537,50564

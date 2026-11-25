@@ -114,3 +114,18 @@ python -B outputs/deep_penetration/tau23/path_classes/tagged_tau23.py --check
 ```
 
 Choose fresh destinations for repeated runs. See [reduced duct channel marking](outputs/air_duct/channel_marking/baseline_T5/README.md) for the six flag probabilities and the numerical filters, [two-cell detector oracle](outputs/amplitude_estimation/tau19_two_cell/oracle_audit_v2.0.1/README.md) for the local compilation and protocol checks, and [short transport amplitude estimation](outputs/amplitude_estimation/README.md) for the original execution and count-replay commands.
+
+## Off-axis detection, event-history controls and slab sensitivity
+
+The [five-step off-axis duct](outputs/air_duct/offaxis_T5/README.md) isolates trajectories that turn in all three spatial dimensions. The sparse gate run checks every step and one Grover amplification. Its separate [finite-shot IQAE run](outputs/air_duct/offaxis_T5/iqae_01/README.md) stopped on its prospective budget after 1,024 simulated measurements (8,192 protocol preparation and inverse calls). The [completed three-step slab estimate](outputs/amplitude_estimation/tau19_two_cell/iqae_sparse_complete_20261117_124813_443bf938/result.json) used 2,048 simulated measurements and 503,808 calls.
+
+The [controlled history comparison](outputs/circuit_resources/history_controls/README.md) compares five unmarked circuits with identical model and compilation settings. The [bond-dimension comparison](outputs/deep_penetration/tau23/mps/baseline_tau23_T15_bond64_mem1800/README.md) pairs a new maximum-bond-64 baseline slab simulation with the archived maximum-bond-256 run. The smaller bond nearly preserves total probability while losing the detector component. Version 2.0.2 distributes these records with their actual run identities.
+
+Run these read-only checks from the project root in the QC environment:
+
+```bat
+python -B tools/verify_release.py --strict-tree
+python -B tools/verify_archived_comparisons.py
+python -B tools/replay_short_iqae.py outputs/amplitude_estimation/tau19_two_cell/iqae_sparse_complete_20261117_124813_443bf938/result.json
+```
+

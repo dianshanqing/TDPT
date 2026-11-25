@@ -1,0 +1,191 @@
+{
+  "reference": "reference_solver.reference",
+  "simulator": "reference_engine.evolve",
+  "cut_off": "exactly zero only",
+  "max_states": 60000,
+  "strict_absolute_tolerance": 2e-11,
+  "strict_inverse_tail_tolerance": 2e-20,
+  "short_input": "configs/models/q_legacy_small.json",
+  "short_steps": 3,
+  "short_config": {
+    "geom": {
+      "nx": 5,
+      "ny": 4,
+      "nz": 3,
+      "slab_x0": 1,
+      "slab_x1": 2,
+      "duct_y0": 1,
+      "duct_y1": 1,
+      "duct_z0": 1,
+      "duct_z1": 1,
+      "detector_x": 3,
+      "roi_y0": 1,
+      "roi_y1": 2,
+      "roi_z0": 1,
+      "roi_z1": 1
+    },
+    "groups": {
+      "n_groups": 1,
+      "boundaries": [
+        1.0,
+        0.0
+      ]
+    },
+    "mats": {
+      "concrete": {
+        "p_int": [
+          0.0
+        ],
+        "p_abs": [
+          0.0
+        ],
+        "q_down": [
+          0.0
+        ]
+      },
+      "tungsten": {
+        "p_int": [
+          0.3296799539643607
+        ],
+        "p_abs": [
+          0.3
+        ],
+        "q_down": [
+          0.0
+        ]
+      },
+      "air": {
+        "p_int": [
+          0.5034146962085905
+        ],
+        "p_abs": [
+          0.65
+        ],
+        "q_down": [
+          0.0
+        ]
+      }
+    },
+    "source": {
+      "x0": 1,
+      "y0": 1,
+      "z0": 1,
+      "g0": 0,
+      "dir0": 0
+    },
+    "model": "legacy_duct",
+    "layers": [],
+    "h": 1.0
+  },
+  "slab_input": "configs/models/compact_deep/compact_n8_w0002_tau23.json",
+  "slab_steps": 15,
+  "slab_config": {
+    "geom": {
+      "nx": 17,
+      "ny": 9,
+      "nz": 9,
+      "slab_x0": 4,
+      "slab_x1": 11,
+      "duct_y0": 4,
+      "duct_y1": 4,
+      "duct_z0": 4,
+      "duct_z1": 4,
+      "detector_x": 14,
+      "roi_y0": 3,
+      "roi_y1": 5,
+      "roi_z0": 3,
+      "roi_z1": 5
+    },
+    "groups": {
+      "n_groups": 1,
+      "boundaries": [
+        1,
+        0
+      ]
+    },
+    "mats": {
+      "concrete": {
+        "p_int": [
+          -0.0
+        ],
+        "p_abs": [
+          0
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "tungsten": {
+        "p_int": [
+          0.9435838604962227
+        ],
+        "p_abs": [
+          0.998
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "air": {
+        "p_int": [
+          0.39346934028736663
+        ],
+        "p_abs": [
+          0.09999999999999998
+        ],
+        "q_down": [
+          0
+        ]
+      }
+    },
+    "source": {
+      "x0": 2,
+      "y0": 4,
+      "z0": 4,
+      "g0": 0,
+      "dir0": 0
+    },
+    "model": "uniform_slab",
+    "layers": [
+      {
+        "x0": 4,
+        "x1": 11,
+        "material": "tungsten"
+      }
+    ],
+    "h": 0.5
+  },
+  "compile_options": {
+    "basis_gates": [
+      "u",
+      "cx"
+    ],
+    "optimization_level": 0,
+    "seed_transpiler": 917,
+    "num_processes": 1
+  },
+  "coupling_map": null,
+  "backend": null,
+  "archive_resource_path": "outputs/circuit_resources/tau23_T15",
+  "versions": {
+    "python": "3.13.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "qiskit": "2.5.2",
+    "qiskit-aer": "0.17.2",
+    "qiskit-algorithms": "0.4.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "sha256": {
+    "configs/models/q_legacy_small.json": "1249f58578afc03367d92283feb3eb173e557a164faa6c7a07ca0cc8050cc98f",
+    "configs/models/compact_deep/compact_n8_w0002_tau23.json": "3296b9d25e341e3ebe8ea4f3be8955fc81e12eceea8719532b4facacd6d469ad",
+    "unitary_circuit.py": "4e049256bd532409dd88f7d6b93f7985ec865d446b4f0542259f567bde749656",
+    "reference_engine.py": "047ca9ec83c562547da92b8a403419267b751094f7ed90a529282cf09cf21662",
+    "reference_solver.py": "cd8e1c48cde93172bae72ef10277279c48df77a2bc214f11bc699ef6a6eba64b",
+    "config.py": "a0ae6f2bd55cdf8d0840da7c07595b0155846347ba97d5d1738a563d34a1a867",
+    "presets.py": "0076446dfd97982e02e666d04ca4ad4e847451f8c4b9261dcdea9dd01731f5f8",
+    "models.py": "b37956eda05c1595ee72e7d3f2772eb3bb77d4dc64fef8fe28137d75dd5f3ccd",
+    "runtime_identity.py": "5ecd839549edaa7890d9d4f948259e7e82d7f20e06e22cddc4de07d01711e73d",
+    "tools/verify_history_ablation.py": "c8693b228dc149fedd50d81d36efbe2fb060a56eae112d640167095b78295c41"
+  }
+}

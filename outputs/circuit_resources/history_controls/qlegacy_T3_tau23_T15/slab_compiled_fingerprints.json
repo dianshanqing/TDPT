@@ -1,0 +1,29 @@
+{
+  "baseline": {
+    "compiled_fingerprint": "c542f8d5bdd78714f870243ecb4e73ee6ee0dd798ab7ca667aad8717e0d01866",
+    "archived_compiled_fingerprint": "c542f8d5bdd78714f870243ecb4e73ee6ee0dd798ab7ca667aad8717e0d01866",
+    "archive": "outputs/circuit_resources/tau23_T15/baseline/results.json",
+    "archive_file_sha256": "5b566f23db367432465ef96fd2a03ab3af0d827cc784a94770c07fa809ee0d0f",
+    "compiled_gate_match": true
+  },
+  "compressed": {
+    "compiled_fingerprint": "76dbf4e877e823bd19cec740ea2aa76bb1e417b706b2cec5d1218ff25415f31b",
+    "archived_compiled_fingerprint": "76dbf4e877e823bd19cec740ea2aa76bb1e417b706b2cec5d1218ff25415f31b",
+    "archive": "outputs/circuit_resources/tau23_T15/compressed/results.json",
+    "archive_file_sha256": "361441c9af4f32b9cbb99bac02faa85d3bf4f8624707687ab09c0d47a9eca61e",
+    "compiled_gate_match": true
+  },
+  "baseline_scatter_copy": {
+    "compiled_fingerprint": "3e33ce68ff93106c76f8ed639601ec92f001b27f014e5379393758f3fdd3652e"
+  },
+  "baseline_scatter_control": {
+    "compiled_fingerprint": "aed4a9f9c80b9dfa1420f8aa812694215f323aaafff7b858c5b4f378a070c0c2"
+  },
+  "full_history": {
+    "compiled_fingerprint": "f1cc6c8f6ada5c07ded9d85669101218600e794836cf894d5fd335a12b57ae7c",
+    "archived_compiled_fingerprint": "f1cc6c8f6ada5c07ded9d85669101218600e794836cf894d5fd335a12b57ae7c",
+    "archive": "outputs/circuit_resources/tau23_T15/full_history/results.json",
+    "archive_file_sha256": "aa0bcbef8bbb99a626acf5dc2787998538048ff9466f3f383a91ed9a287e8865",
+    "compiled_gate_match": true
+  }
+}

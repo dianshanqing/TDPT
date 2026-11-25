@@ -1,0 +1,306 @@
+{
+  "bond": 64,
+  "build_process_cpu_seconds": 0.15625,
+  "build_seconds": 0.16330800001742318,
+  "case": {
+    "config": "compact_n8_w0002_tau23",
+    "id": "n8_w0002_tau23_T15",
+    "profile": "baseline",
+    "steps": 15
+  },
+  "compile_process_cpu_seconds": 0.3125,
+  "compile_seconds": 0.3440658000181429,
+  "compiled_A_fingerprint": "c542f8d5bdd78714f870243ecb4e73ee6ee0dd798ab7ca667aad8717e0d01866",
+  "compiled_depth": 57958,
+  "compiled_fingerprint_seconds": 1.349033500009682,
+  "compiled_gates": 93447,
+  "compiled_sparse": null,
+  "compiled_two_qubit_gates": 29901,
+  "config": {
+    "geom": {
+      "detector_x": 14,
+      "duct_y0": 4,
+      "duct_y1": 4,
+      "duct_z0": 4,
+      "duct_z1": 4,
+      "nx": 17,
+      "ny": 9,
+      "nz": 9,
+      "roi_y0": 3,
+      "roi_y1": 5,
+      "roi_z0": 3,
+      "roi_z1": 5,
+      "slab_x0": 4,
+      "slab_x1": 11
+    },
+    "groups": {
+      "boundaries": [
+        1,
+        0
+      ],
+      "n_groups": 1
+    },
+    "h": 0.5,
+    "layers": [
+      {
+        "material": "tungsten",
+        "x0": 4,
+        "x1": 11
+      }
+    ],
+    "mats": {
+      "air": {
+        "p_abs": [
+          0.09999999999999998
+        ],
+        "p_int": [
+          0.39346934028736663
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "concrete": {
+        "p_abs": [
+          0
+        ],
+        "p_int": [
+          -0.0
+        ],
+        "q_down": [
+          0
+        ]
+      },
+      "tungsten": {
+        "p_abs": [
+          0.998
+        ],
+        "p_int": [
+          0.9435838604962227
+        ],
+        "q_down": [
+          0
+        ]
+      }
+    },
+    "model": "uniform_slab",
+    "source": {
+      "dir0": 0,
+      "g0": 0,
+      "x0": 2,
+      "y0": 4,
+      "z0": 4
+    }
+  },
+  "diagnostic_fingerprint": "de76ea043e7faf5007806f63968eef5c7a5b03fed3f32375b9ff6dea5b5191d1",
+  "diagnostic_fingerprint_seconds": 1.309531099977903,
+  "error": "RuntimeError('ERROR:  [Experiment 0] bad allocation')",
+  "execution_status": "failed",
+  "original_A_fingerprint": "1fcb0f0cbe7a43d9c09ae3774ce20de108219b40063cf4643797fbb355cc3cfb",
+  "original_fingerprint_seconds": 4.752199299982749,
+  "pilot_accuracy_status": "not_evaluated",
+  "qubits": 156,
+  "rare_accuracy_status": "not_evaluated",
+  "reference": [
+    5.652242209894055e-16,
+    1.0729208963459933e-10,
+    0.9996837914824892,
+    0.000316208410218315
+  ],
+  "register_map": {
+    "cA": [
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91
+    ],
+    "cI": [
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76
+    ],
+    "dir": [
+      14,
+      15,
+      16
+    ],
+    "dirT": [
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61
+    ],
+    "g": [
+      13
+    ],
+    "status": [
+      137,
+      138
+    ],
+    "tA": [
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136
+    ],
+    "tB": [
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106
+    ],
+    "tD": [
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121
+    ],
+    "work": [
+      139,
+      140,
+      141,
+      142,
+      143,
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155
+    ],
+    "x": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "y": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "z": [
+      9,
+      10,
+      11,
+      12
+    ]
+  },
+  "save_qubit_count": 2,
+  "sparse_actual": null,
+  "sparse_crosscheck": false,
+  "sparse_passed": null,
+  "sparse_runtime": null,
+  "sparse_skip_reason": "Explicit suite/case sparse_crosscheck=false for a main-candidate probe; independent DP remains active. No sparse accuracy claim.",
+  "sparse_status_max_error": null,
+  "status": "failed",
+  "strict_status": "not_evaluated",
+  "top_level_gates": 11292,
+  "traceback": "Traceback (most recent call last):\n  File \"validation.py\", line 487, in run_mps_probe\n    if not result.success: raise RuntimeError(str(result.status))\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: ERROR:  [Experiment 0] bad allocation\n",
+  "truncation_threshold": 1e-16
+}

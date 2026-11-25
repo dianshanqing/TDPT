@@ -1,0 +1,17 @@
+{
+  "evolution": {
+    "basis_size_before_filter": 663552,
+    "max_states": 650000,
+    "primitive": "h",
+    "primitive_index_1based": 2921,
+    "seconds": 7.06835429999046,
+    "status": "basis_budget_exceeded"
+  },
+  "final_memory": {
+    "available_physical_bytes": 2046595072,
+    "process_peak_working_set_bytes": 279588864
+  },
+  "k1": null,
+  "passed": false,
+  "wall_seconds": 20.63638840004569
+}

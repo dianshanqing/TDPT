@@ -1,0 +1,63 @@
+{
+  "short_checks": {
+    "baseline": true,
+    "compressed": true,
+    "baseline_scatter_copy": true,
+    "baseline_scatter_control": true,
+    "full_history": true
+  },
+  "resources": [
+    {
+      "profile": "baseline",
+      "qubits": 156,
+      "raw_gates": 11292,
+      "raw_depth": 2504,
+      "compiled_u": 63546,
+      "compiled_cx": 29901,
+      "compiled_gates": 93447,
+      "compiled_depth": 57958
+    },
+    {
+      "profile": "compressed",
+      "qubits": 156,
+      "raw_gates": 11787,
+      "raw_depth": 2515,
+      "compiled_u": 64926,
+      "compiled_cx": 30546,
+      "compiled_gates": 95472,
+      "compiled_depth": 58486
+    },
+    {
+      "profile": "baseline_scatter_copy",
+      "qubits": 171,
+      "raw_gates": 11307,
+      "raw_depth": 2504,
+      "compiled_u": 63546,
+      "compiled_cx": 29916,
+      "compiled_gates": 93462,
+      "compiled_depth": 57959
+    },
+    {
+      "profile": "baseline_scatter_control",
+      "qubits": 171,
+      "raw_gates": 11307,
+      "raw_depth": 2504,
+      "compiled_u": 63546,
+      "compiled_cx": 29916,
+      "compiled_gates": 93462,
+      "compiled_depth": 57314
+    },
+    {
+      "profile": "full_history",
+      "qubits": 171,
+      "raw_gates": 8802,
+      "raw_depth": 2204,
+      "compiled_u": 55056,
+      "compiled_cx": 26481,
+      "compiled_gates": 81537,
+      "compiled_depth": 50564
+    }
+  ],
+  "all_stock_archive_comparisons_passed": true,
+  "simulation_executed_on_slab": false
+}

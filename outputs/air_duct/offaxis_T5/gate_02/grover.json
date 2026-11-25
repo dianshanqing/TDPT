@@ -1,0 +1,160 @@
+{
+  "evolution": {
+    "discard_events": [
+      {
+        "count": 540,
+        "discarded_l2": 1.0850345839914576e-17,
+        "primitive_index_1based": 285
+      },
+      {
+        "count": 28,
+        "discarded_l2": 1.7831747583942206e-18,
+        "primitive_index_1based": 300
+      },
+      {
+        "count": 80,
+        "discarded_l2": 1.6713074077324796e-18,
+        "primitive_index_1based": 302
+      },
+      {
+        "count": 17,
+        "discarded_l2": 3.0665868333667484e-19,
+        "primitive_index_1based": 310
+      },
+      {
+        "count": 80,
+        "discarded_l2": 2.625695025621353e-18,
+        "primitive_index_1based": 312
+      },
+      {
+        "count": 140,
+        "discarded_l2": 2.7442542270695324e-17,
+        "primitive_index_1based": 878
+      },
+      {
+        "count": 10,
+        "discarded_l2": 3.2742187586505674e-18,
+        "primitive_index_1based": 893
+      },
+      {
+        "count": 18,
+        "discarded_l2": 4.635519035990621e-18,
+        "primitive_index_1based": 895
+      },
+      {
+        "count": 3,
+        "discarded_l2": 4.336808689942018e-19,
+        "primitive_index_1based": 903
+      },
+      {
+        "count": 18,
+        "discarded_l2": 8.008431293384742e-18,
+        "primitive_index_1based": 905
+      },
+      {
+        "count": 20,
+        "discarded_l2": 5.2098136718466165e-17,
+        "primitive_index_1based": 1440
+      },
+      {
+        "count": 4,
+        "discarded_l2": 2.2350348528052965e-17,
+        "primitive_index_1based": 1455
+      },
+      {
+        "count": 4,
+        "discarded_l2": 1.4821483875836085e-17,
+        "primitive_index_1based": 1465
+      },
+      {
+        "count": 104040,
+        "discarded_l2": 8.87026020722664e-19,
+        "primitive_index_1based": 3255
+      },
+      {
+        "count": 72534,
+        "discarded_l2": 1.3527223022182407e-18,
+        "primitive_index_1based": 3265
+      },
+      {
+        "count": 41465,
+        "discarded_l2": 7.85875223952844e-18,
+        "primitive_index_1based": 3280
+      },
+      {
+        "count": 13280,
+        "discarded_l2": 1.5426252618955161e-18,
+        "primitive_index_1based": 3815
+      },
+      {
+        "count": 12660,
+        "discarded_l2": 1.5518529292763407e-18,
+        "primitive_index_1based": 3817
+      },
+      {
+        "count": 6672,
+        "discarded_l2": 1.4855058612159339e-18,
+        "primitive_index_1based": 3825
+      },
+      {
+        "count": 6378,
+        "discarded_l2": 2.0677830231313297e-18,
+        "primitive_index_1based": 3827
+      },
+      {
+        "count": 9194,
+        "discarded_l2": 1.3039589091785165e-17,
+        "primitive_index_1based": 3842
+      },
+      {
+        "count": 2206,
+        "discarded_l2": 1.9146617701331933e-18,
+        "primitive_index_1based": 4377
+      },
+      {
+        "count": 1080,
+        "discarded_l2": 1.5551777202841437e-18,
+        "primitive_index_1based": 4387
+      },
+      {
+        "count": 920,
+        "discarded_l2": 1.3074296361031107e-17,
+        "primitive_index_1based": 4404
+      },
+      {
+        "count": 88,
+        "discarded_l2": 1.0425027728053926e-18,
+        "primitive_index_1based": 4939
+      },
+      {
+        "count": 40,
+        "discarded_l2": 1.0820500382409493e-18,
+        "primitive_index_1based": 4949
+      }
+    ],
+    "discarded_l2_sum": 1.9875608845733839e-16,
+    "final_basis": 1128,
+    "peak_basis": 663552,
+    "primitive_gates": 5841,
+    "seconds": 15.474426500033587,
+    "status": "complete"
+  },
+  "final_memory": {
+    "available_physical_bytes": 1886842880,
+    "process_peak_working_set_bytes": 300290048
+  },
+  "k1": {
+    "absolute_error": 3.686287386450715e-18,
+    "expected_from_classical": 0.0009953164265524182,
+    "flag_probability": 0.0009953164265524219,
+    "k": 1,
+    "marker_mismatch_probability": 0.0,
+    "norm_residual": 4.440892098500626e-16,
+    "norm_squared": 1.0000000000000004,
+    "passed": true,
+    "probability_error_bound_from_filter": 3.9751217691467687e-16,
+    "work_nonzero_probability": 0.0
+  },
+  "passed": true,
+  "wall_seconds": 29.223010800022166
+}

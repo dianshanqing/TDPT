@@ -1,0 +1,133 @@
+{
+  "estimate": {
+    "status": "budget_limited",
+    "reason": "BudgetStop('projected power exceeds the remaining admission window')",
+    "estimate": null,
+    "confidence_interval": null,
+    "last_valid_interval": [
+      5.35064850270209e-05,
+      0.0002371707330607917
+    ],
+    "precision_target_met": false,
+    "relative_error": 0.01,
+    "confidence": 0.95,
+    "alpha": 0.050000000000000044,
+    "confidence_scope": "single complete estimation process",
+    "failure_probability_spending": "alpha_t=(1-confidence)/(t*(t+1)); fresh batches",
+    "failure_probability_spent": 0.03333333333333336,
+    "stopping_rule": "L>0 and (U-L)/(2L)<=relative_error; midpoint estimate",
+    "statistical_precision": "not_achieved",
+    "simulation_error": "not_bounded_by_estimator",
+    "full_pipeline_certified": false,
+    "budgets": {
+      "shots_per_round": 512,
+      "max_shots": 16384,
+      "max_queries": 15000000,
+      "max_power": 4096,
+      "wall_clock_deadline": null
+    },
+    "costs": {
+      "shots": 1024,
+      "queries_A_and_inverse": 8192,
+      "grover_iterations": 3584,
+      "A_calls": 4608,
+      "A_inverse_calls": 3584,
+      "zero_reflection_calls": 3584,
+      "objective_reflection_calls": 3584,
+      "max_power": 7
+    },
+    "rounds": [
+      {
+        "round": 1,
+        "power": 0,
+        "shots": 512,
+        "success_count": 0,
+        "alpha": 0.025000000000000022,
+        "measurement_interval": [
+          0.0,
+          0.008522124826342384
+        ],
+        "theta_interval": [
+          0.0,
+          0.01471339403440075
+        ],
+        "prior_theta_interval": [
+          0.0,
+          0.25
+        ],
+        "confidence_interval": [
+          0.0,
+          0.008522124826342384
+        ]
+      },
+      {
+        "round": 2,
+        "power": 7,
+        "shots": 512,
+        "success_count": 14,
+        "alpha": 0.00833333333333334,
+        "measurement_interval": [
+          0.011990937443547837,
+          0.05242499580544234
+        ],
+        "theta_interval": [
+          0.001164198983263571,
+          0.002451138480895623
+        ],
+        "prior_theta_interval": [
+          0.0,
+          0.01471339403440075
+        ],
+        "confidence_interval": [
+          5.35064850270209e-05,
+          0.0002371707330607917
+        ]
+      }
+    ]
+  },
+  "endpoint_checks": [
+    {
+      "power": 0,
+      "probability": 0.00011062334505329156,
+      "norm_squared": 1.0000000000000002,
+      "norm_residual": 2.220446049250313e-16,
+      "work_nonzero_probability": 0.0,
+      "marker_mismatch_probability": 0.0,
+      "cumulative_discard_l2_bound": 0.0,
+      "probability_error_bound": 0.0
+    },
+    {
+      "power": 7,
+      "probability": 0.024685331246565204,
+      "norm_squared": 1.0,
+      "norm_residual": 0.0,
+      "work_nonzero_probability": 0.0,
+      "marker_mismatch_probability": 0.0,
+      "cumulative_discard_l2_bound": 2.182345358747883e-15,
+      "probability_error_bound": 4.364690717495771e-15
+    }
+  ],
+  "batches": [
+    {
+      "power": 0,
+      "shots": 512,
+      "hits": 0,
+      "native_gate_probability": 0.00011062334505329156
+    },
+    {
+      "power": 7,
+      "shots": 512,
+      "hits": 14,
+      "native_gate_probability": 0.024685331246565204
+    }
+  ],
+  "last_extension_decision": {
+    "requested_power": 50,
+    "last_computed_power": 7,
+    "elapsed_seconds": 99.23404960002517,
+    "available_MiB": 2297.69140625,
+    "projected_additional_seconds": 831.7489999999999
+  },
+  "highest_completed_prefix": 7,
+  "elapsed_seconds": 99.23436740000034
+}

@@ -1,0 +1,749 @@
+{
+  "displacement": [
+    2,
+    1,
+    1
+  ],
+  "earliest_scoring_step": 5,
+  "p_detect_through_steps_1_to_4": [
+    "0",
+    "0",
+    "0",
+    "0"
+  ],
+  "p_detect_through_step_5": "0.00011062334505329146949162035474832312865460640025191",
+  "p_detect_by_turn_count": {
+    "2": "0E-54",
+    "3": "0.00010728146644071897809958479762990700162840745373515",
+    "4": "0.0000033418786125724913920355571184161270261989465167594"
+  },
+  "shortest_direction_sequences": 12,
+  "positive_weight_sequences": 6,
+  "paths": [
+    {
+      "moves": [
+        "+x",
+        "+x",
+        "+y",
+        "+z"
+      ],
+      "turns_from_source_heading": 2,
+      "factors": [
+        {
+          "position": [
+            1,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+x",
+          "weight": "0.52595116107024394583333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+x",
+          "weight": "0.52595116107024394583333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            3,
+            1,
+            1
+          ],
+          "material_slot": "concrete",
+          "incoming": "+x",
+          "outgoing": "+y",
+          "weight": "0.00",
+          "zero_reason": "The outgoing direction changes in a zero-interaction cell."
+        },
+        {
+          "position": [
+            3,
+            2,
+            1
+          ],
+          "material_slot": "concrete",
+          "incoming": "+y",
+          "outgoing": "+z",
+          "weight": "0.00",
+          "zero_reason": "The outgoing direction changes in a zero-interaction cell."
+        }
+      ],
+      "detection_probability": "0E-54"
+    },
+    {
+      "moves": [
+        "+x",
+        "+x",
+        "+z",
+        "+y"
+      ],
+      "turns_from_source_heading": 2,
+      "factors": [
+        {
+          "position": [
+            1,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+x",
+          "weight": "0.52595116107024394583333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+x",
+          "weight": "0.52595116107024394583333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            3,
+            1,
+            1
+          ],
+          "material_slot": "concrete",
+          "incoming": "+x",
+          "outgoing": "+z",
+          "weight": "0.00",
+          "zero_reason": "The outgoing direction changes in a zero-interaction cell."
+        },
+        {
+          "position": [
+            3,
+            1,
+            2
+          ],
+          "material_slot": "concrete",
+          "incoming": "+z",
+          "outgoing": "+y",
+          "weight": "0.00",
+          "zero_reason": "The outgoing direction changes in a zero-interaction cell."
+        }
+      ],
+      "detection_probability": "0E-54"
+    },
+    {
+      "moves": [
+        "+x",
+        "+y",
+        "+x",
+        "+z"
+      ],
+      "turns_from_source_heading": 3,
+      "factors": [
+        {
+          "position": [
+            1,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+x",
+          "weight": "0.52595116107024394583333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+y",
+          "weight": "0.029365857278834445833333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            2,
+            1
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+y",
+          "outgoing": "+x",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            3,
+            2,
+            1
+          ],
+          "material_slot": "concrete",
+          "incoming": "+x",
+          "outgoing": "+z",
+          "weight": "0.00",
+          "zero_reason": "The outgoing direction changes in a zero-interaction cell."
+        }
+      ],
+      "detection_probability": "0E-55"
+    },
+    {
+      "moves": [
+        "+x",
+        "+y",
+        "+z",
+        "+x"
+      ],
+      "turns_from_source_heading": 3,
+      "factors": [
+        {
+          "position": [
+            1,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+x",
+          "weight": "0.52595116107024394583333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+y",
+          "weight": "0.029365857278834445833333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            2,
+            1
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+y",
+          "outgoing": "+z",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            2,
+            2
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+z",
+          "outgoing": "+x",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        }
+      ],
+      "detection_probability": "0.000022848977127699769260910170226005501641204470609147"
+    },
+    {
+      "moves": [
+        "+x",
+        "+z",
+        "+x",
+        "+y"
+      ],
+      "turns_from_source_heading": 3,
+      "factors": [
+        {
+          "position": [
+            1,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+x",
+          "weight": "0.52595116107024394583333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+z",
+          "weight": "0.029365857278834445833333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            1,
+            2
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+z",
+          "outgoing": "+x",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            3,
+            1,
+            2
+          ],
+          "material_slot": "concrete",
+          "incoming": "+x",
+          "outgoing": "+y",
+          "weight": "0.00",
+          "zero_reason": "The outgoing direction changes in a zero-interaction cell."
+        }
+      ],
+      "detection_probability": "0E-55"
+    },
+    {
+      "moves": [
+        "+x",
+        "+z",
+        "+y",
+        "+x"
+      ],
+      "turns_from_source_heading": 3,
+      "factors": [
+        {
+          "position": [
+            1,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+x",
+          "weight": "0.52595116107024394583333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+z",
+          "weight": "0.029365857278834445833333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            1,
+            2
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+z",
+          "outgoing": "+y",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            2,
+            2
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+y",
+          "outgoing": "+x",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        }
+      ],
+      "detection_probability": "0.000022848977127699769260910170226005501641204470609147"
+    },
+    {
+      "moves": [
+        "+y",
+        "+x",
+        "+x",
+        "+z"
+      ],
+      "turns_from_source_heading": 3,
+      "factors": [
+        {
+          "position": [
+            1,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+y",
+          "weight": "0.029365857278834445833333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            1,
+            2,
+            1
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+y",
+          "outgoing": "+x",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            2,
+            1
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+x",
+          "outgoing": "+x",
+          "weight": "0.70878270733148138166666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            3,
+            2,
+            1
+          ],
+          "material_slot": "concrete",
+          "incoming": "+x",
+          "outgoing": "+z",
+          "weight": "0.00",
+          "zero_reason": "The outgoing direction changes in a zero-interaction cell."
+        }
+      ],
+      "detection_probability": "0E-55"
+    },
+    {
+      "moves": [
+        "+y",
+        "+x",
+        "+z",
+        "+x"
+      ],
+      "turns_from_source_heading": 4,
+      "factors": [
+        {
+          "position": [
+            1,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+y",
+          "weight": "0.029365857278834445833333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            1,
+            2,
+            1
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+y",
+          "outgoing": "+x",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            2,
+            1
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+x",
+          "outgoing": "+z",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            2,
+            2
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+z",
+          "outgoing": "+x",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        }
+      ],
+      "detection_probability": "0.0000016709393062862456960177785592080635130994732583797"
+    },
+    {
+      "moves": [
+        "+y",
+        "+z",
+        "+x",
+        "+x"
+      ],
+      "turns_from_source_heading": 3,
+      "factors": [
+        {
+          "position": [
+            1,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+y",
+          "weight": "0.029365857278834445833333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            1,
+            2,
+            1
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+y",
+          "outgoing": "+z",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            1,
+            2,
+            2
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+z",
+          "outgoing": "+x",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            2,
+            2
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+x",
+          "outgoing": "+x",
+          "weight": "0.70878270733148138166666666666666666666666666666667",
+          "zero_reason": null
+        }
+      ],
+      "detection_probability": "0.000030791756092659719788882228588947999172999256258429"
+    },
+    {
+      "moves": [
+        "+z",
+        "+x",
+        "+x",
+        "+y"
+      ],
+      "turns_from_source_heading": 3,
+      "factors": [
+        {
+          "position": [
+            1,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+z",
+          "weight": "0.029365857278834445833333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            1,
+            1,
+            2
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+z",
+          "outgoing": "+x",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            1,
+            2
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+x",
+          "outgoing": "+x",
+          "weight": "0.70878270733148138166666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            3,
+            1,
+            2
+          ],
+          "material_slot": "concrete",
+          "incoming": "+x",
+          "outgoing": "+y",
+          "weight": "0.00",
+          "zero_reason": "The outgoing direction changes in a zero-interaction cell."
+        }
+      ],
+      "detection_probability": "0E-55"
+    },
+    {
+      "moves": [
+        "+z",
+        "+x",
+        "+y",
+        "+x"
+      ],
+      "turns_from_source_heading": 4,
+      "factors": [
+        {
+          "position": [
+            1,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+z",
+          "weight": "0.029365857278834445833333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            1,
+            1,
+            2
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+z",
+          "outgoing": "+x",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            1,
+            2
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+x",
+          "outgoing": "+y",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            2,
+            2
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+y",
+          "outgoing": "+x",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        }
+      ],
+      "detection_probability": "0.0000016709393062862456960177785592080635130994732583797"
+    },
+    {
+      "moves": [
+        "+z",
+        "+y",
+        "+x",
+        "+x"
+      ],
+      "turns_from_source_heading": 3,
+      "factors": [
+        {
+          "position": [
+            1,
+            1,
+            1
+          ],
+          "material_slot": "air",
+          "incoming": "+x",
+          "outgoing": "+z",
+          "weight": "0.029365857278834445833333333333333333333333333333333",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            1,
+            1,
+            2
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+z",
+          "outgoing": "+y",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            1,
+            2,
+            2
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+y",
+          "outgoing": "+x",
+          "weight": "0.038462661295842081666666666666666666666666666666667",
+          "zero_reason": null
+        },
+        {
+          "position": [
+            2,
+            2,
+            2
+          ],
+          "material_slot": "tungsten",
+          "incoming": "+x",
+          "outgoing": "+x",
+          "weight": "0.70878270733148138166666666666666666666666666666667",
+          "zero_reason": null
+        }
+      ],
+      "detection_probability": "0.000030791756092659719788882228588947999172999256258429"
+    }
+  ],
+  "config": "q_duct_offaxis.json",
+  "config_sha256": "d3dbef1c296e4e8640538b6115110e08dac310428c51306d1f8dfd97a93af375",
+  "driver_sha256": "5ceeb9edbc61532e508797288c178bc60ddf4cee31b5e04b488461ce21405097",
+  "arithmetic": "50 significant decimal digits, using the JSON decimal inputs",
+  "scoring": "A detector arrival after the fourth move registers at the start of step five."
+}

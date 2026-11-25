@@ -1,0 +1,108 @@
+{
+  "status_order": [
+    "survive",
+    "detect",
+    "absorb",
+    "boundary"
+  ],
+  "tolerance": 2e-11,
+  "comparison": "strict less than",
+  "classical_reference_file": "outputs/deep_penetration/tau23/classical/compact_n8_w0002_tau23.json",
+  "classical_reference_sha256": "800bb888421d9157c1358a01fd670c161136571bf086a1c7e084c05c05738648",
+  "reference": [
+    5.652242209894055e-16,
+    1.0729208963459933e-10,
+    0.9996837914824892,
+    0.000316208410218315
+  ],
+  "original_A_fingerprint": "1fcb0f0cbe7a43d9c09ae3774ce20de108219b40063cf4643797fbb355cc3cfb",
+  "compiled_A_fingerprint": "c542f8d5bdd78714f870243ecb4e73ee6ee0dd798ab7ca667aad8717e0d01866",
+  "diagnostic_fingerprint": "de76ea043e7faf5007806f63968eef5c7a5b03fed3f32375b9ff6dea5b5191d1",
+  "compilation": {
+    "basis_gates": [
+      "u",
+      "cx"
+    ],
+    "num_processes": 1,
+    "optimization_level": 0,
+    "seed_transpiler": 917
+  },
+  "common_backend_options": {
+    "chop_threshold": 0.0,
+    "matrix_product_state_truncation_threshold": 1e-16,
+    "max_parallel_experiments": 1,
+    "max_parallel_shots": 1,
+    "max_parallel_threads": 1,
+    "method": "matrix_product_state",
+    "mps_lapack": false,
+    "mps_log_data": true,
+    "mps_omp_threads": 1,
+    "precision": "double",
+    "seed_simulator": 20261030,
+    "zero_threshold": 0.0
+  },
+  "model": {
+    "config": "compact_n8_w0002_tau23",
+    "id": "n8_w0002_tau23_T15",
+    "profile": "baseline",
+    "steps": 15
+  },
+  "qubits": 156,
+  "compiled_gates": 93447,
+  "compiled_two_qubit_gates": 29901,
+  "compiled_depth": 57958,
+  "runs": [
+    {
+      "file": "n8_w0002_tau23_T15_bond64_trunc1e-16.json.gz",
+      "sha256_packed": "66a240b93f081630b602cf9c42a7ef12273f0f93ddc86d4587ebb00f4403d489",
+      "sha256_raw": "ef81d85a36f3884e39d3bfb9ab4c755f7164a434f793da7093004d7073b97035",
+      "bond": 64,
+      "probabilities": [
+        3.748214739192836e-33,
+        1.18471746213396e-36,
+        0.9996840247416938,
+        0.00031597525839271583
+      ],
+      "absolute_errors": [
+        5.652242209894055e-16,
+        1.0729208963459933e-10,
+        2.3325920461836347e-07,
+        2.3315182559916717e-07
+      ],
+      "max_abs_error": 2.3325920461836347e-07,
+      "p_detect_relative_error_fraction": 1.0,
+      "raw_sum": 1.0000000000000866,
+      "normalization_residual": 8.659739592076221e-14,
+      "strict_four_state_passed": false,
+      "work_union_upper_bound": 4.392541924168851e-19,
+      "work_status": "passed",
+      "execution": "passed"
+    },
+    {
+      "file": "n8_w0002_tau23_T15_bond256_trunc1e-16.json.gz",
+      "sha256_packed": "6ad5034824f49c232af5c495d79fb52b7c00dce141688fcdcf2300c4b06c4942",
+      "sha256_raw": "520474b902343e4aa59716384241a8a46a91ee8c6cd4dd2be64c1b73b8d6419a",
+      "bond": 256,
+      "probabilities": [
+        7.2169503577749475e-22,
+        1.07289461380873e-10,
+        0.9996837914412022,
+        0.0003162080783635595
+      ],
+      "absolute_errors": [
+        5.652234992943697e-16,
+        2.6282537263228047e-15,
+        4.128697383976032e-11,
+        3.3185475548092036e-10
+      ],
+      "max_abs_error": 3.3185475548092036e-10,
+      "p_detect_relative_error_fraction": 2.4496248840653125e-05,
+      "raw_sum": 0.9999999996268553,
+      "normalization_residual": 3.73144737331188e-10,
+      "strict_four_state_passed": false,
+      "work_union_upper_bound": 1.1644680907842562e-18,
+      "work_status": "passed",
+      "execution": "passed"
+    }
+  ]
+}

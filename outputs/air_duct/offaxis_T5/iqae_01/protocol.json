@@ -1,0 +1,50 @@
+{
+  "parameters": {
+    "model": "configs/models/q_duct_offaxis.json",
+    "profile": "baseline",
+    "steps": 5,
+    "good": "detect",
+    "shots_per_round": 512,
+    "relative_error": 0.01,
+    "confidence": 0.95,
+    "max_shots": 16384,
+    "max_queries": 15000000,
+    "max_power": 4096,
+    "seed": 2026112501,
+    "amplitude_cutoff": 1e-17,
+    "max_basis_states": 1400000,
+    "absolute_tolerance": 2e-11,
+    "minimum_available_MiB_before_extension": 768,
+    "extension_admission_seconds": 900,
+    "projection_safety_factor": 1.25,
+    "stopping_rule": "Use TDPT estimate_relative_iqae, with L>0 and (U-L)/(2L)<=0.01. Each adaptive batch has a fresh binomial draw. Spending alpha_t=0.05/[t(t+1)].",
+    "admission_rule": "Use the measured native k=1 pilot time as an initial estimate for one Q. Admit a requested power extension only if its additional Q count times the largest observed seconds/Q times 1.25 fits the remaining 900-second admission window, and available physical memory is at least 768 MiB. Recheck before each iterate. A running iterate may finish after this window.",
+    "error_rule": "Sum discarded L2 amplitudes across completed prefix iterates. Require each of the norm residual, nonzero work probability and inconsistent mark probability plus the induced probability bound to be below 2e-11 before drawing counts.",
+    "simulation": "Direct sparse evolution through primitive marked-A and Grover gates. Fresh ideal binomial shots for each admitted batch. Cache the highest computed quantum state; use no transport reference or analytic law for sampling."
+  },
+  "pilot_seconds_per_Q": 15.4744,
+  "UTC": "2026-11-25T13:29:53.954032+00:00",
+  "numpy_bit_generator": "PCG64",
+  "software": {
+    "python": "3.13.13",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "qiskit": "2.5.2",
+    "qiskit-aer": "0.17.2",
+    "qiskit-algorithms": "0.4.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "fingerprints": {
+    "U": "66e1767475684ac62becd56a15e240d719281547299245be2e9ae210e6039c85",
+    "marked_A": "dfe9e03ae834f8db39bf9b94211e6490372ea26e9df41c854eede6b0a45cf360",
+    "Q": "9fd1741680902325d69be714aa3868b5aca2988f1052fe5d790727501efc7b78"
+  },
+  "input_sha256": {
+    "configs/models/q_duct_offaxis.json": "d3dbef1c296e4e8640538b6115110e08dac310428c51306d1f8dfd97a93af375",
+    "configs/offaxis_iqae_budget.json": "fa4300b0b739036cf84e051b6cfd9a8c4416e8b34f70602fa8acd4844239e885",
+    "tools/run_offaxis_iqae.py": "91745c3ef47ebeca4aaca307af395ebc21d6d56beb220dbeb72ce6d165de821f",
+    "tools/verify_transport_channels.py": "b2614b3e4ad96aeee0cf80c13d3f370f1c0b8dedf93b4d35d89ffe868d83e10e",
+    "iqae.py": "eddb1a9ed766e7ec430b97f085ed1cf28ddc26923ac0832fa1b63d5ffcc65fd7",
+    "reference_engine.py": "047ca9ec83c562547da92b8a403419267b751094f7ed90a529282cf09cf21662"
+  }
+}

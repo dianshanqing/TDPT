@@ -1,0 +1,87 @@
+{
+  "geom": {
+    "nx": 5,
+    "ny": 4,
+    "nz": 4,
+    "slab_x0": 1,
+    "slab_x1": 2,
+    "duct_y0": 1,
+    "duct_y1": 1,
+    "duct_z0": 1,
+    "duct_z1": 1,
+    "detector_x": 3,
+    "roi_y0": 2,
+    "roi_y1": 2,
+    "roi_z0": 2,
+    "roi_z1": 2
+  },
+  "groups": {
+    "n_groups": 1,
+    "boundaries": [
+      1.0,
+      0.0
+    ]
+  },
+  "mats": {
+    "concrete": {
+      "p_int": [
+        0.0
+      ],
+      "p_abs": [
+        0.0
+      ],
+      "q_down": [
+        0.0
+      ]
+    },
+    "tungsten": {
+      "p_int": [
+        0.3296799539643607
+      ],
+      "p_abs": [
+        0.3
+      ],
+      "q_down": [
+        0.0
+      ]
+    },
+    "air": {
+      "p_int": [
+        0.5034146962085905
+      ],
+      "p_abs": [
+        0.65
+      ],
+      "q_down": [
+        0.0
+      ]
+    }
+  },
+  "source": {
+    "x0": 1,
+    "y0": 1,
+    "z0": 1,
+    "g0": 0,
+    "dir0": 0
+  },
+  "model": "legacy_duct",
+  "layers": [],
+  "h": 1.0,
+  "metadata": {
+    "purpose": "Five-step off-axis single-cell detection under three-dimensional turning",
+    "units": "dimensionless h=1",
+    "parameter_slots": {
+      "concrete": "vacuum",
+      "tungsten": "A",
+      "air": "B"
+    },
+    "sigma_t": {
+      "A": 0.4,
+      "B": 0.7
+    },
+    "omega": {
+      "A": 0.7,
+      "B": 0.35
+    }
+  }
+}
